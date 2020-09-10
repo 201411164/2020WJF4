@@ -1,0 +1,23 @@
+SAP HANA : SAP의 In-Memory Database Platform
+
+* In-Memory Database : 데이터 스토리지의 메인 메모리에 설치되어 운영
+   - 장점 : 디스크 검색보다 자료 접근이 훨씬 빠르다. (Column Store 기반)
+   - 단점 : 휘발성 -> 안정성이 떨어짐 (정전이나 정전기 발생시)
+             => 이를 방지하기 위해 백업용 SSD나 HDD를 구비하여 주기적으로 Data 백업
+
+* SAP HANA DB
+  - 인메모리 데이터베이스이지만 기존 시스템과 동일하게 스토리지를 가지고 있음
+     => 특정 시점마다 데이터 저장
+  - Appliance : Hardware + Software 일체형 제품
+  - Column Store 기반으로 Data 조회가 빠름
+  - 동일한 Data가 자주 반복되는 경우 압축률이 높고, 그렇지 않은 경우는 낮음 (약 1/4 ~ 1/7)
+  - 실시간으로 데이터가 변경되는 중에서도 빠른 속도로 처리함
+    => 실시간 정보 동기화
+
+* SAP HANA DB의 단점
+  - 가격 : Appliance 제품으로 Hardware와 Software를 함께 구매 해야함
+            => Hardware 제조사가 정해져 있으며 가격이 높음
+  - 서버 자원의 경합과 이로인한 서비스 불안정 : 대용량 Data를 메모리에 상시 올려놓고 사용
+    => 다른 서비스들과 경합 유발
+         : Operation System인 경우 시스템 자체 불안정성 증가
+           => 안정화가 이루어졌지만 잠재적인 리스크 존재
