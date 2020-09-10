@@ -21,3 +21,5 @@ SAP HANA : SAP의 In-Memory Database Platform
     => 다른 서비스들과 경합 유발
          : Operation System인 경우 시스템 자체 불안정성 증가
            => 안정화가 이루어졌지만 잠재적인 리스크 존재
+  - 호환성 : 운영체제에 종속적임
+	=> Linux 기반 환경에서 사용해야함
