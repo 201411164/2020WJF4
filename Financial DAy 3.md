@@ -296,3 +296,17 @@ AP때는 품목을 하나 잡는데, 그뒤로는 수량만큼 01 02 03... 으�
 
 차원을 활성화 시키면 모든 마케팅 문서에서 보임
 예) 부서, 영업 부분
+
+
+
+# 판매, 구매 Process (차변, 대변 정리)
+
+***
+
+![](C:\Users\77106151\Documents\GitHub\2020WJF4\Image\판매Process.jpg)
+
+![](C:\Users\77106151\Documents\GitHub\2020WJF4\Image\구매Process.jpg)
+
+![](C:\Users\77106151\Documents\GitHub\2020WJF4\Image\해외수입Process.jpg)
+
+![](C:\Users\77106151\Documents\GitHub\2020WJF4\Image\판매_취소Process.jpg)
