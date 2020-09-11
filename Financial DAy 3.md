@@ -303,7 +303,7 @@ AP때는 품목을 하나 잡는데, 그뒤로는 수량만큼 01 02 03... 으�
 
 ***
 
-![](\Image\판매Process.jpg)
+![](/Image/판매Process.jpg)
 
 ![](C:\Users\77106151\Documents\GitHub\2020WJF4\Image\구매Process.jpg)
 
