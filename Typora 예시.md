@@ -6,4 +6,4 @@ typora-root-url: image
 
 
 
-![](/reactNativeThumbnail.jpg)
+![](/image/reactNativeThumbnail.jpg)
