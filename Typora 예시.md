@@ -1,8 +1,9 @@
+---
+typora-root-url: image
+---
+
 ## Typora
 
 
 
-<hr>
-
-1. 제목
-
+![](/reactNativeThumbnail.jpg)
