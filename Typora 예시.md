@@ -6,4 +6,4 @@ typora-root-url: image
 
 
 구매Process
-![](/Image/구매Process.jpeg)
+![](/Image/구매Process.jpg)
