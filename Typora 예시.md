@@ -5,5 +5,5 @@ typora-root-url: image
 ## Typora
 
 
-
-![](/image/reactNativeThumbnail.jpg)
+구매Process
+![](/image/구매Process.jpg)
