@@ -322,7 +322,7 @@ AP때는 품목을 하나 잡는데, 그뒤로는 수량만큼 01 02 03... 으�
 
 
 
-![](/Image/구매Process.jpg)
+![](Image/구매Process.jpg)
 
 
 
@@ -330,10 +330,10 @@ AP때는 품목을 하나 잡는데, 그뒤로는 수량만큼 01 02 03... 으�
 
 
 
-![](/Image/해외수입Process.jpg)
+![](Image/해외수입Process.jpg)
 
 ------
 
 
 
-![](/Image/판매_취소Process.jpg)
+![](Image/판매_취소Process.jpg)
