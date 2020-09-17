@@ -1,16 +1,16 @@
-# SDK 
+# SDK  9.3 imlt 13 14 15
 
 ## 프로세스 정리
 
-캡파 + 코스트 = 
-
-
+캡파 + 코스트 = 원가
 
 SDK
 
-B1F
+Integration framework 대신 B1F.
 
 Service Layer : 기존 설치형 클라이언트 서비스가 아니라 server단, DI서버에서 발전, 분산 처리에 강함.
+
+
 
 ### 마스터 데이터
 
@@ -28,7 +28,7 @@ Service Layer : 기존 설치형 클라이언트 서비스가 아니라 server�
     - 원재료 (박스; 개)수량 관리
     - 원료 : 단위로 관리
 
-- GL
+- GL 계정과목.
 
 - 가격 리스트
 
@@ -85,7 +85,15 @@ ORDER BY T0.[DocDate]
 
 ### Group by 사용
 
-추가 부탁함.
+정확하지 않음. 정정 부탁드려요.
+
+```mssql
+SELECT COUNT(T0.[CardCode]), T0.[CardName], SUM(T0.[DocTotal]), T0.[DocNum] 
+FROM OPOR T0 WHERE T0.[DocStatus]  = 'C' 
+and T0.[DocDate] between [%0] and [%1]
+GROUP BY DATEPART(T0.[DocDate],year)
+ORDER BY T0.[DocDate]	
+```
 
 
 
