@@ -2,7 +2,7 @@
 
 ## 프로세스 정리
 
-캡파 + 코스트 = 원가
+Capacity + Cost = 원가
 
 SDK
 
@@ -62,7 +62,9 @@ EX) 노트북을 100만원에 취득해 4년 뒤 20만원의 잔존가치까지 
 
 이동평균으로 금액 재료비 또는 WIP (Work In Process) 
 
-* wip : 생산관리 과정에서 원단, 염색약 ... 등 원재료를 대차변에 나타낼때 사용한다. 가계정과 비슷한 개념
+* WIP : 생산관리 과정에서 원단, 염색약 ... 등 원재료를 대차변에 나타낼때 사용한다. 가계정과 비슷한 개념
+
+  WIP 차이 계정 - 차, 대변에 위치한 WIP 값의 차이만큼 조정하기 위한 계정
 
 
 
@@ -160,6 +162,14 @@ GROUP BY DATEPART(T0.[DocDate],year)
 ORDER BY T0.[DocDate]	
 ```
 
+```mssql
+SELECT YEAR(T0.[DocDate]) AS YEAR, T0.[CardName], SUM(T0.[DocTotal])
+FROM OPOR T0
+WHERE T0.[CardName] = '[%0]'
+GROUP BY YEAR(T0.[DocDate]), T0.[CardName]
+ORDER BY YEAR(T0.[DocDate])
+```
+
 
 
 #### 조인
@@ -168,6 +178,19 @@ ORDER BY T0.[DocDate]
 SELECT T0.[CardCode]), T0.[CardName], T0.[DocNum], T0.[DocTotal], T0.[Balance], T1.[ListNum]
 FROM OPOR T0 INNER JOIN OCRD T1 ON T0. [CardCode] = T1.[CardCode]
 WHERE T0.[DocStatus]  = 'C' 
+```
+
+
+
+#### 활성 윈도우의 필드를 참조하는 질의
+
+판매 오더의 고객/공급업체 코드에 해당하는 계정잔액 값을 불러오는 질의
+
+```mssql
+SELECT DISTINCT T0.[Balance]
+FROM OCRD T0
+INNER JOIN ORDR T1 ON T0.[CardCode] = T1.[CardCode]
+WHERE ($[ORDR.CardCode] = T0.[CardCode])
 ```
 
 
@@ -207,6 +230,19 @@ from ORDR
 
 
 
+#### 사용자 정의 값에 질의 사용
+
+사용하고자 하는 필드에 커서 올린 후 Alt + Shift + F2 를 눌러 추가
+
+사용자 정의 값 자동 변경 필요 시 자동 새로고침 기능 이용
+
+1. 저장된 사용자 정의 값 조회 (Default)
+   - 질의가 한 번 실행되면 필드 내에 결과가 유지 된다.
+2. 정기적 새로 고침
+   - 종속 필드가 변경되거나 문서에서 선택될 때마다 질의를 실행한다.
+
+
+
 ### 사용자 정의 테이블 UDT
 
 1. tool - customizing - UDT 만듦 : 접두부 ''@''로 시작
@@ -239,6 +275,8 @@ SELECT *  FROM [dbo].[@DRIVERS]  T0
    질의에서 조회시 SELECT * FROM [@Deliveryrq]
 
 4. Type을 Doc
+
+5. 마스터 오브젝트와 전표 형태로 만들어진 UDT만 UDO로 생성 가능하다.
 
 
 
