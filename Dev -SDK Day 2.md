@@ -54,6 +54,8 @@ SDK= DLL+COM 모델로 컴퓨터에 등록, 다른 컴퓨터와 통신할 수 �
 
 - 데이터를 활용해 동시에 서비스를 접근할 수 있도록 한다. 
 
+- 폐쇄적인 환경 -> 개방적인 환경
+
   
 
 #### ODBC
@@ -70,9 +72,9 @@ MS에서 만든 데이터 핸들 위한 DB접근
 
 #### SCP (SAP Cloud Platform)
 
-- PAAS
-- SAAS
-- IAAS
+- PaaS
+- SaaS
+- IaaS
 
 [sap community network](https://community.sap.com/)
 
@@ -94,7 +96,9 @@ Business와 Non-Business
 
 - **Business Obj**  구매오더에 해당하는 오브젝트 (제일 많이 사용 -> 중요)
   
-  - Master Data
+  - Master Data Obj
+    - BP
+    - Item
   - Transactional Data Obj
     - JE
     - Document
@@ -103,24 +107,26 @@ Business와 Non-Business
 
 
 
-- Infra Obj
-  - **Company Obj** (최상위 객체로 많이 사용, HANA랑 SAP B1이랑 연결 할 수 있는 첫 번째)
-
+- **Infrastructure Obj**
+  
+- **Company Obj** (최상위 객체로 많이 사용, HANA랑 SAP B1이랑 연결 할 수 있는 첫 번째)
+  
     - company obj가 무엇? -> DB의 경우 insert, update... 할때 트랜잭션 관리를 한다. 화면을 저장하면 특	정비즈니스를 처리해줘야 한다. 만약 TB1 데이터 insert 동시에 TB2 연관된 Foreign key를 update 해	줘야 하는 니즈가 있을 때 TB1에는 insert 하는 구문이 실행되고, TB2에 특정 로우 데이터가 update된	다. 그런데, 둘을 동시에 할 때 TB1은 성공, TB2는 실패하면 롤백해야 한다. 따라서 위에 있는 트랜잭션	을 지운다. 그게 Company Obj!
     - 출하를 등록 했다. -> 판매 오더 입장에서 판매 오더 라인에 출하로 전기가 된 수량을 등록한다. -> 데이터 생성, 출하요청 리퀘스트 수량에 맞게 SBO에서 출하요청 1, 판매오더 2 두객체를 호출 -> 호출하기 전 Company Obj에서 start object를 통해 제어할 수 있다.
-    - All or Not 원칙을 이것을 이용해서 제어 가능.
-
-  - Ex Functionality Obj (확장 함수 오브젝트로 많이 사용)
+  - All or Not 원칙을 이것을 이용해서 제어 가능.
+  
+  - Extended Functionality Obj (확장 함수 오브젝트로 많이 사용)
+    - 데이터 탐색을 위한 API
     - RecordSet
     - DataBrowser
     - SBObob
-    
+  
   - Meta Data Obj : 테이블 명세서
 
     데이터를 저장해서 관리하는 것이 메타 데이터다. 즉, 정의서를 위한 정의내역
-
   
-- Special Obj ( UI와 연결되어 있는 개체)
+- **Special Obj** ( UI와 연결되어 있는 개체)
+  
   - Service Type 환경설정
     
     - *CompanyService*
@@ -148,17 +154,28 @@ DI API 보다는 UI API에 집중
 
 ### Object and Collections
 
+#### SboGuiAPI
+
 #### Application
 
- 최상위 객체
+- UI API 최상위 계층
+- SboGuiAPI와 함께 동작한다.
 
-#### DataSources
+#### Desktop
 
-Data의 attribute를 가지고 있음.
+#### Menu
 
-- DBDataSource
-- UserDataSource
-- DataTable
+#### Form
+
+##### ■  DataSources
+
+​	Data의 attribute를 가지고 있음.
+
+​	-  DBDataSource
+
+​	- UserDataSource
+
+​	- DataTable
 
 
 
@@ -181,6 +198,22 @@ UI API 와 DI API 가 결합하기에 DI API 에서 유니크한 문자를 만�
 #### Multi Add-ons using DI API 
 
 기존에 있던 것을 사용
+
+
+
+#### 동작 방식
+
+1) SAP Core가 UI API Link 하여 Event sink
+2) 등록된 Add-On들이 순차적으로 UI API Link 하여 Event sink
+
+
+
+#### 연결 방식
+
+1) Add-On이 Connection string 정보를 SBO Client에 제공
+2) Connection string이 일치하면 연결하여 동작
+
+
 
 
 
