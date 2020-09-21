@@ -8,11 +8,7 @@
 > 'U'=사용자 테이블, 'P'=저장 프로시저, 'K'=프라이머리 키, 'F'=포린 키,
 > 'V'=뷰, 'C'=체크 제약 등 오브젝트 이름과 정보를 알 수 있다
 
- 
-
- 
-
- **데이타 검색**
+  **데이타 검색**
 
 ```mssql
 USE 데이타베이스명   /* USE 문을 사용한 데이타베이스 선택 */
@@ -42,27 +38,21 @@ USE 데이타베이스명   /* USE 문을 사용한 데이타베이스 선택 */
    'p_'(p로 시작하는 2자리), 'p___'(p로 시작하는 4자리), '__p'(3자리 데이타중 p로 끝나는)
 ```
 
- 🚨**Like 패턴 주의 사항**
+ 
 
-
+🚨**Like 패턴 주의 사항**
 
 \- MSSQL LIKE 쿼리에서 와일드 카드(예약어) 문자가 들어간 결과 검색 시
 
 언더바(_)가 들어간 결과를 보기 위해 아래처럼 쿼리를 날리니
 
- 
-
 ```mssql
 select * from 테이블명 where 컬럼명 like '%_%'
 ```
 
- 
-
 모든 데이터가 결과로 튀어나왔다. -_-;;
 
 언더바가 와일드 카드(쿼리 예약어)이기 때문인데 이럴 땐
-
- 
 
 ```mssql
 select * from 테이블명 where 컬럼명 like '%[_]%'
@@ -93,9 +83,9 @@ select * from 테이블명 where 컬럼명 like '%[_]%'
  **연산자 
 **   1순위는 수치 앞에 기술되는 + - 같은 단항 연산자
    2순위는 사칙 연산의 산술 연산자인 * / + -
-   3순위는 = > 비교 연산자
+   3순위는 => 비교 연산자
    4순위는 AND OR 같은 논리 연산자
-   ()을 붙이면 우선 순위를 바꿀수 있다
+   ()을 붙이면 우선 순위를 바꿀 수 있다
 
 ```mssql
  --1. SELECT 문의 연산
@@ -125,19 +115,19 @@ select * from 테이블명 where 컬럼명 like '%[_]%'
 
   
 
- **함수
-** 1. 수치 함수
-   ROUND(수치값, 반올림위치)      /* 반올림 및 자르기 */
-   ABS(수치 데이타)           /* 절대값 */  
-   SIGN(수치 데이타)          /* 부호 */
-   SQRT(수치값)             /* 제곱근 */
-   POWER(수치값, n)           /* n승 *
+####  *함수*
 
+1. 수치 함수
 
+   ```mssql
+      ROUND(수치값, 반올림위치)      /* 반올림 및 자르기 */
+      ABS(수치 데이타)           /* 절대값 */  
+      SIGN(수치 데이타)          /* 부호 */
+      SQRT(수치값)             /* 제곱근 */
+      POWER(수치값, n)           /* n승 *
+   ```
 
-2. 문자열 함수 정리**
-
- 
+2. 문자열 함수 정리
 
 **1) Ascii() - 문자열의 제일 왼쪽 문자의 아스키 코드 값을 반환(Integer)**
 
@@ -169,13 +159,13 @@ select * from 테이블명 where 컬럼명 like '%[_]%'
 
  
 
-**4) Difference() - 두 문자식에 SUONDEX 값 간의 차이를 정수로 반환**
+**4) Difference() - 두 문자식에 SOUNDEX 값 간의 차이를 정수로 반환**
 
 **예) SELECT Difference('a','b')**
 
  
 
-**5) Left() - 문자열에서 왼쪽에서부터 지정한 수만큼의 문자를 반환**
+**5) Left() - 문자열에서 왼쪽에서 부터 지정한 수 만큼의 문자를 반환**
 
 **예) SELECT Left('abced',3)    결과 >> 3**
 
@@ -197,15 +187,13 @@ select * from 테이블명 where 컬럼명 like '%[_]%'
 
 **예) SELECT Ltrim('  AB CDE')  결과>> AB CDE**
 
- 
+
 
 **9)Nchar() - 지정한 정수 코드의 유니코드 문자 반환**
 
 **예) SELECT Nchar(20)    결과 >> **
 
- 
-
- 
+  
 
 **10) Replace - 문자열에서 바꾸고 싶은 문자 다른 문자로 변환**
 
@@ -263,11 +251,9 @@ select * from 테이블명 where 컬럼명 like '%[_]%'
 
  
 
-**※ 기타 함수 Tip**
+#### **※ 기타 함수 Tip**
 
- 
-
-**19) Isnumeric - 해당 문자열이 숫자형이면 1 아니면 0을 반환**
+ **19) Isnumeric - 해당 문자열이 숫자형이면 1 아니면 0을 반환**
 
 **>> 숫자 : 1 , 숫자X :0**
 
@@ -288,9 +274,7 @@ select * from 테이블명 where 컬럼명 like '%[_]%'
 
  
 
- 
-
-**※ 날짜및 시간함수 정리**
+#### **※ 날짜 및 시간 함수 정리**
 
  
 
@@ -310,22 +294,22 @@ select * from 테이블명 where 컬럼명 like '%[_]%'
 
  
 
-**3> Datename() -지정한 날짜에 특정 날짜부분을 나타내는 문자열을 반환**
+**3> Datename() -지정한 날짜에 특정 날짜 부분을 나타내는 문자열을 반환**
 
 **예) SELECT Datename(d,getdate())**
 
  
 
-**4> Datepart() -지정한 날짜에 특정 날짜부분을 나타내는 정수를 반환**
+**4> Datepart() -지정한 날짜에 특정 날짜 부분을 나타내는 정수를 반환**
 
 **예) SELECT Datepart(d,getdate())**
 
- ** 돌려주는값(약어)
-   Year-yy, Quarter-qq, Month-mm, DayofYear-dy, Day-dd, Week-wk,
-   Hour-hh, Minute-mi, Second-ss, Milisecond-ms
-   SELECT DATEADD(dd, 7, 날짜칼럼) 
+> 돌려주는 값(약어)
+>    Year-yy, Quarter-qq, Month-mm, DayofYear-dy, Day-dd, Week-wk,
+>    Hour-hh, Minute-mi, Second-ss, Milisecond-ms
+>    SELECT DATEADD(dd, 7, 날짜 칼럼) 
 
-**>> Datename , Datepart 은 결과 값은 같으나 반환 값의 타입이 틀림.**
+**🚨 Datename , Datepart 은 결과 값은 같으나 반환 값의 타입이 틀림.**
 
  
 
@@ -347,8 +331,11 @@ select * from 테이블명 where 컬럼명 like '%[_]%'
  
 
  **그룹화 함수
-**  SELECT COUNT(*) FROM 테이블명        /* 전체 데이타의 갯수 가져오기 */
-  SEELECT COUNT(칼럼) FROM 테이블명      /* NULL은 제외한 칼럼의 데이타 갯수 가져오기 */
+**  
+
+```mssql
+  SELECT COUNT(*) FROM 테이블명        /* 전체 데이타의 갯수 가져오기 */
+  SELECT COUNT(칼럼) FROM 테이블명      /* NULL은 제외한 칼럼의 데이타 갯수 가져오기 */
   SELECT SUM(칼럼) FROM 테이블명       /* 칼럼의 합계 구하기 */
   SELECT MAX(칼럼) FROM 테이블명       /* 칼럼의 최대값 구하기 */
   SELECT MIN(칼럼) FROM 테이블명       /* 칼럼의 최소값 구하기 */
@@ -358,14 +345,13 @@ select * from 테이블명 where 컬럼명 like '%[_]%'
   SELECT 칼럼1, SUM(칼럼2) FROM 테이블명 GROUP BY 칼럼1
   SELECT 칼럼1, COUNT(*) FROM 테이블명 GROUP BY 칼럼1
   SELECT 칼럼1, 칼럼2, MAX(칼럼3) FROM 테이블명 GROUP BY 칼럼1, 칼럼2
-  ** GROUP BY를 지정한 경우 SELECT 다음에는 반드시 GROUP BY에서 지정한 칼럼 또는
-    그룹 함수만이 올 수 있다
-
+  -- GROUP BY를 지정한 경우 SELECT 다음에는 반드시 GROUP BY에서 지정한 칼럼 또는 그룹 함수만이 올 수 있다
+```
 
  **조건
 **  SELECT 칼럼1, SUM(칼럼2) FROM 테이블명 GROUP BY 칼럼1 HAVING SUM(칼럼2) < a
   SELECT 칼럼1, SUM(칼럼2) FROM 테이블명 ORDER BY 칼럼1 COMPUTE SUM(칼럼2)
-  ** HAVING:    그룹 함수를 사용할 경우의 조건을 지정한다
+  HAVING:    그룹 함수를 사용할 경우의 조건을 지정한다
     HAVING의 위치: GROUP BY의 뒤 ORDER BY의 앞에 지정한다
     COMPUTE:    각 그룹의 소계를 요약해서 보여준다
            ORDER BY가 항상 선행해서 나와야 한다
@@ -387,7 +373,6 @@ select * from 테이블명 where 컬럼명 like '%[_]%'
 
  데이타 편집
 
-
  **추가
 **  ** NULL 값을 허용하지도 않고 디폴트 값도 지정되어 있지 않은 칼럼에 값을 지정하지 않은채
    INSERT를 수행하면 에러가 발생한다
@@ -402,7 +387,9 @@ select * from 테이블명 where 컬럼명 like '%[_]%'
   SELECT * INTO 테이블명 FROM 테이블명2               /* 새로 만든 테이블에 데이타 추가 */
   SELECT 칼럼1, 칼럼2, ... 테이블명 FROM 테이블명2
 
- **갱신
+ 
+
+**갱신
 **  UPDATE 테이블명 SET 칼럼1=값1, 칼럼2=값2      /* 전체 데이타 갱신 */   
   UPDATE 테이블명 SET 칼럼1=값1, 칼럼2=값2 WHERE 조건        /* 조건에 해당되는 데이타 갱신 */
 
@@ -423,11 +410,14 @@ WHERE A.no = B.no
 
  
 
- **오브젝트
-** ** 데이타베이스는 아래 오브젝트들을 각각의 유저별로 관리를 하는데 Schema(스키마)는 각 유저별 소유 리스트이다
+##  오브젝트
 
- **1. Table(테이블)
-**  ** CREATE일때 프라이머리 키를 설정하지 않는다면 (칼럼 int IDENTITY(1, 1) NOT NULL) 자동 칼럼을 만든다
+데이타베이스는 아래 오브젝트들을 각각의 유저별로 관리를 하는데 Schema(스키마)는 각 유저별 소유 리스트이다
+
+####  1. Table(테이블)
+
+```mssql
+ ** CREATE일때 프라이머리 키를 설정하지 않는다면 (칼럼 int IDENTITY(1, 1) NOT NULL) 자동 칼럼을 만든다
    데이타들의 입력 순서와 중복된 데이타를 구별하기 위해서 반드시 필요하다
   ** 테이블 정보 SP_HELP 테이블명, 제약 조건은 SP_HELPCONSTRAINT 테이블명 을 사용한다
 
@@ -435,28 +425,28 @@ WHERE A.no = B.no
   DROP TABLE 테이블명                              /* 테이블 삭제 */
   ALTER TABLE 테이블명 ADD 칼럼 데이타형 제약, ...               /* 칼럼 추가 */
   ALTER TABLE 테이블명 DROP COLUMN 칼럼                     /* 칼럼 삭제 */
-  ** DROP COLUMN으로 다음 칼럼은 삭제를 할 수 없다
+  /* DROP COLUMN으로 다음 칼럼은 삭제를 할 수 없다
     \- 복제된 칼럼
     \- 인덱스로 사용하는 칼럼
     \- PRIMARY KEY, FOREGIN KEY, UNIQUE, CHECK등의 제약 조건이 지정된 칼럼
     \- DEFAULT 키워드로 정의된 기본값과 연결되거나 기본 개체에 바인딩된 칼럼
-    \- 규칙에 바인딩된 칼럼
+    \- 규칙에 바인딩된 칼럼 */
   CREATE TABLE 테이블명 (칼럼 데이타형 DEFAULT 디폴트값, ...)          /* 디폴트 지정 */
   CREATE TABLE 테이블명 (칼럼 데이타형 CONSTRAINT 이름 UNIQUE, ...)       /* 유니크 설정 */
   ** UNIQUE란 지정한 칼럼에 같은 값이 들어가는것을 금지하는 제약으로 기본 키와 비슷하지만
     NULL 값을 하용하는것이 다르다
-  CREATE TABLE 테이블명 (칼럼 데이타형 CONSTRAINT 이름 NOT NULL, ...)      /* NOT NULL 설정 */
-  CREATE TABLE 테이블명 (칼럼 데이타형 CONSTRAINT 이름 PRIMARY KEY, ...)    /* 기본 키 설정 */
-  ** 기본 키는 유니크와 NOT NULL이 조합된 제약으로 색인이 자동적으로 지정되고 데이타를
+  CREATE TABLE 테이블명 (칼럼 데이타형 CONSTRAINT 이름 NOT NULL, ...)    /* NOT NULL 설정 */
+  CREATE TABLE 테이블명 (칼럼 데이타형 CONSTRAINT 이름 PRIMARY KEY, ...)   /* 기본 키 설정 */
+  /* 기본 키는 유니크와 NOT NULL이 조합된 제약으로 색인이 자동적으로 지정되고 데이타를
     유일하게 만들어 준다
-  ** 기본 키는 한 테이블에 한개의 칼럼만 가능하다
+   기본 키는 한 테이블에 한개의 칼럼만 가능하다 */
   CREATE TABLE 테이블명 (칼럼 데이타형 CONSTRAINT 이름 FOREIGN KEY REFERENCES 부모테이블이름(부모칼럼), ...)    
   CREATE TABLE 테이블명 (칼럼 데이타형 CONSTRAINT 이름 CHECK(조건), ...)    /* CHECK 설정 */
-  ** CHECK는 조건을 임의로 정의할 수 있는 제약으로 설정되면 조건을 충족시키는 데이타만
+  /* CHECK는 조건을 임의로 정의할 수 있는 제약으로 설정되면 조건을 충족시키는 데이타만
     등록할 수 있고 SELECT의 WHERE구와 같은 조건을 지정한다
   ** CONSTRAINT와 제약 이름을 쓰지 않으면 데이타베이스가 알아서 이름을 붙이지만
     복잡한 이름이 되기 때문에 되도록이면 사용자가 지정하도록 한다
-  ** CONSTRAINT는 칼럼과 데이타형을 모두 정의한 뒤에 맨 마지막에 설정할 수 있다
+  ** CONSTRAINT는 칼럼과 데이타형을 모두 정의한 뒤에 맨 마지막에 설정할 수 있다 */
    CREATE TABLE 테이블명 (칼럼1 데이타형,
        칼럼2 데이타형, ...
        CONSTRAINT 이름 PRIMARY KEY(칼럼1)
@@ -465,24 +455,29 @@ WHERE A.no = B.no
   ALTER TABLE 테이블명 DROP CONSTRAINT 제약명                  /* 제약 삭제 */
   ALTER TABLE 테이블명 NOCHECK CONSTRAINT 제약명                 /* 제약 효력 정지 */
   ALTER TABLE 테이블명 CHECK CONSTRAINT 제약명                  /* 제약 효력 유효 */
-  ** 제약명은 테이블을 만들때 사용자가 지정한 파일 이름을 말한다
+  -- 제약명은 테이블을 만들때 사용자가 지정한 파일 이름을 말한다
+```
 
- 
+#### 2. View(뷰)
 
- **2. View(뷰)
-**  ** 자주 사용하는 SELECT문이 있을때 사용한다
-   테이블에 존재하는 칼럼들중 특정 칼럼을 보이고 싶지 않을때 사용한다
-   테이블간의 결합등으로 인해 복잡해진 SELECT문을 간단히 다루고 싶을때 사용한다
-  ** 뷰를 만들때 COMPUTE, COMPUTE BY, SELECT INTO, ORDER BY는 사용할 수 없고
-   \#, ##으로 시작되는 임시 테이블도 뷰의 대상으로 사용할 수 없다
-  ** 뷰의 내용을 보고 싶으면 SP_HELPTEXT 뷰명 을 사용한다
+> 자주 사용하는 SELECT문이 있을 때 사용한다
+>    테이블에 존재하는 칼럼들 중 특정 칼럼을 보이고 싶지 않을 때 사용한다
+>    테이블 간의 결합 등으로 인해 복잡해진 SELECT문을 간단히 다루고 싶을 때 사용한다
+>   뷰를 만들 때 COMPUTE, COMPUTE BY, SELECT INTO, ORDER BY는 사용할 수 없고
+>    \#, ##으로 시작되는 임시 테이블도 뷰의 대상으로 사용할 수 없다
+>   뷰의 내용을 보고 싶으면 SP_HELPTEXT 뷰명 을 사용한다
 
-  CREATE VIEW 뷰명 AS SELECT문              /* 뷰 만들기 */
+  
+
+```mssql
+CREATE VIEW 뷰명 AS SELECT문              /* 뷰 만들기 */
   CREATE VIEW 뷰명 (별칭1, 별칭2, ...) AS SELECT문  /* 칼럼의 별칭 붙이기 */
   CREATE VIEW 뷰명 AS (SELECT 칼럼1 AS 별칭1, 칼럼2 AS 별칭2, ...)
   ALTER VIEW 뷰명 AS SELECT문                    /* 뷰 수정 */
   DROP VIEW 뷰명                          /* 뷰 삭제 */
   CREATE VIEW 뷰명 WITH ENCRYPTION AS SELECT문           /* 뷰 암호 */
+```
+
   ** 한번 암호화된 뷰는 소스 코드를 볼 수 없으므로 뷰를 암호화하기전에
     뷰의 내용을 스크립트 파일로 저장하여 보관한다
   INSERT INTO 뷰명 (칼럼1, 칼럼2, ...) VALUES (값1, 값2, ...)
@@ -499,12 +494,13 @@ WHERE A.no = B.no
 
  
 
- **3. Stored Procedure(저장 프로시저)
-**  ** 데이타베이스내에서 SQL 명령을 컴파일할때 캐시를 이용할 수 있으므로 처리가 매우 빠르다
-   반복적으로 SQL 명령을 실행할 경우 매회 명령마다 네트워크를 경유할 필요가 없다
-   어플리케이션마다 새로 만들 필요없이 이미 만들어진 프로시저를 반복 사용한다
-   데이타베이스 로직을 수정시 프로시저는 서버측에 있으므로 어플리케이션을 다시 컴파일할 필요가 없다
-  ** 저장 프로시저의 소스 코드를 보고 싶으면 SP_HELPTEXT 프로시저명 을 사용한다
+#### 3. Stored Procedure(저장 프로시저)
+
+> 데이타베이스내에서 SQL 명령을 컴파일할 때 캐시를 이용할 수 있으므로 처리가 매우 빠르다
+>    반복적으로 SQL 명령을 실행할 경우 매회 명령마다 네트워크를 경유할 필요가 없다
+>    어플리케이션 마다 새로 만들 필요 없이 이미 만들어진 프로시저를 반복 사용한다
+>    데이타베이스 로직을 수정 시 프로시저는 서버 측에 있으므로 어플리케이션을 다시 컴파일할 필요가 없다
+>   저장 프로시저의 소스 코드를 보고 싶으면 SP_HELPTEXT 프로시저명 을 사용한다
 
   CREATE PROC 프로시저명 AS SQL문  /* 저장 프로시저 */
   CREATE PROC 프로시저명 변수선언 AS SQL문 /* 인수를 가지는 저장 프로시저 */
@@ -575,17 +571,20 @@ WHERE A.no = B.no
 
  
 
-이런식으로 다중입력도 가능함.
+이런식으로 다중 입력도 가능함.
 
+```mssql
 SELECT @no = no, @name = name, @level = level
 FROM OF_Member
 WHERE userId ='"
+```
 
  
 
  
 
- \4. Trigger(트리거)
+#### 4. Trigger(트리거)
+
   ** 한 테이블의 데이타가 편집(INSERT/UPDATE/DELETE)된 경우에 자동으로 다른 테이블의
    데이타를 삽입, 수정, 삭제한다
   ** 트리거 내용을 보고 싶으면 SP_HELPTRIGGER 트리거명 을 사용한다
@@ -597,7 +596,8 @@ WHERE userId ='"
 
  
 
- \5. Cursor(커서)
+####  5. Cursor(커서)
+
   ** SELECT로 가져온 결과들을 하나씩 읽어들여 처리하고 싶을때 사용한다
   ** 커서의 사용방법은 OPEN, FETCH, CLOSE, DEALLOCATE등 4단계를 거친다
   ** FETCH에는 NEXT, PRIOR, FIRST, LAST, ABSOLUTE {n / @nvar}, RELATIVE {n / @nvar}가 있다
@@ -799,8 +799,6 @@ FROM 테이블
 
  
 
- 
-
 -- ROW_NUMBER (순차번호 생성)
 
 SELECT ROW_NUMBER() OVER( ORDER BY 기준열) AS 번호, 컬럼명
@@ -809,27 +807,13 @@ FROM 테이블
 
 
 
+## 자료형 (데이터 타입)
 
-
-
-
-
-
-
-
-자료형 (데이터타입)
-
-MSSQL 서버에서 사용하는 데이터 타입(자료형)은 두가지가 있다.
+MSSQL 서버에서 사용하는 데이터 타입(자료형)은 2가지가 있다.
 
  
 
 **1. 시스템에서 제공하는 System data type**
-
-
-
-
-
-
 
 ![](.\image/sql_자료형.jpg)
 
