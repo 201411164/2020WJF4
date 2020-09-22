@@ -8,7 +8,7 @@
 
 
 
-### Profiler 
+### SQL Server Profiler 
 
 packet tracer처럼 블랙박스인 프로그램의 쿼리를 추적(tracking)하는 프로그램.
 
@@ -18,7 +18,7 @@ packet tracer처럼 블랙박스인 프로그램의 쿼리를 추적(tracking)�
 
 
 
-### Management
+### Microsoft SQL Server Management Studio (SSMS)
 
 백업, 스케쥴링, 조인 등의 작업을 Management Studio에서 수행한다.
 
@@ -40,7 +40,7 @@ packet tracer처럼 블랙박스인 프로그램의 쿼리를 추적(tracking)�
   - 쉘 스크립트 작성 정도의 능력 요구
   - HANA 스케쥴링 관리는 리눅스 환경에서 크론탭(crontab)을 이용함.
 - 윈도우에서 사용
-  - RSP 사용함
+  - RSP(Remote Support Platform) 사용함
   - RSP로 인스턴스 백업, 스케쥴링을 수행함.
   
   
@@ -51,7 +51,7 @@ Column Store 기술
 
 
 
-### 델타 머지
+### Delta Merge
 
 인메모리 방식의 HANA DB 관리 방법
 
@@ -116,7 +116,7 @@ Drop Create
 
 매개변수를 이용한 select 
 
-보충 필요
+DB 내부에 저장된 일련의 SQL 명령문들을 하나의 함수처럼 실행하기 위한 쿼리의 집합 (프로그램)
 
 
 
@@ -136,13 +136,21 @@ Drop Create
 
 인스턴스 백업을 하면 로그가 클리어됨.
 
-#### Log Volume
+#### Log Volume Size
 
-HANA , SSMS 모두 에서 사용되는 것
+HANA , SSMS 모두 에서 사용되는 것 (SAP에서는 로그를 사용자가 삭제하지 않도록 함)
 
 인스턴스 백업이 되면 100% 클리어 
 
 DB 서비스가 가동되고 나서 모든 쿼리를 로그에 기록하는데, 델타 머지가 한번 돌아가서 로그사이즈가 클리어된다. 
+
+
+
+#### 저장 공간이 가득찰 시 발생하는 일
+
+1. Database가 정지하게 된다.
+2. SBO 실행 시 오류가 발생한다.
+3. SBO 내에서 더 이상의 Data 추가가 불가능하다.
 
 
 
