@@ -1,5 +1,19 @@
 # SQL
 
+Formatter(소스코드 정렬) 
+
+[깃허브 다운 링크](https://github.com/TaoK/PoorMansTSqlFormatter/releases/tag/1.6.16)
+
+[애드온 적용및 사용법](https://iyak.tistory.com/entry/Poor-Mans-T-SQL-Formatter-SSMS-%EC%BF%BC%EB%A6%AC-%EB%93%A4%EC%97%AC%EC%93%B0%EA%B8%B0-%EC%A0%95%EB%A6%AC)
+
+.net framework 2.0 오류 날 시
+
+https://dbrang.tistory.com/986
+
+
+
+
+
 ```mssql
 use db실습;
 create table wj_prc(
