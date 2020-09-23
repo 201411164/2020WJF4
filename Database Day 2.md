@@ -1,5 +1,23 @@
 # SQL
 
+#### 새로고침
+
+편집- INTELLIGENCE - 새 로컬캐쉬 새로고침 /  CTRL SHIFT R 
+
+DB  - 테이블 : DB에서 새로고침  필요
+
+
+
+#### 아카이브
+
+[사용자 정의 테이블 - 설정 - 아카이브]
+
+db 용량을 줄여주는 기능 
+
+
+
+#### 정렬
+
 Formatter(소스코드 정렬) 
 
 [깃허브 다운 링크](https://github.com/TaoK/PoorMansTSqlFormatter/releases/tag/1.6.16)
