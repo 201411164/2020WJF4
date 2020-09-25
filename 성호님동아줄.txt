@@ -1,0 +1,38 @@
+USE [SBODemoKR]
+GO
+
+/****** Object:  Table [dbo].[CHO3]    Script Date: 2020-09-25 오후 2:40:40 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[CHO3](
+	[DocEntry] [int] NOT NULL,
+	[ObjType] [int] NOT NULL,
+	[LogInstanc] [int] NOT NULL,
+	[LineNum] [int] NOT NULL,
+	[RefDocEntr] [int] NULL,
+	[RefDocNum] [int] NULL,
+	[ExtDocNum] [nvarchar](100) NULL,
+	[RefObjType] [nvarchar](20) NULL,
+	[IssueDate] [datetime] NULL,
+	[Remark] [nvarchar](254) NULL,
+	[CardCode] [nvarchar](15) NULL,
+	[LinkRefTyp] [nvarchar](20) NULL,
+ CONSTRAINT [CHO3_PRIMARY] PRIMARY KEY CLUSTERED 
+(
+	[DocEntry] ASC,
+	[LineNum] ASC,
+	[ObjType] ASC,
+	[LogInstanc] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+ALTER TABLE [dbo].[CHO3] ADD  CONSTRAINT [DF_CHO3_LogInstanc]  DEFAULT ((0)) FOR [LogInstanc]
+GO
+
+ALTER TABLE [dbo].[CHO3] ADD  CONSTRAINT [DF_CHO3_LinkRefTyp]  DEFAULT ('00') FOR [LinkRefTyp]
+GO
