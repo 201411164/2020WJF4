@@ -121,18 +121,22 @@ END
 ```mssql
 CREATE VIEW mView2
 AS
-SELECT cardcode
+SELECT ROW_NUMBER() OVER (
+		ORDER BY docdate
+		) AS 번호
+	,cardcode
 	,cardname
 	,docdate
 	,taxdate
 	,docduedate
 	,docstatus
-	,(doctotal - vatsum) AS '할인전 총계'
+	,(doctotal - vatsum) AS '할인 전 총계'
 FROM opor
 WHERE docdate BETWEEN dateadd(month, - 1, getdate())
 		AND getdate()
---실행
+
 SELECT *
 FROM mView2
+
 
 ```
