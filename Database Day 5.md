@@ -34,7 +34,9 @@ Insert into CO03H select ('column 1', 'column 2' ... 'column n')
 >
 > e.g.  
 >
+> ```excel
 > =CONCATENATE("insert into co03H  select '",A6,"','",B6,"','",C6,"','",D6,"','",E6,"','",F6,"','",G6,"','",H6,"','",I6,"','",J6,"','",K6,"','",L6,"','",M6,"',N'",N6,"','",O6,"',N'",P6,"','",Q6,"','",R6,"',N'",S6,"','",T6,"','",U6,"','",V6,"','",W6,"'",)
+> ```
 
 ### Update
 
@@ -84,7 +86,6 @@ SELECT T0.CardCode
 	,t1.WhsCode
 	,t1.Price
 	,t1.LineTotal
-	--,( t1.Quantity * t2.AvgPrice) as 총계
 FROM ordr t0
 INNER JOIN rdr1 t1 ON t0.DocEntry = t1.DocEntry
 inner join ocrd t2 on t0.CardCode = t2.CardCode
@@ -135,8 +136,7 @@ FROM opor
 WHERE docdate BETWEEN dateadd(month, - 1, getdate())
 		AND getdate()
 
+-- 뷰 실행
 SELECT *
 FROM mView2
-
-
 ```
