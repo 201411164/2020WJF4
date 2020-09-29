@@ -1,0 +1,21 @@
+데이터 접근은 우리가 접근하는 ap를 통해서만 해라. 
+=> 사용자 정의 역할이 중요. 
+
+프로시저 수정을 통해 update, insert .. 등 쿼리를 수정해서
+노티피케이션 간단한 실습
+
+ssms-db- 프로그래밍 기능 - 저장프로시저 
+dbo.SBO_SP_TransactionNotification : 이것만 씀 , 에러가 나면 실제로 트랜잭션이 일어나지 않게 된다. 
+vs dbo.SBO_SP_PostTransactionNotice 비교해보면 좋다. 
+
+수정, 삭제, ... 모든 것 dbo.SBO_SP_TransactionNotification 트랜잭션을 먼저 거친다. 이게 잘못된 코드가 되면 실행이 안됨.
+이게 끝나면 insert되고, 변경된 내용을 조회를 할 수 있어 
+
+
+분개는 batchnum, transid = > key 가 두개다
+
+
+네임스페이스 같은 역할 : 참조 - sap businessone di api ver 100 추가
+
+
+"debug.print("dd")"
