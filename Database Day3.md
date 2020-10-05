@@ -1,3 +1,5 @@
+## 함수
+
 SELECT ABS(-100)
 수식의 절대값을 돌려준다
 
@@ -45,20 +47,29 @@ SELECT DATENAME(weekday, '2020-10-19')
 SELECT MONTH('2022-10-19')
 지정된 날짜의 일 월 년을 돌려준다. DAY(), MONTH() , YEAR()
 
-----------------------------------------------------------------
 
-[서브쿼리]
--단일행 서브쿼리 : 
+
+### 서브쿼리
+
+##### 단일행 서브쿼리 : 
+
 납품 문서중 전기일이 제일 나중인 것 
 SELECT * FROM ODLN A WHERE A.DocDate= (SELECT MAX(DocDate) FROM ODLN)
+
 품목마스터에서 재고가 가장 많은 품목
 SELECT * FROM OITM WHERE OnHand= (SELECT MAX(OnHand) FROM OITM)
 
--다중행 서브쿼리 : 
+
+
+##### 다중행 서브쿼리 : 
+
 20200901~10100910 기간동안의 납품내역이 있는 BP 마스터 조회
 SELECT * FROM OCRD WHERE CardCode IN (SELECT CardCode FROM ODLN WHERE DocDate BETWEEN '20200901' AND '20200910')
 
-- 스칼라 서브쿼리 : 
+
+
+##### 스칼라 서브쿼리 : 
+
 SELECT CardCode
 , (SELECT CardName FROM OCRD WHERE CardCode = A.CardCode ) AS CardName
 , DocDate
@@ -83,7 +94,9 @@ SELECT A.ItemCode, Dscription B.ItemName
 INNER JOIN OITM B ON A.ItemCode = B. ItemCode
 
 
--인라인뷰 
+
+##### 인라인뷰 
+
 --20200101~20200930 납품(ODLN)을 기반으로한 반품(ORDN)이 된 납품문서(DNL1) ( 반품은 납품문서를 원본으로 만들어진 것만 가져온다.)
 SELECT B.* --B.DocEntry , B.LineNum,C.DocEntry, C.LineNum
 FROM ODLN AS A
@@ -94,14 +107,16 @@ INNER JOIN (SELECT BaseEntry, Baseline, DocEntry, LineNum
 			AND Basetype=15) AS C on A.DocEntry = C.BaseEntry
 	AND B.Linenum= C.Linenum
 
-----------------------------------------------------------------
-UNION
 
+
+### UNION
 
 중복값 제거
 SELECT '1','2'
 UNION
 SELECT '1','2'
+
+
 
 중복값 제거안함 ; 더 많이 사용함
 SELECT '1','2'
@@ -123,9 +138,10 @@ INNER JOIN DLN1 B ON A.DocEntry = B.DocEntry
 --WHERE CONVERT(NVARCHAR(6), A.DocDate,112) = '202006'
 
 
-----------------------------------------------------------------
 
-PIVOT ( 잘안쓴다 )
+### PIVOT 
+
+잘안씀.
 
 월별, 품목별 합계를 보고 싶을 때 
 
@@ -141,6 +157,7 @@ PIVOT( SUM(Quantity) FOR DATA.YYYYMM IN ( [202005], [202006], [202007], [202008]
 ORDER BY PVT.ItemCode ASC
 
 
+
 SELECT * 
 FROM(
 SELECT CONVERT(NVARCHAR(6), A.DocDate, 112) YYYYMM
@@ -152,39 +169,50 @@ INNER JOIN DLN1 B ON A.DocEntry = B.DocEntry
 PIVOT( SUM(Quantity) FOR DATA.ItemCode IN ( [I00007] )) AS PVT
 ORDER BY PVT.ItemCode ASC
 
------------------------------------------------------------------------------------------------------
 
 
+### 실습
 
---실습
---1. 품목마스터에서 가장 품명(description | itemname)이 긴 품목 찾기 
+##### --1. 품목마스터에서 가장 품명(description | itemname)이 긴 품목 찾기 
 
 ==>답
 SELECT top 1 ItemCode , LEN(ItemName) FROM OITM
 ORDER BY LEN(ItemName) DESC
 
 
---2. 20200910 기준으로 전월 말일은? LEFT OR SUBSTRING 사용
+
+##### --2. 20200910 기준으로 전월 말일은? LEFT OR SUBSTRING 사용
+
 ==>답1 
 SELECT SUBSTRING('20200910',1,6)+'01'	--2020001
 ==>답2
 SELECT LEFT('20200910',6)+'01'			--2020001
 
---3. 20200910 기준으로 해당월 말일은?
+
+
+##### --3. 20200910 기준으로 해당월 말일은?
+
 ==>답
 SELECT DATEADD(D,-1,DATEADD(M,1,LEFT('20200910',6)+'01')) --20200930
 
---4. 오늘 기준 전월 말일은? GETDATA()사용
+
+
+##### --4. 오늘 기준 전월 말일은? GETDATA()사용
+
 ==>답
 SELECT DATEADD(D,-1,CONVERT(NVARCHAR(6),GETDATE(),112)+'01')
 
 
---5. 오늘 기준 이번달 말일은? GETDATA() 사용
+
+##### --5. 오늘 기준 이번달 말일은? GETDATA() 사용
 
 ==>답
 SELECT DATEADD(D,-1,DATEADD(M,1,CONVERT(NVARCHAR(6),GETDATE(),112)+'01'))
 
---6. 서브쿼리를 사용해서 한 번도 납품을 하지 않는 판매 품목 조회(판매품목 조건 : SellItem = 'Y')
+
+
+##### --6. 서브쿼리를 사용해서 한 번도 납품을 하지 않는 판매 품목 조회(판매품목 조건 : SellItem = 'Y')
+
 ==>답
 SELECT * FROM OITM
 WHERE SellItem = 'Y'
@@ -192,7 +220,8 @@ AND ItemCode NOT IN (select ItemCode FROM DLN1 )
 
 
 
---7. 20200101~20200930 기간 동안의 반품이 된 입고 po 문서 ? (반품은 입고 po 문서를 원본으로 만들어 진 것만 가져온다.)
+##### --7. 20200101~20200930 기간 동안의 반품이 된 입고 po 문서 ? (반품은 입고 po 문서를 원본으로 만들어 진 것만 가져온다.)
+
 =>답: 
 SELECT B.* --B.CardCode , B.CardName, C.DocEntry, C.LineNum
 FROM OPDN AS A
@@ -203,7 +232,10 @@ INNER JOIN (SELECT BaseEntry, Baseline, DocEntry, LineNum
 			AND Basetype=20) AS C on A.DocEntry = C.BaseEntry
 								AND B.Linenum= C.Linenum
 
---8. 아래 쿼리를 활용하여 아래 데이터도 같이 출력해주세요. 서브쿼리 사용(인라인뷰)
+
+
+##### --8. 아래 쿼리를 활용하여 아래 데이터도 같이 출력해주세요. 서브쿼리 사용(인라인뷰)
+
 OCRD--BP마스터의 CardName
 OITM --품목마스터 ItemName
 
@@ -233,4 +265,3 @@ WHERE CONVERT(NVARCHAR(6), A.DocDate,112) = '20200930') A
 
 INNER JOIN OCRD B ON A.CardCode = B.CardCode
 INNER JOIN OITM C ON A.ItemCode = C.ItemCode
-
