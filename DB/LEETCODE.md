@@ -124,3 +124,16 @@ group by request_at
 
 ```
 
+```mssql
+SELECT    Request_at AS 'Day'
+        , ROUND((CONVERT(FLOAT,(SUM(CASE
+                                        WHEN Status = 'completed' THEN 0
+                                         ELSE 1
+                                   END)))/COUNT(*)),2) AS 'Cancellation Rate'
+FROM    Trips
+WHERE   Client_Id IN (SELECT Users_Id FROM Users WHERE Banned = 'NO' AND Role = 'client')
+        AND Driver_Id IN (SELECT Users_Id FROM Users WHERE Banned = 'NO' AND Role = 'driver')    
+        AND Request_at BETWEEN ('2013-10-01') AND ('2013-10-03')
+GROUP   BY  Request_at
+```
+
