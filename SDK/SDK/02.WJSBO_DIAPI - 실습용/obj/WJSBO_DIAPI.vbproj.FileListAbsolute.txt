@@ -1,0 +1,15 @@
+D:\고객사\동아\SDK\02.WJSBO_DIAPI - 실습용\bin\Release\WJSBO_DIAPI.exe
+D:\고객사\동아\SDK\02.WJSBO_DIAPI - 실습용\bin\Release\WJSBO_DIAPI.pdb
+D:\고객사\동아\SDK\02.WJSBO_DIAPI - 실습용\bin\Release\WJSBO_DIAPI.xml
+D:\고객사\동아\SDK\02.WJSBO_DIAPI - 실습용\bin\Release\Interop.SAPbobsCOM.dll
+D:\고객사\동아\SDK\02.WJSBO_DIAPI - 실습용\bin\Release\Interop.WinHttp.dll
+D:\고객사\동아\SDK\02.WJSBO_DIAPI - 실습용\obj\Release\ResolveAssemblyReference.cache
+D:\고객사\동아\SDK\02.WJSBO_DIAPI - 실습용\obj\Release\Interop.SAPbobsCOM.dll
+D:\고객사\동아\SDK\02.WJSBO_DIAPI - 실습용\obj\Release\Interop.WinHttp.dll
+D:\고객사\동아\SDK\02.WJSBO_DIAPI - 실습용\obj\Release\WJSBO_DIAPI.vbproj.ResolveComReference.cache
+D:\고객사\동아\SDK\02.WJSBO_DIAPI - 실습용\obj\Release\WJSBO_DIAPI.WJSBO_DIAPI.resources
+D:\고객사\동아\SDK\02.WJSBO_DIAPI - 실습용\obj\Release\WJSBO_DIAPI.Resources.resources
+D:\고객사\동아\SDK\02.WJSBO_DIAPI - 실습용\obj\Release\WJSBO_DIAPI.vbproj.GenerateResource.Cache
+D:\고객사\동아\SDK\02.WJSBO_DIAPI - 실습용\obj\Release\WJSBO_DIAPI.exe
+D:\고객사\동아\SDK\02.WJSBO_DIAPI - 실습용\obj\Release\WJSBO_DIAPI.xml
+D:\고객사\동아\SDK\02.WJSBO_DIAPI - 실습용\obj\Release\WJSBO_DIAPI.pdb

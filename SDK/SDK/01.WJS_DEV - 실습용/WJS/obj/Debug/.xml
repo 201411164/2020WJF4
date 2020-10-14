@@ -1,0 +1,260 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+WJS_DEV
+</name>
+</assembly>
+<members>
+<member name="P:WJS.My.Resources.WJS_CAPTION_ENG.ResourceManager">
+	<summary>
+  이 클래스에서 사용하는 캐시된 ResourceManager 인스턴스를 반환합니다.
+</summary>
+</member><member name="P:WJS.My.Resources.WJS_CAPTION_ENG.Culture">
+	<summary>
+  이 강력한 형식의 리소스 클래스를 사용하여 모든 리소스 조회에 대한 현재 스레드의 CurrentUICulture
+  속성을 재정의합니다.
+</summary>
+</member><member name="P:WJS.My.Resources.WJS_CAPTION_ENG.공통코드">
+	<summary>
+  Code Master과(와) 유사한 지역화된 문자열을 찾습니다.
+</summary>
+</member><member name="P:WJS.My.Resources.WJS_CAPTION_ENG.그룹명">
+	<summary>
+  Group Name과(와) 유사한 지역화된 문자열을 찾습니다.
+</summary>
+</member><member name="P:WJS.My.Resources.WJS_CAPTION_ENG.그룹코드">
+	<summary>
+  Group Code과(와) 유사한 지역화된 문자열을 찾습니다.
+</summary>
+</member><member name="P:WJS.My.Resources.WJS_CAPTION_ENG.길이">
+	<summary>
+  Length과(와) 유사한 지역화된 문자열을 찾습니다.
+</summary>
+</member><member name="P:WJS.My.Resources.WJS_CAPTION_ENG.비고">
+	<summary>
+  Remark과(와) 유사한 지역화된 문자열을 찾습니다.
+</summary>
+</member><member name="P:WJS.My.Resources.WJS_CAPTION_ENG.비고1">
+	<summary>
+  Remark1과(와) 유사한 지역화된 문자열을 찾습니다.
+</summary>
+</member><member name="P:WJS.My.Resources.WJS_CAPTION_ENG.비고2">
+	<summary>
+  Remark2과(와) 유사한 지역화된 문자열을 찾습니다.
+</summary>
+</member><member name="P:WJS.My.Resources.WJS_CAPTION_ENG.비고3">
+	<summary>
+  Remark3과(와) 유사한 지역화된 문자열을 찾습니다.
+</summary>
+</member><member name="P:WJS.My.Resources.WJS_CAPTION_ENG.사업장">
+	<summary>
+  Business Place과(와) 유사한 지역화된 문자열을 찾습니다.
+</summary>
+</member><member name="P:WJS.My.Resources.WJS_CAPTION_ENG.사용여부">
+	<summary>
+  Use과(와) 유사한 지역화된 문자열을 찾습니다.
+</summary>
+</member><member name="P:WJS.My.Resources.WJS_CAPTION_ENG.수정여부">
+	<summary>
+  Correct(Y/N)과(와) 유사한 지역화된 문자열을 찾습니다.
+</summary>
+</member><member name="P:WJS.My.Resources.WJS_CAPTION_ENG.실행">
+	<summary>
+  Excute과(와) 유사한 지역화된 문자열을 찾습니다.
+</summary>
+</member><member name="P:WJS.My.Resources.WJS_CAPTION_ENG.취소">
+	<summary>
+  Cancel과(와) 유사한 지역화된 문자열을 찾습니다.
+</summary>
+</member><member name="P:WJS.My.Resources.WJS_CAPTION_ENG.코드">
+	<summary>
+  Code과(와) 유사한 지역화된 문자열을 찾습니다.
+</summary>
+</member><member name="P:WJS.My.Resources.WJS_CAPTION_ENG.코드길이">
+	<summary>
+  Code Length과(와) 유사한 지역화된 문자열을 찾습니다.
+</summary>
+</member><member name="P:WJS.My.Resources.WJS_CAPTION_ENG.코드명">
+	<summary>
+  Code Name과(와) 유사한 지역화된 문자열을 찾습니다.
+</summary>
+</member><member name="P:WJS.My.Resources.WJS_CAPTION_ENG.확인">
+	<summary>
+  Confirm과(와) 유사한 지역화된 문자열을 찾습니다.
+</summary>
+</member><member name="T:WJS.My.Resources.WJS_CAPTION_ENG">
+	<summary>
+  지역화된 문자열 등을 찾기 위한 강력한 형식의 리소스 클래스입니다.
+</summary>
+</member><member name="P:WJS.My.Resources.WJS_MESSAGE_ENG.ResourceManager">
+	<summary>
+  이 클래스에서 사용하는 캐시된 ResourceManager 인스턴스를 반환합니다.
+</summary>
+</member><member name="P:WJS.My.Resources.WJS_MESSAGE_ENG.Culture">
+	<summary>
+  이 강력한 형식의 리소스 클래스를 사용하여 모든 리소스 조회에 대한 현재 스레드의 CurrentUICulture
+  속성을 재정의합니다.
+</summary>
+</member><member name="P:WJS.My.Resources.WJS_MESSAGE_ENG.COM0001">
+	<summary>
+  It is saved.과(와) 유사한 지역화된 문자열을 찾습니다.
+</summary>
+</member><member name="P:WJS.My.Resources.WJS_MESSAGE_ENG.COM0002">
+	<summary>
+  It is deleted.과(와) 유사한 지역화된 문자열을 찾습니다.
+</summary>
+</member><member name="P:WJS.My.Resources.WJS_MESSAGE_ENG.COM0003">
+	<summary>
+  Do you want to Save it?과(와) 유사한 지역화된 문자열을 찾습니다.
+</summary>
+</member><member name="P:WJS.My.Resources.WJS_MESSAGE_ENG.COM0004">
+	<summary>
+  Do you want to Delete it?과(와) 유사한 지역화된 문자열을 찾습니다.
+</summary>
+</member><member name="P:WJS.My.Resources.WJS_MESSAGE_ENG.COM0005">
+	<summary>
+  If you change it, data will be deleted.과(와) 유사한 지역화된 문자열을 찾습니다.
+</summary>
+</member><member name="T:WJS.My.Resources.WJS_MESSAGE_ENG">
+	<summary>
+  지역화된 문자열 등을 찾기 위한 강력한 형식의 리소스 클래스입니다.
+</summary>
+</member><member name="P:WJS.My.Resources.WJS_MESSAGE_KOR.ResourceManager">
+	<summary>
+  이 클래스에서 사용하는 캐시된 ResourceManager 인스턴스를 반환합니다.
+</summary>
+</member><member name="P:WJS.My.Resources.WJS_MESSAGE_KOR.Culture">
+	<summary>
+  이 강력한 형식의 리소스 클래스를 사용하여 모든 리소스 조회에 대한 현재 스레드의 CurrentUICulture
+  속성을 재정의합니다.
+</summary>
+</member><member name="P:WJS.My.Resources.WJS_MESSAGE_KOR.COM0001">
+	<summary>
+  저장되었습니다과(와) 유사한 지역화된 문자열을 찾습니다.
+</summary>
+</member><member name="P:WJS.My.Resources.WJS_MESSAGE_KOR.COM0002">
+	<summary>
+  삭제되었습니다과(와) 유사한 지역화된 문자열을 찾습니다.
+</summary>
+</member><member name="P:WJS.My.Resources.WJS_MESSAGE_KOR.COM0003">
+	<summary>
+  저장 하시겠습니까?과(와) 유사한 지역화된 문자열을 찾습니다.
+</summary>
+</member><member name="P:WJS.My.Resources.WJS_MESSAGE_KOR.COM0004">
+	<summary>
+  삭제 하시겠습니까?과(와) 유사한 지역화된 문자열을 찾습니다.
+</summary>
+</member><member name="P:WJS.My.Resources.WJS_MESSAGE_KOR.COM0005">
+	<summary>
+  변경 하면 데이터가 삭제됩니다.과(와) 유사한 지역화된 문자열을 찾습니다.
+</summary>
+</member><member name="P:WJS.My.Resources.WJS_MESSAGE_KOR.COM0006">
+	<summary>
+  일자를 입력하십시오.과(와) 유사한 지역화된 문자열을 찾습니다.
+</summary>
+</member><member name="P:WJS.My.Resources.WJS_MESSAGE_KOR.COM0007">
+	<summary>
+  수량을 입력하십시오.과(와) 유사한 지역화된 문자열을 찾습니다.
+</summary>
+</member><member name="P:WJS.My.Resources.WJS_MESSAGE_KOR.COM0008">
+	<summary>
+  가격을 입력하십시오.과(와) 유사한 지역화된 문자열을 찾습니다.
+</summary>
+</member><member name="P:WJS.My.Resources.WJS_MESSAGE_KOR.COM0009">
+	<summary>
+  선택된 행이 없습니다.과(와) 유사한 지역화된 문자열을 찾습니다.
+</summary>
+</member><member name="T:WJS.My.Resources.WJS_MESSAGE_KOR">
+	<summary>
+  지역화된 문자열 등을 찾기 위한 강력한 형식의 리소스 클래스입니다.
+</summary>
+</member><member name="P:WJS.My.Resources.Resources.ResourceManager">
+	<summary>
+  이 클래스에서 사용하는 캐시된 ResourceManager 인스턴스를 반환합니다.
+</summary>
+</member><member name="P:WJS.My.Resources.Resources.Culture">
+	<summary>
+  이 강력한 형식의 리소스 클래스를 사용하여 모든 리소스 조회에 대한 현재 스레드의 CurrentUICulture
+  속성을 재정의합니다.
+</summary>
+</member><member name="T:WJS.My.Resources.Resources">
+	<summary>
+  지역화된 문자열 등을 찾기 위한 강력한 형식의 리소스 클래스입니다.
+</summary>
+</member><member name="P:WJS.My.Resources.WJS_CAPTION_CHN.ResourceManager">
+	<summary>
+  이 클래스에서 사용하는 캐시된 ResourceManager 인스턴스를 반환합니다.
+</summary>
+</member><member name="P:WJS.My.Resources.WJS_CAPTION_CHN.Culture">
+	<summary>
+  이 강력한 형식의 리소스 클래스를 사용하여 모든 리소스 조회에 대한 현재 스레드의 CurrentUICulture
+  속성을 재정의합니다.
+</summary>
+</member><member name="P:WJS.My.Resources.WJS_CAPTION_CHN.공통코드">
+	<summary>
+  主代码과(와) 유사한 지역화된 문자열을 찾습니다.
+</summary>
+</member><member name="P:WJS.My.Resources.WJS_CAPTION_CHN.그룹명">
+	<summary>
+  组名과(와) 유사한 지역화된 문자열을 찾습니다.
+</summary>
+</member><member name="P:WJS.My.Resources.WJS_CAPTION_CHN.그룹코드">
+	<summary>
+  组代码과(와) 유사한 지역화된 문자열을 찾습니다.
+</summary>
+</member><member name="P:WJS.My.Resources.WJS_CAPTION_CHN.비고">
+	<summary>
+  备注과(와) 유사한 지역화된 문자열을 찾습니다.
+</summary>
+</member><member name="P:WJS.My.Resources.WJS_CAPTION_CHN.비고1">
+	<summary>
+  备注1과(와) 유사한 지역화된 문자열을 찾습니다.
+</summary>
+</member><member name="P:WJS.My.Resources.WJS_CAPTION_CHN.비고2">
+	<summary>
+  备注2과(와) 유사한 지역화된 문자열을 찾습니다.
+</summary>
+</member><member name="P:WJS.My.Resources.WJS_CAPTION_CHN.비고3">
+	<summary>
+  备注3과(와) 유사한 지역화된 문자열을 찾습니다.
+</summary>
+</member><member name="P:WJS.My.Resources.WJS_CAPTION_CHN.사용여부">
+	<summary>
+  适用与否과(와) 유사한 지역화된 문자열을 찾습니다.
+</summary>
+</member><member name="P:WJS.My.Resources.WJS_CAPTION_CHN.수정여부">
+	<summary>
+  修正与否과(와) 유사한 지역화된 문자열을 찾습니다.
+</summary>
+</member><member name="P:WJS.My.Resources.WJS_CAPTION_CHN.조회년도">
+	<summary>
+  查询年度과(와) 유사한 지역화된 문자열을 찾습니다.
+</summary>
+</member><member name="P:WJS.My.Resources.WJS_CAPTION_CHN.취소">
+	<summary>
+  取消과(와) 유사한 지역화된 문자열을 찾습니다.
+</summary>
+</member><member name="P:WJS.My.Resources.WJS_CAPTION_CHN.코드">
+	<summary>
+  代码과(와) 유사한 지역화된 문자열을 찾습니다.
+</summary>
+</member><member name="P:WJS.My.Resources.WJS_CAPTION_CHN.코드길이">
+	<summary>
+  代码长度과(와) 유사한 지역화된 문자열을 찾습니다.
+</summary>
+</member><member name="P:WJS.My.Resources.WJS_CAPTION_CHN.코드명">
+	<summary>
+  代码名과(와) 유사한 지역화된 문자열을 찾습니다.
+</summary>
+</member><member name="P:WJS.My.Resources.WJS_CAPTION_CHN.확인">
+	<summary>
+  确认과(와) 유사한 지역화된 문자열을 찾습니다.
+</summary>
+</member><member name="T:WJS.My.Resources.WJS_CAPTION_CHN">
+	<summary>
+  지역화된 문자열 등을 찾기 위한 강력한 형식의 리소스 클래스입니다.
+</summary>
+</member>
+</members>
+</doc>

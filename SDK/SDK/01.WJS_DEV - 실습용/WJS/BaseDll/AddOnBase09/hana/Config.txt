@@ -1,0 +1,16 @@
+﻿// If UseCaseFixer=true, DB objects (tables, columns,...) will be verified.
+// If UseCaseFixer=false, DB objects will NOT be verified but the SQL converter will run faster.
+UseCaseFixer=false
+
+// Case fixer will use the following DB settings:
+DBPasswd=pwd
+DBSchema=dbname
+DBServer=hostname:port
+DBUser=SYSTEM
+
+Formatter=true
+DisableComments=false
+OutputFile=outputFile.sql
+InputFile=.\SQL_Examples\inputFile.sql
+CreateProcedure=false
+GUI=true

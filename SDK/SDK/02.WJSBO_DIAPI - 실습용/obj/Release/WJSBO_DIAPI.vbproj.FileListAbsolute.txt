@@ -1,0 +1,14 @@
+C:\SDK\SDK\02.WJSBO_DIAPI - 실습용\obj\Release\Interop.WinHttp.dll
+C:\SDK\SDK\02.WJSBO_DIAPI - 실습용\obj\Release\WJSBO_DIAPI.vbproj.ResolveComReference.cache
+C:\SDK\SDK\02.WJSBO_DIAPI - 실습용\obj\Release\WJSBO_DIAPI.exe
+C:\SDK\SDK\02.WJSBO_DIAPI - 실습용\obj\Release\WJSBO_DIAPI.xml
+C:\SDK\SDK\02.WJSBO_DIAPI - 실습용\obj\Release\WJSBO_DIAPI.pdb
+C:\SDK\SDK\02.WJSBO_DIAPI - 실습용\bin\Release\WJSBO_DIAPI.exe.config
+C:\SDK\SDK\02.WJSBO_DIAPI - 실습용\obj\Release\Interop.SAPbobsCOM.dll
+C:\SDK\SDK\02.WJSBO_DIAPI - 실습용\bin\Release\WJSBO_DIAPI.exe
+C:\SDK\SDK\02.WJSBO_DIAPI - 실습용\bin\Release\WJSBO_DIAPI.pdb
+C:\SDK\SDK\02.WJSBO_DIAPI - 실습용\bin\Release\WJSBO_DIAPI.xml
+C:\SDK\SDK\02.WJSBO_DIAPI - 실습용\bin\Release\Interop.WinHttp.dll
+C:\SDK\SDK\02.WJSBO_DIAPI - 실습용\obj\Release\WJSBO_DIAPI.WJSBO_DIAPI.resources
+C:\SDK\SDK\02.WJSBO_DIAPI - 실습용\obj\Release\WJSBO_DIAPI.Resources.resources
+C:\SDK\SDK\02.WJSBO_DIAPI - 실습용\obj\Release\WJSBO_DIAPI.vbproj.GenerateResource.Cache

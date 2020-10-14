@@ -1,0 +1,168 @@
+D:\교육\01.SOURCE\WJS.DEV\bin\Debug\WJS.CPT.xml
+D:\교육\01.SOURCE\WJS.DEV\bin\Debug\AddOnBase.dll
+D:\교육\01.SOURCE\WJS.DEV\bin\Debug\Interop.CRAXDDRT.dll
+D:\교육\01.SOURCE\WJS.DEV\bin\Debug\Interop.Excel.dll
+D:\교육\01.SOURCE\WJS.DEV\bin\Debug\Interop.Microsoft.Office.Core.dll
+D:\교육\01.SOURCE\WJS.DEV\bin\Debug\WJS.COMM.dll
+D:\교육\01.SOURCE\WJS.DEV\bin\Debug\Interop.SAPbouiCOM.dll
+D:\교육\01.SOURCE\WJS.DEV\bin\Debug\Interop.SAPbobsCOM.dll
+D:\교육\01.SOURCE\WJS.DEV\bin\Debug\Interop.ADOX.dll
+D:\교육\01.SOURCE\WJS.DEV\obj\Debug\ResolveAssemblyReference.cache
+D:\교육\01.SOURCE\WJS.DEV\obj\Debug\Interop.ADOX.dll
+D:\교육\01.SOURCE\WJS.DEV\obj\Debug\Interop.SAPbobsCOM.dll
+D:\교육\01.SOURCE\WJS.DEV\obj\Debug\Interop.SAPbouiCOM.dll
+D:\교육\01.SOURCE\WJS.DEV\obj\Debug\WJS.DEV.vbproj.ResolveComReference.cache
+D:\교육\01.SOURCE\WJS.DEV\obj\Debug\WJS.DEV.vbproj.GenerateResource.Cache
+D:\교육\01.SOURCE\WJS.DEV\obj\Debug\WJS.CPT.xml
+D:\교육\01.SOURCE\WJS.DEV\bin\Debug\WJS.DEV.dll
+D:\교육\01.SOURCE\WJS.DEV\bin\Debug\WJS.DEV.pdb
+D:\교육\01.SOURCE\WJS.DEV\obj\Debug\WJS.DEV.dll
+D:\교육\01.SOURCE\WJS.DEV\obj\Debug\WJS.DEV.pdb
+D:\WJS_WPO\WJS.DEV\bin\Debug\WJS.DEV.dll
+D:\WJS_WPO\WJS.DEV\bin\Debug\WJS.DEV.pdb
+D:\WJS_WPO\WJS.DEV\bin\Debug\WJS.CPT.xml
+D:\WJS_WPO\WJS.DEV\bin\Debug\AddOnBase.dll
+D:\WJS_WPO\WJS.DEV\bin\Debug\Interop.CRAXDDRT.dll
+D:\WJS_WPO\WJS.DEV\bin\Debug\Interop.Excel.dll
+D:\WJS_WPO\WJS.DEV\bin\Debug\Interop.Microsoft.Office.Core.dll
+D:\WJS_WPO\WJS.DEV\bin\Debug\WJS.COMM.dll
+D:\WJS_WPO\WJS.DEV\bin\Debug\Interop.SAPbouiCOM.dll
+D:\WJS_WPO\WJS.DEV\bin\Debug\Interop.SAPbobsCOM.dll
+D:\WJS_WPO\WJS.DEV\bin\Debug\Interop.ADOX.dll
+D:\WJS_WPO\WJS.DEV\obj\Debug\ResolveAssemblyReference.cache
+D:\WJS_WPO\WJS.DEV\obj\Debug\Interop.ADOX.dll
+D:\WJS_WPO\WJS.DEV\obj\Debug\Interop.SAPbobsCOM.dll
+D:\WJS_WPO\WJS.DEV\obj\Debug\Interop.SAPbouiCOM.dll
+D:\WJS_WPO\WJS.DEV\obj\Debug\WJS.DEV.vbproj.ResolveComReference.cache
+D:\WJS_WPO\WJS.DEV\obj\Debug\WJS.DEV.vbproj.GenerateResource.Cache
+D:\WJS_WPO\WJS.DEV\obj\Debug\WJS.DEV.dll
+D:\WJS_WPO\WJS.DEV\obj\Debug\WJS.CPT.xml
+D:\WJS_WPO\WJS.DEV\obj\Debug\WJS.DEV.pdb
+D:\WJS_WPO\WJS.DEV\obj\Debug\WJS.DEV.Resources.resources
+D:\교육\01.SOURCE\WJS.DEV\obj\Debug\WJS.DEV.Resources.resources
+D:\교육\01.SOURCE -3일차\WJS.DEV\bin\Debug\WJS.CPT.xml
+D:\교육\01.SOURCE -3일차\WJS.DEV\bin\Debug\AddOnBase.dll
+D:\교육\01.SOURCE -3일차\WJS.DEV\bin\Debug\Interop.CRAXDDRT.dll
+D:\교육\01.SOURCE -3일차\WJS.DEV\bin\Debug\Interop.Excel.dll
+D:\교육\01.SOURCE -3일차\WJS.DEV\bin\Debug\Interop.Microsoft.Office.Core.dll
+D:\교육\01.SOURCE -3일차\WJS.DEV\bin\Debug\WJS.COMM.dll
+D:\교육\01.SOURCE -3일차\WJS.DEV\bin\Debug\Interop.SAPbouiCOM.dll
+D:\교육\01.SOURCE -3일차\WJS.DEV\bin\Debug\Interop.SAPbobsCOM.dll
+D:\교육\01.SOURCE -3일차\WJS.DEV\bin\Debug\Interop.ADOX.dll
+D:\교육\01.SOURCE -3일차\WJS.DEV\obj\Debug\ResolveAssemblyReference.cache
+D:\교육\01.SOURCE -3일차\WJS.DEV\obj\Debug\Interop.ADOX.dll
+D:\교육\01.SOURCE -3일차\WJS.DEV\obj\Debug\Interop.SAPbobsCOM.dll
+D:\교육\01.SOURCE -3일차\WJS.DEV\obj\Debug\Interop.SAPbouiCOM.dll
+D:\교육\01.SOURCE -3일차\WJS.DEV\obj\Debug\WJS.DEV.vbproj.ResolveComReference.cache
+D:\교육\01.SOURCE -3일차\WJS.DEV\obj\Debug\WJS.DEV.Resources.resources
+D:\교육\01.SOURCE -3일차\WJS.DEV\obj\Debug\WJS.DEV.vbproj.GenerateResource.Cache
+D:\교육\01.SOURCE -3일차\WJS.DEV\obj\Debug\WJS.CPT.xml
+D:\교육\01.SOURCE -3일차\WJS.DEV\bin\Debug\WJS.DEV.dll
+D:\교육\01.SOURCE -3일차\WJS.DEV\bin\Debug\WJS.DEV.pdb
+D:\교육\01.SOURCE -3일차\WJS.DEV\obj\Debug\WJS.DEV.dll
+D:\교육\01.SOURCE -3일차\WJS.DEV\obj\Debug\WJS.DEV.pdb
+D:\신규입사자교육\01.SOURCE -3일차\WJS.DEV\bin\Debug\WJS.DEV.dll
+D:\신규입사자교육\01.SOURCE -3일차\WJS.DEV\bin\Debug\WJS.DEV.pdb
+D:\신규입사자교육\01.SOURCE -3일차\WJS.DEV\bin\Debug\WJS.CPT.xml
+D:\신규입사자교육\01.SOURCE -3일차\WJS.DEV\bin\Debug\AddOnBase.dll
+D:\신규입사자교육\01.SOURCE -3일차\WJS.DEV\bin\Debug\Interop.CRAXDDRT.dll
+D:\신규입사자교육\01.SOURCE -3일차\WJS.DEV\bin\Debug\Interop.Excel.dll
+D:\신규입사자교육\01.SOURCE -3일차\WJS.DEV\bin\Debug\Interop.Microsoft.Office.Core.dll
+D:\신규입사자교육\01.SOURCE -3일차\WJS.DEV\bin\Debug\WJS.COMM.dll
+D:\신규입사자교육\01.SOURCE -3일차\WJS.DEV\bin\Debug\Interop.SAPbouiCOM.dll
+D:\신규입사자교육\01.SOURCE -3일차\WJS.DEV\bin\Debug\Interop.SAPbobsCOM.dll
+D:\신규입사자교육\01.SOURCE -3일차\WJS.DEV\bin\Debug\Interop.ADOX.dll
+D:\신규입사자교육\01.SOURCE -3일차\WJS.DEV\obj\Debug\ResolveAssemblyReference.cache
+D:\신규입사자교육\01.SOURCE -3일차\WJS.DEV\obj\Debug\Interop.ADOX.dll
+D:\신규입사자교육\01.SOURCE -3일차\WJS.DEV\obj\Debug\Interop.SAPbobsCOM.dll
+D:\신규입사자교육\01.SOURCE -3일차\WJS.DEV\obj\Debug\Interop.SAPbouiCOM.dll
+D:\신규입사자교육\01.SOURCE -3일차\WJS.DEV\obj\Debug\WJS.DEV.vbproj.ResolveComReference.cache
+D:\신규입사자교육\01.SOURCE -3일차\WJS.DEV\obj\Debug\WJS.DEV.Resources.resources
+D:\신규입사자교육\01.SOURCE -3일차\WJS.DEV\obj\Debug\WJS.DEV.vbproj.GenerateResource.Cache
+D:\신규입사자교육\01.SOURCE -3일차\WJS.DEV\obj\Debug\WJS.DEV.dll
+D:\신규입사자교육\01.SOURCE -3일차\WJS.DEV\obj\Debug\WJS.CPT.xml
+D:\신규입사자교육\01.SOURCE -3일차\WJS.DEV\obj\Debug\WJS.DEV.pdb
+D:\BACKUP\TEMP\신규입사자교육\01.SOURCE -3일차\WJS.DEV\bin\Debug\WJS.DEV.dll
+D:\BACKUP\TEMP\신규입사자교육\01.SOURCE -3일차\WJS.DEV\bin\Debug\WJS.DEV.pdb
+D:\BACKUP\TEMP\신규입사자교육\01.SOURCE -3일차\WJS.DEV\bin\Debug\WJS.CPT.xml
+D:\BACKUP\TEMP\신규입사자교육\01.SOURCE -3일차\WJS.DEV\bin\Debug\AddOnBase.dll
+D:\BACKUP\TEMP\신규입사자교육\01.SOURCE -3일차\WJS.DEV\bin\Debug\Interop.CRAXDDRT.dll
+D:\BACKUP\TEMP\신규입사자교육\01.SOURCE -3일차\WJS.DEV\bin\Debug\Interop.Excel.dll
+D:\BACKUP\TEMP\신규입사자교육\01.SOURCE -3일차\WJS.DEV\bin\Debug\Interop.Microsoft.Office.Core.dll
+D:\BACKUP\TEMP\신규입사자교육\01.SOURCE -3일차\WJS.DEV\bin\Debug\WJS.COMM.dll
+D:\BACKUP\TEMP\신규입사자교육\01.SOURCE -3일차\WJS.DEV\bin\Debug\Interop.SAPbouiCOM.dll
+D:\BACKUP\TEMP\신규입사자교육\01.SOURCE -3일차\WJS.DEV\bin\Debug\Interop.SAPbobsCOM.dll
+D:\BACKUP\TEMP\신규입사자교육\01.SOURCE -3일차\WJS.DEV\bin\Debug\Interop.ADOX.dll
+D:\BACKUP\TEMP\신규입사자교육\01.SOURCE -3일차\WJS.DEV\obj\Debug\ResolveAssemblyReference.cache
+D:\BACKUP\TEMP\신규입사자교육\01.SOURCE -3일차\WJS.DEV\obj\Debug\Interop.ADOX.dll
+D:\BACKUP\TEMP\신규입사자교육\01.SOURCE -3일차\WJS.DEV\obj\Debug\Interop.SAPbobsCOM.dll
+D:\BACKUP\TEMP\신규입사자교육\01.SOURCE -3일차\WJS.DEV\obj\Debug\Interop.SAPbouiCOM.dll
+D:\BACKUP\TEMP\신규입사자교육\01.SOURCE -3일차\WJS.DEV\obj\Debug\WJS.DEV.vbproj.ResolveComReference.cache
+D:\BACKUP\TEMP\신규입사자교육\01.SOURCE -3일차\WJS.DEV\obj\Debug\WJS.DEV.Resources.resources
+D:\BACKUP\TEMP\신규입사자교육\01.SOURCE -3일차\WJS.DEV\obj\Debug\WJS.DEV.vbproj.GenerateResource.Cache
+D:\BACKUP\TEMP\신규입사자교육\01.SOURCE -3일차\WJS.DEV\obj\Debug\WJS.DEV.dll
+D:\BACKUP\TEMP\신규입사자교육\01.SOURCE -3일차\WJS.DEV\obj\Debug\WJS.CPT.xml
+D:\BACKUP\TEMP\신규입사자교육\01.SOURCE -3일차\WJS.DEV\obj\Debug\WJS.DEV.pdb
+D:\01.SOURCE -3일차\WJS.DEV\bin\Debug\WJS.CPT.xml
+D:\01.SOURCE -3일차\WJS.DEV\bin\Debug\AddOnBase.dll
+D:\01.SOURCE -3일차\WJS.DEV\bin\Debug\Interop.CRAXDDRT.dll
+D:\01.SOURCE -3일차\WJS.DEV\bin\Debug\Interop.Excel.dll
+D:\01.SOURCE -3일차\WJS.DEV\bin\Debug\Interop.Microsoft.Office.Core.dll
+D:\01.SOURCE -3일차\WJS.DEV\bin\Debug\WJS.COMM.dll
+D:\01.SOURCE -3일차\WJS.DEV\bin\Debug\Interop.SAPbouiCOM.dll
+D:\01.SOURCE -3일차\WJS.DEV\bin\Debug\Interop.SAPbobsCOM.dll
+D:\01.SOURCE -3일차\WJS.DEV\bin\Debug\Interop.ADOX.dll
+D:\01.SOURCE -3일차\WJS.DEV\obj\Debug\ResolveAssemblyReference.cache
+D:\01.SOURCE -3일차\WJS.DEV\obj\Debug\Interop.ADOX.dll
+D:\01.SOURCE -3일차\WJS.DEV\obj\Debug\Interop.SAPbobsCOM.dll
+D:\01.SOURCE -3일차\WJS.DEV\obj\Debug\Interop.SAPbouiCOM.dll
+D:\01.SOURCE -3일차\WJS.DEV\obj\Debug\WJS.DEV.vbproj.ResolveComReference.cache
+D:\01.SOURCE -3일차\WJS.DEV\obj\Debug\WJS.DEV.vbproj.GenerateResource.Cache
+D:\01.SOURCE -3일차\WJS.DEV\obj\Debug\WJS.CPT.xml
+D:\BACKUP\교육\01.SOURCE -3일차\WJS.DEV\bin\Debug\WJS_DEV.dll
+D:\BACKUP\교육\01.SOURCE -3일차\WJS.DEV\bin\Debug\WJS_DEV.pdb
+D:\BACKUP\교육\01.SOURCE -3일차\WJS.DEV\bin\Debug\WJS.CPT.xml
+D:\BACKUP\교육\01.SOURCE -3일차\WJS.DEV\bin\Debug\AddOnBase.dll
+D:\BACKUP\교육\01.SOURCE -3일차\WJS.DEV\bin\Debug\Interop.CRAXDDRT.dll
+D:\BACKUP\교육\01.SOURCE -3일차\WJS.DEV\bin\Debug\Interop.Excel.dll
+D:\BACKUP\교육\01.SOURCE -3일차\WJS.DEV\bin\Debug\Interop.Microsoft.Office.Core.dll
+D:\BACKUP\교육\01.SOURCE -3일차\WJS.DEV\bin\Debug\WJS.COMM.dll
+D:\BACKUP\교육\01.SOURCE -3일차\WJS.DEV\bin\Debug\Interop.SAPbouiCOM.dll
+D:\BACKUP\교육\01.SOURCE -3일차\WJS.DEV\bin\Debug\Interop.SAPbobsCOM.dll
+D:\BACKUP\교육\01.SOURCE -3일차\WJS.DEV\bin\Debug\Interop.ADOX.dll
+D:\BACKUP\교육\01.SOURCE -3일차\WJS.DEV\obj\Debug\ResolveAssemblyReference.cache
+D:\BACKUP\교육\01.SOURCE -3일차\WJS.DEV\obj\Debug\Interop.ADOX.dll
+D:\BACKUP\교육\01.SOURCE -3일차\WJS.DEV\obj\Debug\Interop.SAPbobsCOM.dll
+D:\BACKUP\교육\01.SOURCE -3일차\WJS.DEV\obj\Debug\Interop.SAPbouiCOM.dll
+D:\BACKUP\교육\01.SOURCE -3일차\WJS.DEV\obj\Debug\WJS.DEV.vbproj.ResolveComReference.cache
+D:\BACKUP\교육\01.SOURCE -3일차\WJS.DEV\obj\Debug\WJS_DEV.Resources.resources
+D:\BACKUP\교육\01.SOURCE -3일차\WJS.DEV\obj\Debug\WJS.DEV.vbproj.GenerateResource.Cache
+D:\BACKUP\교육\01.SOURCE -3일차\WJS.DEV\obj\Debug\WJS_DEV.dll
+D:\BACKUP\교육\01.SOURCE -3일차\WJS.DEV\obj\Debug\WJS.CPT.xml
+D:\BACKUP\교육\01.SOURCE -3일차\WJS.DEV\obj\Debug\WJS_DEV.pdb
+D:\01.SOURCE -3일차\WJS.DEV\bin\Debug\WJS.DEV.dll
+D:\01.SOURCE -3일차\WJS.DEV\bin\Debug\WJS.DEV.pdb
+D:\01.SOURCE -3일차\WJS.DEV\obj\Debug\WJS.DEV.Resources.resources
+D:\01.SOURCE -3일차\WJS.DEV\obj\Debug\WJS.DEV.dll
+D:\01.SOURCE -3일차\WJS.DEV\obj\Debug\WJS.DEV.pdb
+D:\신규자교육\01.SOURCE - 복사본 (2)\WJS.DEV\bin\Debug\WJS.DEV.dll
+D:\신규자교육\01.SOURCE - 복사본 (2)\WJS.DEV\bin\Debug\WJS.DEV.pdb
+D:\신규자교육\01.SOURCE - 복사본 (2)\WJS.DEV\bin\Debug\WJS.CPT.xml
+D:\신규자교육\01.SOURCE - 복사본 (2)\WJS.DEV\bin\Debug\AddOnBase.dll
+D:\신규자교육\01.SOURCE - 복사본 (2)\WJS.DEV\bin\Debug\Interop.CRAXDDRT.dll
+D:\신규자교육\01.SOURCE - 복사본 (2)\WJS.DEV\bin\Debug\Interop.Excel.dll
+D:\신규자교육\01.SOURCE - 복사본 (2)\WJS.DEV\bin\Debug\Interop.Microsoft.Office.Core.dll
+D:\신규자교육\01.SOURCE - 복사본 (2)\WJS.DEV\bin\Debug\WJS.COMM.dll
+D:\신규자교육\01.SOURCE - 복사본 (2)\WJS.DEV\bin\Debug\Interop.SAPbouiCOM.dll
+D:\신규자교육\01.SOURCE - 복사본 (2)\WJS.DEV\bin\Debug\Interop.SAPbobsCOM.dll
+D:\신규자교육\01.SOURCE - 복사본 (2)\WJS.DEV\bin\Debug\Interop.ADOX.dll
+D:\신규자교육\01.SOURCE - 복사본 (2)\WJS.DEV\obj\Debug\ResolveAssemblyReference.cache
+D:\신규자교육\01.SOURCE - 복사본 (2)\WJS.DEV\obj\Debug\Interop.ADOX.dll
+D:\신규자교육\01.SOURCE - 복사본 (2)\WJS.DEV\obj\Debug\Interop.SAPbobsCOM.dll
+D:\신규자교육\01.SOURCE - 복사본 (2)\WJS.DEV\obj\Debug\Interop.SAPbouiCOM.dll
+D:\신규자교육\01.SOURCE - 복사본 (2)\WJS.DEV\obj\Debug\WJS.DEV.vbproj.ResolveComReference.cache
+D:\신규자교육\01.SOURCE - 복사본 (2)\WJS.DEV\obj\Debug\WJS.DEV.Resources.resources
+D:\신규자교육\01.SOURCE - 복사본 (2)\WJS.DEV\obj\Debug\WJS.DEV.vbproj.GenerateResource.Cache
+D:\신규자교육\01.SOURCE - 복사본 (2)\WJS.DEV\obj\Debug\WJS.DEV.dll
+D:\신규자교육\01.SOURCE - 복사본 (2)\WJS.DEV\obj\Debug\WJS.CPT.xml
+D:\신규자교육\01.SOURCE - 복사본 (2)\WJS.DEV\obj\Debug\WJS.DEV.pdb

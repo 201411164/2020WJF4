@@ -1,0 +1,2169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AD0005" xml:space="preserve">
+    <value>그룹코드를 입력하세요.</value>
+  </data>
+  <data name="AD0006" xml:space="preserve">
+    <value>그룹코드명을 입력하세요.</value>
+  </data>
+  <data name="AD0007" xml:space="preserve">
+    <value>라인 데이터를 입력해주세요.</value>
+  </data>
+  <data name="AD0010" xml:space="preserve">
+    <value>제거하시겠습니까?</value>
+  </data>
+  <data name="FI0001" xml:space="preserve">
+    <value>키값이 존재하지 않습니다.</value>
+  </data>
+  <data name="FI0002" xml:space="preserve">
+    <value>기간코드를 입력해주세요.</value>
+  </data>
+  <data name="FI0003" xml:space="preserve">
+    <value>기간명을 입력해주세요.</value>
+  </data>
+  <data name="FI0004" xml:space="preserve">
+    <value>시작 회계기간을 입력해주세요.</value>
+  </data>
+  <data name="FI0005" xml:space="preserve">
+    <value>종료 회계기간을 입력해주세요.</value>
+  </data>
+  <data name="FI0006" xml:space="preserve">
+    <value>계정잔액마감여부를 입력해주세요.</value>
+  </data>
+  <data name="FI0007" xml:space="preserve">
+    <value>마감유형을 입력하세요.</value>
+  </data>
+  <data name="FI0008" xml:space="preserve">
+    <value>사용여부를 입력하세요.</value>
+  </data>
+  <data name="FI0009" xml:space="preserve">
+    <value>라인 데이터를 입력해주세요.</value>
+  </data>
+  <data name="FI0010" xml:space="preserve">
+    <value>문서유형을 입력하세요.</value>
+  </data>
+  <data name="FI0011" xml:space="preserve">
+    <value>테이블명을 입력하세요.</value>
+  </data>
+  <data name="FI0012" xml:space="preserve">
+    <value>통제날짜 체크 필드를 입력하세요.</value>
+  </data>
+  <data name="FI0013" xml:space="preserve">
+    <value>마감유형에 동일한 문서유형이 존재합니다.</value>
+  </data>
+  <data name="FI0014" xml:space="preserve">
+    <value>유형별 마감설정에서 참조되는 데이터입니다.</value>
+  </data>
+  <data name="FI0015" xml:space="preserve">
+    <value>제거하시겠습니까?</value>
+  </data>
+  <data name="FI0016" xml:space="preserve">
+    <value>마감년월을 입력하세요.</value>
+  </data>
+  <data name="FI0017" xml:space="preserve">
+    <value>올바른 마감년월을 입력하세요.</value>
+  </data>
+  <data name="FI0018" xml:space="preserve">
+    <value>마감유형을 입력하세요.</value>
+  </data>
+  <data name="FI0019" xml:space="preserve">
+    <value>일자를 입력하세요.</value>
+  </data>
+  <data name="FI0020" xml:space="preserve">
+    <value>계정잔액집계가 왼료되어 입력 또는 수정할 수 없습니다.</value>
+  </data>
+  <data name="FI0021" xml:space="preserve">
+    <value>계정잔액집계가 왼료되어 제거할 수 없습니다.</value>
+  </data>
+  <data name="FI0022" xml:space="preserve">
+    <value>작업을 실패했습니다.</value>
+  </data>
+  <data name="FI0023" xml:space="preserve">
+    <value>G/L계정코드를 입력해주세요.</value>
+  </data>
+  <data name="FI0024" xml:space="preserve">
+    <value>G/L계정코드를 다시 입력해주세요.</value>
+  </data>
+  <data name="FI0025" xml:space="preserve">
+    <value>우선순위를 입력하세요.</value>
+  </data>
+  <data name="FI0026" xml:space="preserve">
+    <value>유효값을 입력하세요.</value>
+  </data>
+  <data name="FI0027" xml:space="preserve">
+    <value>메세지를 입력해주세요.</value>
+  </data>
+  <data name="FI0028" xml:space="preserve">
+    <value>입력된 값은 존재하지 않습니다.</value>
+  </data>
+  <data name="FI0029" xml:space="preserve">
+    <value>삭제 하시겠습니까?</value>
+  </data>
+  <data name="FI0030" xml:space="preserve">
+    <value>배부그룹을 입력하십시오.</value>
+  </data>
+  <data name="FI0031" xml:space="preserve">
+    <value>배부그룹명을 입력하십시오.</value>
+  </data>
+  <data name="FI0032" xml:space="preserve">
+    <value>배부규칙을 입력하십시오.</value>
+  </data>
+  <data name="FI0033" xml:space="preserve">
+    <value>동일 배부그룹코드로 생성된 데이터가 존재합니다.</value>
+  </data>
+  <data name="FI0034" xml:space="preserve">
+    <value>데이터가 없습니다.</value>
+  </data>
+  <data name="FI0035" xml:space="preserve">
+    <value>기준년월을 입력하십시오.</value>
+  </data>
+  <data name="FI0036" xml:space="preserve">
+    <value>동일 기준년월로 기 생성된 집계내역이 존재합니다.</value>
+  </data>
+  <data name="FI0037" xml:space="preserve">
+    <value>집계대상 항목이 조회되지 않았습니다.</value>
+  </data>
+  <data name="FI0038" xml:space="preserve">
+    <value>집계대상 선택항목이 없습니다.</value>
+  </data>
+  <data name="FI0039" xml:space="preserve">
+    <value>집계취소대상 선택항목이 없습니다.</value>
+  </data>
+  <data name="FI0040" xml:space="preserve">
+    <value>대상문서번호가 존재하므로 제거할 수 없습니다.</value>
+  </data>
+  <data name="FI0041" xml:space="preserve">
+    <value>대상문서번호가 존재하므로 수정할 수 없습니다.</value>
+  </data>
+  <data name="FI0042" xml:space="preserve">
+    <value>IFRS 기준정보에서 그룹코드 100 , 코드 10 , 내용2 에 회사코드를 설정하여 주십시요.</value>
+  </data>
+  <data name="FI0043" xml:space="preserve">
+    <value>IFRS 기준정보에서 그룹코드 100 , 코드 10 , 내용1 에 회사명을 설정하여 주십시요.</value>
+  </data>
+  <data name="FI0044" xml:space="preserve">
+    <value>IFRS 기준정보에서 그룹코드 700 , 코드 1 , 내용1 에 오라클 연결정보를 설정하여 주십시요.</value>
+  </data>
+  <data name="FI0045" xml:space="preserve">
+    <value>같은 년월로 저장된 내용이 있습니다.계속하겠습니까?</value>
+  </data>
+  <data name="FI0046" xml:space="preserve">
+    <value>같은 년월로 저장된 내용이 있습니다.기존 데이타를 삭제하고 저장하시겠습니까?</value>
+  </data>
+  <data name="FI0047" xml:space="preserve">
+    <value>IFRS 기준정보에서 그룹코드 200 , 코드: 거래처코드 , 내용1 에 모회사코드를 설정하여 주십시요.</value>
+  </data>
+  <data name="FI0048" xml:space="preserve">
+    <value>저장완료</value>
+  </data>
+  <data name="FI0049" xml:space="preserve">
+    <value>통화를 입력하세요.</value>
+  </data>
+  <data name="FI0050" xml:space="preserve">
+    <value>완료여부를 입력하세요.</value>
+  </data>
+  <data name="FI0051" xml:space="preserve">
+    <value>계정을 입력하세요.</value>
+  </data>
+  <data name="FI0052" xml:space="preserve">
+    <value>데이터 조회중입니다</value>
+  </data>
+  <data name="FI0053" xml:space="preserve">
+    <value>조회완료</value>
+  </data>
+  <data name="FI0054" xml:space="preserve">
+    <value>대변의 선택하신 데이터 중에</value>
+  </data>
+  <data name="FI0055" xml:space="preserve">
+    <value>라인의 통화가 차변의 통화와 불일치합니다.</value>
+  </data>
+  <data name="FI0056" xml:space="preserve">
+    <value>매핑작업을 하시겠습니까?</value>
+  </data>
+  <data name="FI0057" xml:space="preserve">
+    <value>대변에 선택된 내역이 없습니다. 라인별 반제하실 경우 '예' 통합 반제하실 경우 '아니오'를 선택하세요.</value>
+  </data>
+  <data name="FI0058" xml:space="preserve">
+    <value>상계계정을 입력해주세요.</value>
+  </data>
+  <data name="FI0059" xml:space="preserve">
+    <value>차변에 선택된 내역이 없습니다. 라인별 반제하실 경우 '예' 통합 반제하실 경우 '아니오'를 선택하세요.</value>
+  </data>
+  <data name="FI0060" xml:space="preserve">
+    <value>선택된 내역이 존재하지 않습니다.</value>
+  </data>
+  <data name="FI0061" xml:space="preserve">
+    <value>거래처를 입력해주세요.</value>
+  </data>
+  <data name="FI0062" xml:space="preserve">
+    <value>국가를 입력해주세요.</value>
+  </data>
+  <data name="FI0063" xml:space="preserve">
+    <value>지급은행을 입력해주세요.</value>
+  </data>
+  <data name="FI0064" xml:space="preserve">
+    <value>반제처리할 내역이 존재하지 않습니다.</value>
+  </data>
+  <data name="FI0065" xml:space="preserve">
+    <value>사업장을 입력하세요.</value>
+  </data>
+  <data name="FI0066" xml:space="preserve">
+    <value>전기일을 입력하세요.</value>
+  </data>
+  <data name="FI0067" xml:space="preserve">
+    <value>만기일을 입력하세요.</value>
+  </data>
+  <data name="FI0068" xml:space="preserve">
+    <value>증빙일을 입력하세요.</value>
+  </data>
+  <data name="FI0069" xml:space="preserve">
+    <value>환율을 입력하세요.</value>
+  </data>
+  <data name="FI0070" xml:space="preserve">
+    <value>상계문서의 전기일은 원천문서의 전기일보다 크거나 같아야합니다.</value>
+  </data>
+  <data name="FI0071" xml:space="preserve">
+    <value>계좌번호를 입력하세요.</value>
+  </data>
+  <data name="FI0072" xml:space="preserve">
+    <value>예금주를 입력하세요.</value>
+  </data>
+  <data name="FI0073" xml:space="preserve">
+    <value>반제처리할 내역의 통화와 상단의 통화가 일치하지 않습니다.</value>
+  </data>
+  <data name="FI0074" xml:space="preserve">
+    <value>대차 불일치 거래입니다.</value>
+  </data>
+  <data name="FI0075" xml:space="preserve">
+    <value>(외화)대차 불일치 거래입니다.</value>
+  </data>
+  <data name="FI0076" xml:space="preserve">
+    <value>반제처리 작업이 실패하였습니다.</value>
+  </data>
+  <data name="FI0077" xml:space="preserve">
+    <value>반제처리 작업이 성공하였습니다.</value>
+  </data>
+  <data name="FI0078" xml:space="preserve">
+    <value>상계내역이 존재하는 데이터는 처리할 수 없습니다.</value>
+  </data>
+  <data name="FI0079" xml:space="preserve">
+    <value>선택하신 데이터중에 발생데이터가 존재하지 않습니다.</value>
+  </data>
+  <data name="FI0080" xml:space="preserve">
+    <value>발생데이터는 한 개만 존재할 수 있습니다.</value>
+  </data>
+  <data name="FI0081" xml:space="preserve">
+    <value>계정이 동일해야합니다.</value>
+  </data>
+  <data name="FI0082" xml:space="preserve">
+    <value>거래처가 동일해야합니다.</value>
+  </data>
+  <data name="FI0083" xml:space="preserve">
+    <value>발생금액의 합계는 '0'과 동일해야합니다.</value>
+  </data>
+  <data name="FI0084" xml:space="preserve">
+    <value>하단의 내역을 조정하시겠습니까?</value>
+  </data>
+  <data name="FI0085" xml:space="preserve">
+    <value>조정처리할 내역이 존재하지 않습니다.</value>
+  </data>
+  <data name="FI0086" xml:space="preserve">
+    <value>한 건의 데이터만 선택해주세요.</value>
+  </data>
+  <data name="FI0087" xml:space="preserve">
+    <value>상계금액이 존재하지 않습니다.</value>
+  </data>
+  <data name="FI0088" xml:space="preserve">
+    <value>이전 조정내역이 존재하지 않습니다. 원천문서에서 취소해야 합니다.</value>
+  </data>
+  <data name="FI0089" xml:space="preserve">
+    <value>선택된 내역이 존재하지 않습니다.</value>
+  </data>
+  <data name="FI0090" xml:space="preserve">
+    <value>조정작업이 실패하였습니다.</value>
+  </data>
+  <data name="FI0091" xml:space="preserve">
+    <value>라인의 발생데이터가 존재하지 않습니다.</value>
+  </data>
+  <data name="FI0092" xml:space="preserve">
+    <value>미결상세데이터 입력작업이 실패하였습니다.</value>
+  </data>
+  <data name="FI0093" xml:space="preserve">
+    <value>라인의 발생금액을 초과하였습니다.</value>
+  </data>
+  <data name="FI0094" xml:space="preserve">
+    <value>라인의 발생데이터가 존재하지 않습니다.</value>
+  </data>
+  <data name="FI0095" xml:space="preserve">
+    <value>미결마스터 갱신작업이 실패하였습니다.</value>
+  </data>
+  <data name="FI0096" xml:space="preserve">
+    <value>조정작업이 성공하였습니다.</value>
+  </data>
+  <data name="FI0097" xml:space="preserve">
+    <value>발생데이터가 존재하지 않습니다.</value>
+  </data>
+  <data name="FI0098" xml:space="preserve">
+    <value>미결마스터 갱신작업이 실패하였습니다.</value>
+  </data>
+  <data name="FI0099" xml:space="preserve">
+    <value>미결상세 삭제작업이 실패하였습니다.</value>
+  </data>
+  <data name="FI0100" xml:space="preserve">
+    <value>조정취소 작업이 성공하였습니다.</value>
+  </data>
+  <data name="FI0101" xml:space="preserve">
+    <value>마감처리를 하시겠습니까?</value>
+  </data>
+  <data name="FI0102" xml:space="preserve">
+    <value>마감처리가 완료되었습니다.</value>
+  </data>
+  <data name="FI0103" xml:space="preserve">
+    <value>마감취소할 데이터가 존재하지 않습니다.</value>
+  </data>
+  <data name="FI0104" xml:space="preserve">
+    <value>마감취소를 하시겠습니까?</value>
+  </data>
+  <data name="FI0105" xml:space="preserve">
+    <value>마감취소가 완료되었습니다.</value>
+  </data>
+  <data name="FI0106" xml:space="preserve">
+    <value>동일 기준년월로 기 생성된 구매입고가격차이분이 존재합니다.</value>
+  </data>
+  <data name="FI0107" xml:space="preserve">
+    <value>동일 기준년월로 기 생성된 수입부대비용미반영분이 존재합니다.</value>
+  </data>
+  <data name="FI0108" xml:space="preserve">
+    <value>동일 기준년월로 기 생성된 생산입출고원가차이분이 존재합니다.</value>
+  </data>
+  <data name="FI0109" xml:space="preserve">
+    <value>동일 기준년월로 기 생성된 표준가공비정산차이분이 존재합니다.</value>
+  </data>
+  <data name="FI0110" xml:space="preserve">
+    <value>동일 기준년월로 기 생성된 재작업비용발생분이 존재합니다.</value>
+  </data>
+  <data name="FI0111" xml:space="preserve">
+    <value>동일 기준년월로 기 생성된 품목별비용배부분이 존재합니다.</value>
+  </data>
+  <data name="FI0112" xml:space="preserve">
+    <value>조정자료 생성을 실행하시겠습니까?</value>
+  </data>
+  <data name="FI0113" xml:space="preserve">
+    <value>조정자료생성중입니다.</value>
+  </data>
+  <data name="FI0114" xml:space="preserve">
+    <value>기준년월을 입력하세요.</value>
+  </data>
+  <data name="FI0115" xml:space="preserve">
+    <value>확정대상 조정자료가 조회되지 않았습니다.</value>
+  </data>
+  <data name="FI0116" xml:space="preserve">
+    <value>확정 대상을 선택하지 않았습니다.</value>
+  </data>
+  <data name="FI0117" xml:space="preserve">
+    <value>재고재평가 확정대상 중 창고가 정의되지 않은 항목이 존재합니다.</value>
+  </data>
+  <data name="FI0118" xml:space="preserve">
+    <value>재고재평가 확정대상 중 품목의 재고가 존재하지 않는 항목이 존재합니다.</value>
+  </data>
+  <data name="FI0119" xml:space="preserve">
+    <value>선택한 조정내역을 확정처리하시겠습니까?</value>
+  </data>
+  <data name="FI0120" xml:space="preserve">
+    <value>구매입고가격차이분 확정처리중</value>
+  </data>
+  <data name="FI0121" xml:space="preserve">
+    <value>구매입고가격차이분 재고재평가 실패</value>
+  </data>
+  <data name="FI0122" xml:space="preserve">
+    <value>구매입고가격차이분 전표생성 실패</value>
+  </data>
+  <data name="FI0123" xml:space="preserve">
+    <value>수입부대비용 재고자산 미반영분 확정처리중</value>
+  </data>
+  <data name="FI0124" xml:space="preserve">
+    <value>수입부대비용 재고자산 미반영분 재고재평가 실패</value>
+  </data>
+  <data name="FI0125" xml:space="preserve">
+    <value>수입부대비용 재고자산 미반영분 전표생성 실패</value>
+  </data>
+  <data name="FI0126" xml:space="preserve">
+    <value>생산입고/출고 원가차이분 확정처리중</value>
+  </data>
+  <data name="FI0127" xml:space="preserve">
+    <value>생산입고/출고 원가차이분 재고재평가 실패</value>
+  </data>
+  <data name="FI0128" xml:space="preserve">
+    <value>생산입고/출고 원가차이분 전표생성 실패</value>
+  </data>
+  <data name="FI0129" xml:space="preserve">
+    <value>표준외주가공비/외주가공비정산 차이분 확정처리중</value>
+  </data>
+  <data name="FI0130" xml:space="preserve">
+    <value>표준외주가공비/외주가공비정산 차이분 재고재평가 실패</value>
+  </data>
+  <data name="FI0131" xml:space="preserve">
+    <value>표준외주가공비/외주가공비정산 차이분 전표생성 실패</value>
+  </data>
+  <data name="FI0132" xml:space="preserve">
+    <value>재작업비용발생분 확정처리중</value>
+  </data>
+  <data name="FI0133" xml:space="preserve">
+    <value>재작업비용발생분 재고재평가 실패</value>
+  </data>
+  <data name="FI0134" xml:space="preserve">
+    <value>재작업비용발생분 전표생성 실패</value>
+  </data>
+  <data name="FI0135" xml:space="preserve">
+    <value>품목별비용배부분 재고재평가 실패</value>
+  </data>
+  <data name="FI0136" xml:space="preserve">
+    <value>확정처리 완료하였습니다.</value>
+  </data>
+  <data name="FI0137" xml:space="preserve">
+    <value>확정취소대상 조정자료가 조회되지 않았습니다.</value>
+  </data>
+  <data name="FI0138" xml:space="preserve">
+    <value>확정취소 대상을 선택하지 않았습니다.</value>
+  </data>
+  <data name="FI0139" xml:space="preserve">
+    <value>재고재평가 확정취소대상 중 품목의 재고가 존재하지 않는 항목이 존재합니다.</value>
+  </data>
+  <data name="FI0140" xml:space="preserve">
+    <value>그래도 확정취소처리 하시겠습니까?</value>
+  </data>
+  <data name="FI0141" xml:space="preserve">
+    <value>선택한 조정내역을 확정취소처리 하시겠습니까?</value>
+  </data>
+  <data name="FI0142" xml:space="preserve">
+    <value>구매입고가격차이분 취소처리중</value>
+  </data>
+  <data name="FI0143" xml:space="preserve">
+    <value>구매입고가격차이분 재고재평가 취소 실패</value>
+  </data>
+  <data name="FI0144" xml:space="preserve">
+    <value>구매입고가격차이분 전표취소 실패</value>
+  </data>
+  <data name="FI0145" xml:space="preserve">
+    <value>수입부대비용 재고자산 미반영분 취소처리중</value>
+  </data>
+  <data name="FI0146" xml:space="preserve">
+    <value>수입부대비용 재고자산 미반영분 재고재평가 취소 실패</value>
+  </data>
+  <data name="FI0147" xml:space="preserve">
+    <value>수입부대비용 재고자산 미반영분 전표취소 실패</value>
+  </data>
+  <data name="FI0148" xml:space="preserve">
+    <value>생산입고/출고 원가차이분 취소처리중</value>
+  </data>
+  <data name="FI0149" xml:space="preserve">
+    <value>생산입고/출고 원가차이분 미반영분 재고재평가 취소 실패</value>
+  </data>
+  <data name="FI0150" xml:space="preserve">
+    <value>생산입고/출고 원가차이분 전표취소 실패</value>
+  </data>
+  <data name="FI0151" xml:space="preserve">
+    <value>표준외주가공비/외주가공비정산 차이분 취소처리중</value>
+  </data>
+  <data name="FI0152" xml:space="preserve">
+    <value>표준외주가공비/외주가공비정산 차이분 재고재평가 취소 실패</value>
+  </data>
+  <data name="FI0153" xml:space="preserve">
+    <value>표준외주가공비/외주가공비정산 차이분 전표취소 실패</value>
+  </data>
+  <data name="FI0154" xml:space="preserve">
+    <value>재작업비용발생분 취소처리중</value>
+  </data>
+  <data name="FI0155" xml:space="preserve">
+    <value>재작업비용발생분 미반영분 재고재평가 취소 실패</value>
+  </data>
+  <data name="FI0156" xml:space="preserve">
+    <value>재작업비용발생분 전표취소 실패</value>
+  </data>
+  <data name="FI0157" xml:space="preserve">
+    <value>품목별비용배부분 취소처리중</value>
+  </data>
+  <data name="FI0158" xml:space="preserve">
+    <value>품목별비용배부분 재고재평가 취소 실패</value>
+  </data>
+  <data name="FI0159" xml:space="preserve">
+    <value>취소처리 완료하였습니다.</value>
+  </data>
+  <data name="FI0160" xml:space="preserve">
+    <value>재고재평가 작업이 실패하였습니다.</value>
+  </data>
+  <data name="FI0161" xml:space="preserve">
+    <value>재고재평가 작업이 성공하였습니다.</value>
+  </data>
+  <data name="FI0162" xml:space="preserve">
+    <value>확정 작업이 진행중입니다.</value>
+  </data>
+  <data name="FI0163" xml:space="preserve">
+    <value>전표생성작업이 실패하였습니다.</value>
+  </data>
+  <data name="FI0164" xml:space="preserve">
+    <value>전표생성작업이 성공하였습니다.</value>
+  </data>
+  <data name="FI0165" xml:space="preserve">
+    <value>확정취소 작업이 실패하였습니다.</value>
+  </data>
+  <data name="FI0166" xml:space="preserve">
+    <value>확정취소 작업이 성공하였습니다.</value>
+  </data>
+  <data name="FI0167" xml:space="preserve">
+    <value>시작 전기일을 입력하세요.</value>
+  </data>
+  <data name="FI0168" xml:space="preserve">
+    <value>종료 전기일을 입력하세요.</value>
+  </data>
+  <data name="FI0169" xml:space="preserve">
+    <value>종료 전기일을 시작 전기일보다 이전의 일자입니다.</value>
+  </data>
+  <data name="FI0170" xml:space="preserve">
+    <value>을 입력하세요.</value>
+  </data>
+  <data name="FI0171" xml:space="preserve">
+    <value>수정시 실패하였습니다.</value>
+  </data>
+  <data name="FI0172" xml:space="preserve">
+    <value>인쇄할 내역이 존재하지 않습니다.</value>
+  </data>
+  <data name="FI0173" xml:space="preserve">
+    <value>종료 만기일이 시작 만기일보다 이전의 일자입니다.</value>
+  </data>
+  <data name="FI0174" xml:space="preserve">
+    <value>기준일을 입력하세요.</value>
+  </data>
+  <data name="FI0175" xml:space="preserve">
+    <value>템플릿을 입력하세요.</value>
+  </data>
+  <data name="FI0176" xml:space="preserve">
+    <value>시작 기준일을 입력하세요.</value>
+  </data>
+  <data name="FI0177" xml:space="preserve">
+    <value>종료 기준일을 입력하세요.</value>
+  </data>
+  <data name="FI0178" xml:space="preserve">
+    <value>종료 기준일을 시작 기준일보다 이전의 일자입니다.</value>
+  </data>
+  <data name="FI0179" xml:space="preserve">
+    <value>종료 비교일을 입력하세요.</value>
+  </data>
+  <data name="FI0180" xml:space="preserve">
+    <value>시작 비교일을 입력하세요.</value>
+  </data>
+  <data name="FI0181" xml:space="preserve">
+    <value>종료 비교일이 시작 비교일보다 이전의 일자입니다.</value>
+  </data>
+  <data name="FI0182" xml:space="preserve">
+    <value>합계는 조회할 수 없습니다.</value>
+  </data>
+  <data name="FI0183" xml:space="preserve">
+    <value>소계는 조회할 수 없습니다.</value>
+  </data>
+  <data name="FI0184" xml:space="preserve">
+    <value>시작일을 입력하세요.</value>
+  </data>
+  <data name="FI0185" xml:space="preserve">
+    <value>종료일을 입력하세요.</value>
+  </data>
+  <data name="FI0186" xml:space="preserve">
+    <value>종료일이 시작일보다 이전의 일자입니다.</value>
+  </data>
+  <data name="FI0187" xml:space="preserve">
+    <value>년월을 입력하여 주십시오.</value>
+  </data>
+  <data name="FI0188" xml:space="preserve">
+    <value>운영&gt;&gt;설정&gt;&gt;추가설정&gt;&gt;환경설정을 먼저 설정바랍니다.</value>
+  </data>
+  <data name="FI0189" xml:space="preserve">
+    <value>운영&gt;&gt;설정&gt;&gt;추가설정&gt;&gt;환경설정에서 전표인쇄 레포트파일를 설정바랍니다.</value>
+  </data>
+  <data name="FI0190" xml:space="preserve">
+    <value>운영&gt;&gt;설정&gt;&gt;추가설정&gt;&gt;환경설정에서 전표인쇄 프로시저를 설정바랍니다.</value>
+  </data>
+  <data name="FI0191" xml:space="preserve">
+    <value>선택한 항목을 인쇄하시겠습니까?</value>
+  </data>
+  <data name="FI0192" xml:space="preserve">
+    <value>선택한 항목을 인쇄취소하시겠습니까?</value>
+  </data>
+  <data name="FI0193" xml:space="preserve">
+    <value>인쇄취소 작업이 처리되었습니다.</value>
+  </data>
+  <data name="FI0194" xml:space="preserve">
+    <value>인쇄취소 작업이 실패하였습니다.</value>
+  </data>
+  <data name="FI0195" xml:space="preserve">
+    <value>지정하신대로 분개장문서를 생성하시겠습니까?</value>
+  </data>
+  <data name="FI0196" xml:space="preserve">
+    <value>데이터 업로드 작업중.</value>
+  </data>
+  <data name="FI0197" xml:space="preserve">
+    <value>데이터 업로드 완료</value>
+  </data>
+  <data name="FI0198" xml:space="preserve">
+    <value>계정(BP)코드를 확인해 주세요</value>
+  </data>
+  <data name="FI0199" xml:space="preserve">
+    <value>관리계정를 확인해 주세요</value>
+  </data>
+  <data name="FI0200" xml:space="preserve">
+    <value>세금그룹를 확인해 주세요</value>
+  </data>
+  <data name="FI0201" xml:space="preserve">
+    <value>거래처를 확인해 주세요</value>
+  </data>
+  <data name="FI0202" xml:space="preserve">
+    <value>은행코드를 확인해 주세요</value>
+  </data>
+  <data name="FI0203" xml:space="preserve">
+    <value>분개장문서 생성중</value>
+  </data>
+  <data name="FI0204" xml:space="preserve">
+    <value>분개장문서 생성완료</value>
+  </data>
+  <data name="FI0205" xml:space="preserve">
+    <value>출력양식이 존재하지 않습니다.</value>
+  </data>
+  <data name="FI0206" xml:space="preserve">
+    <value>데이터작성중</value>
+  </data>
+  <data name="FI0207" xml:space="preserve">
+    <value>작성완료</value>
+  </data>
+  <data name="FI0208" xml:space="preserve">
+    <value>인쇄할 문서를 선택해주세요.</value>
+  </data>
+  <data name="FI0209" xml:space="preserve">
+    <value>비즈니스파트너코드를 먼저 입력해주세요.</value>
+  </data>
+  <data name="FI0210" xml:space="preserve">
+    <value>국가코드를 먼저 입력해주세요.</value>
+  </data>
+  <data name="FI0211" xml:space="preserve">
+    <value>은행코드를 먼저 입력해주세요.</value>
+  </data>
+  <data name="FI0212" xml:space="preserve">
+    <value>통화를 입력하세요.</value>
+  </data>
+  <data name="FI0213" xml:space="preserve">
+    <value>완료여부를 입력하세요.</value>
+  </data>
+  <data name="FI0214" xml:space="preserve">
+    <value>계정을 입력하세요.</value>
+  </data>
+  <data name="FI0215" xml:space="preserve">
+    <value>종료 전기일이 시작 전기일보다 이전의 일자입니다.</value>
+  </data>
+  <data name="FI0216" xml:space="preserve">
+    <value>선택된 내역이 존재하지 않습니다.</value>
+  </data>
+  <data name="FI0217" xml:space="preserve">
+    <value>선택된 내역이 없습니다</value>
+  </data>
+  <data name="FI0218" xml:space="preserve">
+    <value>전기일자를 입력하여 주십시오</value>
+  </data>
+  <data name="FI0219" xml:space="preserve">
+    <value>재무모듈 생성중 오류가 발생하였습니다. 관리자에게 문의 하십시오</value>
+  </data>
+  <data name="FI0220" xml:space="preserve">
+    <value>재무비율을 입력하십시오.</value>
+  </data>
+  <data name="FI0221" xml:space="preserve">
+    <value>재무비율명을 입력하십시오.</value>
+  </data>
+  <data name="FI0222" xml:space="preserve">
+    <value>분석유형을 입력하십시오.</value>
+  </data>
+  <data name="FI0223" xml:space="preserve">
+    <value>번째 행의 리포트를 입력하십시오.</value>
+  </data>
+  <data name="FI0224" xml:space="preserve">
+    <value>번째 행의 템플릿을 입력하십시오.</value>
+  </data>
+  <data name="FI0225" xml:space="preserve">
+    <value>번째 행의 템플릿명을 입력하십시오.</value>
+  </data>
+  <data name="FI0226" xml:space="preserve">
+    <value>번째 행의 항목 또는 값을 입력하십시오.</value>
+  </data>
+  <data name="FI0227" xml:space="preserve">
+    <value>번째 행의 항목 또는 값을 하나만 입력하십시오.</value>
+  </data>
+  <data name="FI0228" xml:space="preserve">
+    <value>번째 행의 계산항목을 입력하십시오.</value>
+  </data>
+  <data name="FI0229" xml:space="preserve">
+    <value>번째 행의 계산항목을 'A' ~ 'Z'의 알파뱃으로 입력하십시오.</value>
+  </data>
+  <data name="FI0230" xml:space="preserve">
+    <value>은 계산식에 사용할수 없는 문자입니다.</value>
+  </data>
+  <data name="FI0231" xml:space="preserve">
+    <value>번째 행의 계산항목은 한자리만 입력하십시오.</value>
+  </data>
+  <data name="FI0232" xml:space="preserve">
+    <value>은 계산항목에 중복으로 들어가 있습니다.</value>
+  </data>
+  <data name="FI0233" xml:space="preserve">
+    <value>[@WJS_SFI01] AUTOKEY 갱신작업이 실패하였습니다.</value>
+  </data>
+  <data name="FI0234" xml:space="preserve">
+    <value>유형별마감 체크 수행중 오류가 발생하였습니다.</value>
+  </data>
+  <data name="FI0235" xml:space="preserve">
+    <value>유형별마감 설정 - 해당 문서의 처리일자가 마감되었습니다. 마감된 일자로 입력할 수 없습니다.</value>
+  </data>
+  <data name="FI0236" xml:space="preserve">
+    <value>계정마스터에 차대변 구분이 없는 계정이 존재하여 처리 할 수 없습니다.</value>
+  </data>
+  <data name="FI0237" xml:space="preserve">
+    <value>공급업체는 매출채권을 발생시킬 수 없습니다. 매출채권은 고객만 발생시킬 수 있습니다.</value>
+  </data>
+  <data name="FI0238" xml:space="preserve">
+    <value>고객은 매입채무을 발생시킬 수 없습니다. 매입채무는 공급업체만 발생시킬 수 있습니다.</value>
+  </data>
+  <data name="FI0239" xml:space="preserve">
+    <value>계정의 유효값 체크에 실패했습니다.</value>
+  </data>
+  <data name="FI0240" xml:space="preserve">
+    <value>번째 라인의 계정</value>
+  </data>
+  <data name="FI0241" xml:space="preserve">
+    <value>은(는)</value>
+  </data>
+  <data name="FI0242" xml:space="preserve">
+    <value>[@WJS_SFI01M] U_FRDT 갱신작업이 실패하였습니다.</value>
+  </data>
+  <data name="FI0243" xml:space="preserve">
+    <value>[@WJS_SFI01M] U_TODT 갱신작업이 실패하였습니다.</value>
+  </data>
+  <data name="FI0244" xml:space="preserve">
+    <value>계정잔액마감이 수행된 전기기간은 잠금해제 할 수 없습니다. 계정잔액마감을 취소하신 후 잠금해제 하십시요.</value>
+  </data>
+  <data name="FI0245" xml:space="preserve">
+    <value>분개마스터의 시스템필드 정보 갱신에 실패했습니다.</value>
+  </data>
+  <data name="FI0246" xml:space="preserve">
+    <value>분개디테일의 시스템필드 정보 갱신에 실패했습니다.</value>
+  </data>
+  <data name="FI0247" xml:space="preserve">
+    <value>재고 재평가의 Comment갱신에 실패하였습니다.</value>
+  </data>
+  <data name="FI0248" xml:space="preserve">
+    <value>인쇄하시겠습니까?</value>
+  </data>
+  <data name="FI0249" xml:space="preserve">
+    <value> 테이블이 존재하지 않습니다.</value>
+  </data>
+  <data name="FI0250" xml:space="preserve">
+    <value> 테이블의 </value>
+  </data>
+  <data name="FI0251" xml:space="preserve">
+    <value> 필드가 존재하지 않습니다.</value>
+  </data>
+  <data name="FI0252" xml:space="preserve">
+    <value>마감관리 계정등록 라인 데이터를 입력하십시오.</value>
+  </data>
+  <data name="FI0253" xml:space="preserve">
+    <value>대손충당 계정등록 라인 데이터를 입력하십시오.</value>
+  </data>
+  <data name="FI0254" xml:space="preserve">
+    <value>열의결산항목이중복이면서 , 집계계정명이중복됩니다 </value>
+  </data>
+  <data name="FI0255" xml:space="preserve">
+    <value>열의충당집계계정이중복됩니다 </value>
+  </data>
+  <data name="FI0256" xml:space="preserve">
+    <value>마감된 데이터는 추가, 수정, 삭제를 할 수 없습니다.</value>
+  </data>
+  <data name="FI0257" xml:space="preserve">
+    <value>마감전표를 생성합니다. 진행하시겠습니까?</value>
+  </data>
+  <data name="FI0258" xml:space="preserve">
+    <value>마감전표를 확정취소합니다. 진행하시겠습니까?</value>
+  </data>
+  <data name="FI0259" xml:space="preserve">
+    <value>확인모드에서만 확정취소가능합니다.</value>
+  </data>
+  <data name="FI0260" xml:space="preserve">
+    <value>생성된 마감전표가 존재하지 않습니다.</value>
+  </data>
+  <data name="FI0261" xml:space="preserve">
+    <value>확인모드에서만 확정가능합니다.</value>
+  </data>
+  <data name="FI0262" xml:space="preserve">
+    <value>확정 작업이 실패하였습니다.</value>
+  </data>
+  <data name="FI0263" xml:space="preserve">
+    <value>확정취소 작업이 성공하였습니다.</value>
+  </data>
+  <data name="FI0264" xml:space="preserve">
+    <value>확정취소 작업이 실패하였습니다.</value>
+  </data>
+  <data name="FI0265" xml:space="preserve">
+    <value>확정된 전표가 존재하여 제거할 수 없습니다.</value>
+  </data>
+  <data name="FI0266" xml:space="preserve">
+    <value>에 정의된 계산식이 없습니다.</value>
+  </data>
+  <data name="FI0267" xml:space="preserve">
+    <value>SF05'의 우선순위는 월항목중 가장 마지막이어야 합니다.</value>
+  </data>
+  <data name="FI0269" xml:space="preserve">
+    <value>SY02'의 우선순위는 'SY03'의 전 이어야 합니다.</value>
+  </data>
+  <data name="FI0270" xml:space="preserve">
+    <value>SY01'의 우선순위는 'SY02'의 전 이어야 합니다.</value>
+  </data>
+  <data name="FI0271" xml:space="preserve">
+    <value>항목의 우선순위중 연결되지 않는 값이 있습니다.</value>
+  </data>
+  <data name="FI0272" xml:space="preserve">
+    <value>회기마감 진행중에는 내역 변경할 수 없습니다.</value>
+  </data>
+  <data name="FI0273" xml:space="preserve">
+    <value>마감 계정이 등록되어 있지 않습니다. [@WJS_SFI811] : 구분코드 (SC01)</value>
+  </data>
+  <data name="FI0274" xml:space="preserve">
+    <value>입고 미결내역을 가져오시겠습니까?</value>
+  </data>
+  <data name="FI0275" xml:space="preserve">
+    <value>현재 문서를 제거합니다. 진행하시겠습니까?</value>
+  </data>
+  <data name="FI0277" xml:space="preserve">
+    <value>납품 미결내역을 가져오시겠습니까?</value>
+  </data>
+  <data name="FI0278" xml:space="preserve">
+    <value>기간손익 계정 라인을 입력하세요.</value>
+  </data>
+  <data name="FI0279" xml:space="preserve">
+    <value>비율(%)을 입력하십시오.</value>
+  </data>
+  <data name="FI0280" xml:space="preserve">
+    <value>기간손익계정이 정상적으로 등록되어 있지 않습니다.</value>
+  </data>
+  <data name="FI0281" xml:space="preserve">
+    <value>미수급/미지급금 비율의 합이 100%가 되어야 합니다.</value>
+  </data>
+  <data name="FI0282" xml:space="preserve">
+    <value>선수수익/선급비용 비율의 합이 100%가 되어야 합니다.</value>
+  </data>
+  <data name="FI0283" xml:space="preserve">
+    <value>손익계정 비율의 합이 100%가 되어야 합니다.</value>
+  </data>
+  <data name="FI0284" xml:space="preserve">
+    <value>해지 비율의 합이 100%가 되어야 합니다.</value>
+  </data>
+  <data name="FI0285" xml:space="preserve">
+    <value>손익센터를 입력하십시오.</value>
+  </data>
+  <data name="FI0286" xml:space="preserve">
+    <value>발생일의 년월과 발생기간의 년월은 상이할 수 없습니다.</value>
+  </data>
+  <data name="FI0287" xml:space="preserve">
+    <value>기간손익 계정이 등록되어 있지 않습니다. [@WJS_SFI811] : 구분코드 (SC01)</value>
+  </data>
+  <data name="FI0288" xml:space="preserve">
+    <value>확인모드에서만 확정가능합니다.</value>
+  </data>
+  <data name="FI0289" xml:space="preserve">
+    <value>확정전표를 생성합니다. 진행하시겠습니까?</value>
+  </data>
+  <data name="FI0290" xml:space="preserve">
+    <value>전표를 확정취소합니다. 진행하시겠습니까?</value>
+  </data>
+  <data name="FI0291" xml:space="preserve">
+    <value>기간손익 내역을 가져오시겠습니까?</value>
+  </data>
+  <data name="FI0292" xml:space="preserve">
+    <value>해지일은 발생일 보다 작을 수 없습니다.</value>
+  </data>
+  <data name="FI0293" xml:space="preserve">
+    <value>마감된 다음달만 해지 가능 합니다.</value>
+  </data>
+  <data name="FI0294" xml:space="preserve">
+    <value>월마감에서는 잠김 처리를 할 수 없습니다.</value>
+  </data>
+  <data name="FI0295" xml:space="preserve">
+    <value>발생기간을 입력하셔주십시요.</value>
+  </data>
+  <data name="FI0296" xml:space="preserve">
+    <value>예산사용시 차원1값은 필수입력입니다.</value>
+  </data>
+  <data name="FI0297" xml:space="preserve">
+    <value>예산사용시 차원2값은 필수입력입니다.</value>
+  </data>
+  <data name="FI0298" xml:space="preserve">
+    <value>예산사용시 차원3값은 필수입력입니다.</value>
+  </data>
+  <data name="FI0299" xml:space="preserve">
+    <value>예산사용시 차원4값은 필수입력입니다.</value>
+  </data>
+  <data name="FI0300" xml:space="preserve">
+    <value>예산사용시 차원5값은 필수입력입니다.</value>
+  </data>
+  <data name="FI0301" xml:space="preserve">
+    <value>발생금액을 입력하여주십시요.</value>
+  </data>
+  <data name="FI0302" xml:space="preserve">
+    <value>재무관리 &gt; 마감관리 &gt; 전기기간범주 화면에서  전기기간을 먼저 생성하여 주십시요.</value>
+  </data>
+  <data name="FI0303" xml:space="preserve">
+    <value>전기의 전기기간이 존재하지 않습니다. 운영관리에서 전기기간을 생성하십시요.</value>
+  </data>
+  <data name="FI0304" xml:space="preserve">
+    <value>조정번호로 조정된거래가 존재합니다. 조정취소 후 역분개 하셔야 합니다.</value>
+  </data>
+  <data name="FI0305" xml:space="preserve">
+    <value>(대손충당금) 마감된 데이터는 추가, 수정, 삭제를 할 수 없습니다.</value>
+  </data>
+  <data name="FI0306" xml:space="preserve">
+    <value>(기간손익) 마감된 데이터는 추가, 수정, 삭제를 할 수 없습니다.</value>
+  </data>
+  <data name="FI0307" xml:space="preserve">
+    <value>계정마스터에 차대변 구분이 없는 계정이 존재하여 마감처리 할 수 없습니다.</value>
+  </data>
+  <data name="FI0308" xml:space="preserve">
+    <value>비용/수익 계정의 잔액이 존재합니다. 결산완료 후 계정잔액을 마감하시기 바랍니다.</value>
+  </data>
+  <data name="FI0309" xml:space="preserve">
+    <value>계정잔액 테이블에 입력작업이 실패하였습니다.(계정,거래처)</value>
+  </data>
+  <data name="FI0310" xml:space="preserve">
+    <value>계정잔액 테이블에 입력작업이 실패하였습니다.(계정,차원)</value>
+  </data>
+  <data name="FI0311" xml:space="preserve">
+    <value>계정잔액 테이블에 갱신작업이 실패하였습니다.(마감여부)</value>
+  </data>
+  <data name="FI0312" xml:space="preserve">
+    <value>전기기간 마감관련 갱신작업이 실패하였습니다.(활성여부, 잠금)</value>
+  </data>
+  <data name="FI0313" xml:space="preserve">
+    <value>유형별 마감설정 상세갱신작업이 실패하였습니다.</value>
+  </data>
+  <data name="FI0314" xml:space="preserve">
+    <value>재고마감시 실패하였습니다.</value>
+  </data>
+  <data name="FI0315" xml:space="preserve">
+    <value>계정잔액 삭제작업이 실패하였습니다.</value>
+  </data>
+  <data name="FI0316" xml:space="preserve">
+    <value>재고마감취소시 실패하였습니다.</value>
+  </data>
+  <data name="FI0317" xml:space="preserve">
+    <value>합계</value>
+  </data>
+  <data name="FI0318" xml:space="preserve">
+    <value>계</value>
+  </data>
+  <data name="FI0319" xml:space="preserve">
+    <value>총계</value>
+  </data>
+  <data name="FI0320" xml:space="preserve">
+    <value>소계</value>
+  </data>
+  <data name="FI0321" xml:space="preserve">
+    <value>최상위</value>
+  </data>
+  <data name="FI0322" xml:space="preserve">
+    <value>첫 번째</value>
+  </data>
+  <data name="FI0323" xml:space="preserve">
+    <value>다음</value>
+  </data>
+  <data name="FI0324" xml:space="preserve">
+    <value>완료</value>
+  </data>
+  <data name="FI0325" xml:space="preserve">
+    <value>미완료</value>
+  </data>
+  <data name="FI0326" xml:space="preserve">
+    <value>시간</value>
+  </data>
+  <data name="FI0327" xml:space="preserve">
+    <value>일</value>
+  </data>
+  <data name="FI0328" xml:space="preserve">
+    <value>전년도 회기말인</value>
+  </data>
+  <data name="FI0329" xml:space="preserve">
+    <value>이(가) 마감되지 않았습니다.</value>
+  </data>
+  <data name="FI0330" xml:space="preserve">
+    <value>선행 마감 조건인 </value>
+  </data>
+  <data name="FI0331" xml:space="preserve">
+    <value>년</value>
+  </data>
+  <data name="FI0332" xml:space="preserve">
+    <value>월의 </value>
+  </data>
+  <data name="FI0333" xml:space="preserve">
+    <value>년 결산 마감단계의 </value>
+  </data>
+  <data name="FI0334" xml:space="preserve">
+    <value>이(가) 마감되어 취소를 할 수 없습니다.</value>
+  </data>
+  <data name="FI0335" xml:space="preserve">
+    <value>이후 단계의 </value>
+  </data>
+  <data name="FI0336" xml:space="preserve">
+    <value>합 계</value>
+  </data>
+  <data name="FI0337" xml:space="preserve">
+    <value>확정된 데이타입니다.</value>
+  </data>
+  <data name="FI0338" xml:space="preserve">
+    <value>구매입고가격차이분확정취소</value>
+  </data>
+  <data name="FI0339" xml:space="preserve">
+    <value>수입부대비용미반영분확정취소</value>
+  </data>
+  <data name="FI0340" xml:space="preserve">
+    <value>생산입출고원가차이분확정취소</value>
+  </data>
+  <data name="FI0341" xml:space="preserve">
+    <value>표준가공비정산차이분확정취소</value>
+  </data>
+  <data name="FI0342" xml:space="preserve">
+    <value>재작업비용발생분확정취소</value>
+  </data>
+  <data name="FI0343" xml:space="preserve">
+    <value>품목별비용배부분확정취소</value>
+  </data>
+  <data name="FI0344" xml:space="preserve">
+    <value>재고 존재하지않는 계정-</value>
+  </data>
+  <data name="FI0345" xml:space="preserve">
+    <value>라인명세-</value>
+  </data>
+  <data name="FI0346" xml:space="preserve">
+    <value>전일이월</value>
+  </data>
+  <data name="FI0347" xml:space="preserve">
+    <value>Month Total</value>
+  </data>
+  <data name="FI0348" xml:space="preserve">
+    <value>Month Accrued Total</value>
+  </data>
+  <data name="FI0349" xml:space="preserve">
+    <value>합   계</value>
+  </data>
+  <data name="FI0350" xml:space="preserve">
+    <value>월   계</value>
+  </data>
+  <data name="FI0351" xml:space="preserve">
+    <value>월누계</value>
+  </data>
+  <data name="FI0352" xml:space="preserve">
+    <value>잔액</value>
+  </data>
+  <data name="FI0353" xml:space="preserve">
+    <value>시산표 템플릿 로드에 실패하였습니다.</value>
+  </data>
+  <data name="FI0354" xml:space="preserve">
+    <value>시산표 템플릿 상세로드에 실패하였습니다.</value>
+  </data>
+  <data name="FI0355" xml:space="preserve">
+    <value>소계 갱신작업을 실패하였습니다.</value>
+  </data>
+  <data name="FI0356" xml:space="preserve">
+    <value>대차대조표 템플릿 상세 로드에 실패하였습니다.</value>
+  </data>
+  <data name="FI0357" xml:space="preserve">
+    <value>해당기간의 금액 갱신 실패하였습니다.</value>
+  </data>
+  <data name="FI0358" xml:space="preserve">
+    <value>이익기간 금액 갱신 작업을 실패하였습니다.</value>
+  </data>
+  <data name="FI0359" xml:space="preserve">
+    <value>상위계정으로 SUM 갱신 작업을 실패하였습니다.</value>
+  </data>
+  <data name="FI0360" xml:space="preserve">
+    <value>소계 갱신 작업을 실패하였습니다.</value>
+  </data>
+  <data name="FI0361" xml:space="preserve">
+    <value>대차대조표 템플릿 로드에 실패하였습니다.</value>
+  </data>
+  <data name="FI0362" xml:space="preserve">
+    <value>제조원가명세서 템플릿 로드에 실패하였습니다.</value>
+  </data>
+  <data name="FI0363" xml:space="preserve">
+    <value>.     &lt; 금　일　　소　계&gt;</value>
+  </data>
+  <data name="FI0364" xml:space="preserve">
+    <value>.     &lt; 금일잔고/전일잔고&gt;</value>
+  </data>
+  <data name="FI0365" xml:space="preserve">
+    <value>.     &lt; 합　　　　　　계&gt;</value>
+  </data>
+  <data name="FI0366" xml:space="preserve">
+    <value>&lt; 금　일　　소　계&gt;</value>
+  </data>
+  <data name="FI0367" xml:space="preserve">
+    <value>&lt; 금일잔고/전일잔고&gt;</value>
+  </data>
+  <data name="FI0368" xml:space="preserve">
+    <value>&lt; 합　　　　　　계&gt;</value>
+  </data>
+  <data name="FI0369" xml:space="preserve">
+    <value>비율</value>
+  </data>
+  <data name="FI0370" xml:space="preserve">
+    <value>[잔액]</value>
+  </data>
+  <data name="FI0371" xml:space="preserve">
+    <value>분개 인쇄번호 갱신작업이 실패하였습니다.</value>
+  </data>
+  <data name="FI0372" xml:space="preserve">
+    <value>손익계산서 템플릿 로드에 실패하였습니다.</value>
+  </data>
+  <data name="FI0373" xml:space="preserve">
+    <value>손익계산서 템플릿 상세로드에 실패하였습니다.</value>
+  </data>
+  <data name="FI0374" xml:space="preserve">
+    <value>이월</value>
+  </data>
+  <data name="FI0375" xml:space="preserve">
+    <value>월</value>
+  </data>
+  <data name="FI0376" xml:space="preserve">
+    <value>중복된 계좌번호가 있습니다.</value>
+  </data>
+  <data name="FI0377" xml:space="preserve">
+    <value>은행명을 선택하세요!</value>
+  </data>
+  <data name="FI0378" xml:space="preserve">
+    <value>지점을 선택하세요.</value>
+  </data>
+  <data name="FI0379" xml:space="preserve">
+    <value>계좌번호를 선택하세요!</value>
+  </data>
+  <data name="FI0380" xml:space="preserve">
+    <value>수익계정을 선택하세요!</value>
+  </data>
+  <data name="FI0381" xml:space="preserve">
+    <value>관리계정을 선택하세요!</value>
+  </data>
+  <data name="FI0382" xml:space="preserve">
+    <value>가입일을 입력하세요!</value>
+  </data>
+  <data name="FI0383" xml:space="preserve">
+    <value>만기일을 입력하세요!</value>
+  </data>
+  <data name="FI0384" xml:space="preserve">
+    <value>가입금액을 입력하세요!</value>
+  </data>
+  <data name="FI0385" xml:space="preserve">
+    <value>이율을 입력하세요!</value>
+  </data>
+  <data name="FI0386" xml:space="preserve">
+    <value>이미 계상처리된 내용이 있습니다.</value>
+  </data>
+  <data name="FI0387" xml:space="preserve">
+    <value>가입일이 만기일보다 먼저입니다.</value>
+  </data>
+  <data name="FI0388" xml:space="preserve">
+    <value>부서코드를 선택하십시오.</value>
+  </data>
+  <data name="FI0389" xml:space="preserve">
+    <value>사원코드를 선택하십시오.</value>
+  </data>
+  <data name="FI0390" xml:space="preserve">
+    <value>증권번호를 입력하십시요</value>
+  </data>
+  <data name="FI0391" xml:space="preserve">
+    <value>선급비용계정코드를 입력하세요.</value>
+  </data>
+  <data name="FI0392" xml:space="preserve">
+    <value>보험종류를 선택하세요.</value>
+  </data>
+  <data name="FI0393" xml:space="preserve">
+    <value>거래처를 선택하세요</value>
+  </data>
+  <data name="FI0394" xml:space="preserve">
+    <value>중복된 계약번호가 있습니다.</value>
+  </data>
+  <data name="FI0395" xml:space="preserve">
+    <value>계약번호를 입력하십시요</value>
+  </data>
+  <data name="FI0396" xml:space="preserve">
+    <value>선수수익계정코드를 입력하세요.</value>
+  </data>
+  <data name="FI0397" xml:space="preserve">
+    <value>계약일을 입력하세요.</value>
+  </data>
+  <data name="FI0398" xml:space="preserve">
+    <value>계약금액을 입력하세요.</value>
+  </data>
+  <data name="FI0399" xml:space="preserve">
+    <value>분개장으로 생성할 행을 체크하세요!</value>
+  </data>
+  <data name="FI0400" xml:space="preserve">
+    <value>분개장취소완료.</value>
+  </data>
+  <data name="FI0401" xml:space="preserve">
+    <value>분개장생성 작업이 진행중입니다.</value>
+  </data>
+  <data name="FI0402" xml:space="preserve">
+    <value>취소할 행을 체크하세요!</value>
+  </data>
+  <data name="FI0403" xml:space="preserve">
+    <value>관리계정인 경우 비즈니스 파트너가 필수입니다.</value>
+  </data>
+  <data name="FI0404" xml:space="preserve">
+    <value>해지수익/비용계정 비율의 합이 100%가 되어야 합니다.</value>
+  </data>
+  <data name="FI0405" xml:space="preserve">
+    <value>해지수익/비용계정은 여러개일 수 없습니다.</value>
+  </data>
+  <data name="FI0406" xml:space="preserve">
+    <value>기간손익명을 입력하십시오.</value>
+  </data>
+  <data name="FI0407" xml:space="preserve">
+    <value>동일한 기간손익코드는 사용할 수 없습니다.</value>
+  </data>
+  <data name="FI0408" xml:space="preserve">
+    <value>계산된 데이터가 없습니다.</value>
+  </data>
+  <data name="FI0409" xml:space="preserve">
+    <value>계정코드는 필수 입력입니다.</value>
+  </data>
+  <data name="FI0410" xml:space="preserve">
+    <value>미수금/미지급금 계정은 여러개일 수 없습니다.</value>
+  </data>
+  <data name="FI0411" xml:space="preserve">
+    <value>선수수익/선급비용 계정은 여러개일 수 없습니다.</value>
+  </data>
+  <data name="FI0412" xml:space="preserve">
+    <value>해지계정은 여러개일 수 없습니다.</value>
+  </data>
+  <data name="FI0413" xml:space="preserve">
+    <value>TO 기간이 작을 수 없습니다.</value>
+  </data>
+  <data name="FI0414" xml:space="preserve">
+    <value>FROM 기간이 클 수 없습니다.</value>
+  </data>
+  <data name="FI0415" xml:space="preserve">
+    <value>미확정분만 예상금액계산이 가능합니다.</value>
+  </data>
+  <data name="FI0416" xml:space="preserve">
+    <value>산출방식을 선택하세요.</value>
+  </data>
+  <data name="FI0417" xml:space="preserve">
+    <value>전기일을 입력해주세요.</value>
+  </data>
+  <data name="FI0418" xml:space="preserve">
+    <value>총금액을 입력해주세요.</value>
+  </data>
+  <data name="FI0419" xml:space="preserve">
+    <value>손익계산기간을 입력해주세요.</value>
+  </data>
+  <data name="FI0420" xml:space="preserve">
+    <value>내부조정건이 존재하여 확정취소가 불가능합니다.</value>
+  </data>
+  <data name="FI0421" xml:space="preserve">
+    <value>중복된 거래처를 선택할 수 없습니다.</value>
+  </data>
+  <data name="FI0422" xml:space="preserve">
+    <value>해지일을 입력해주세요.</value>
+  </data>
+  <data name="FI0423" xml:space="preserve">
+    <value>기간손익그룹이 입력되지 않은 경우 기본 계정을 불러오지 않습니다. 진행하시겠습니까?</value>
+  </data>
+  <data name="FI0424" xml:space="preserve">
+    <value>기간손익추가(환급)일자를 입력해주세요.</value>
+  </data>
+  <data name="FI0425" xml:space="preserve">
+    <value>기간손익추가(환급)금액을 입력해주세요.</value>
+  </data>
+  <data name="FI0426" xml:space="preserve">
+    <value>월별기간손익처리 전표가 존재하여 처리할 수 없습니다.</value>
+  </data>
+  <data name="FI0427" xml:space="preserve">
+    <value>생성된 확정전표가 존재하지 않습니다.</value>
+  </data>
+  <data name="FI0428" xml:space="preserve">
+    <value>확정된 전표가 존재하여 취소할 수 없습니다.</value>
+  </data>
+  <data name="FI0429" xml:space="preserve">
+    <value>기준년월에 중복되는 문서가 있습니다.</value>
+  </data>
+  <data name="FI0430" xml:space="preserve">
+    <value>손익계산기간내에 처리하셔야 합니다.</value>
+  </data>
+  <data name="FI0431" xml:space="preserve">
+    <value>해지금산정이 되지 않았습니다.</value>
+  </data>
+  <data name="FI0432" xml:space="preserve">
+    <value>파일이 존재합니다. 덮어 씌우시겠습니까?</value>
+  </data>
+  <data name="FI0433" xml:space="preserve">
+    <value>항목이 일치하지 않습니다.</value>
+  </data>
+  <data name="FI0434" xml:space="preserve">
+    <value>데이터가 존재하지 않습니다.</value>
+  </data>
+  <data name="FI0435" xml:space="preserve">
+    <value>계정코드 입력시 에러가 발생하였습니다.</value>
+  </data>
+  <data name="FI0436" xml:space="preserve">
+    <value>분개장번호 :</value>
+  </data>
+  <data name="FI0437" xml:space="preserve">
+    <value>분개장모듈을 활성화시키겠습니까?</value>
+  </data>
+  <data name="FI0438" xml:space="preserve">
+    <value>사원번호를 입력하여 주십시요.</value>
+  </data>
+  <data name="FI0439" xml:space="preserve">
+    <value>권한이 없는 사용자입니다.</value>
+  </data>
+  <data name="FI0440" xml:space="preserve">
+    <value>권한체크중입니다.</value>
+  </data>
+  <data name="FI0441" xml:space="preserve">
+    <value>항목코드값이 빈행인 컬럼은 선택할수없습니다.</value>
+  </data>
+  <data name="FI0442" xml:space="preserve">
+    <value>양식을 선택하여 주십시요.</value>
+  </data>
+  <data name="FI0443" xml:space="preserve">
+    <value>템플릿을 선택하여 주십시요.</value>
+  </data>
+  <data name="FI0444" xml:space="preserve">
+    <value>조회기준을 선택하여 주십시요</value>
+  </data>
+  <data name="FI0445" xml:space="preserve">
+    <value>지정하신대로 저장하시겠습니까?</value>
+  </data>
+  <data name="FI0446" xml:space="preserve">
+    <value>조회기준을 입력하여 주십시요.</value>
+  </data>
+  <data name="FI0447" xml:space="preserve">
+    <value>작성순서를 입력하여 주십시요.</value>
+  </data>
+  <data name="FI0448" xml:space="preserve">
+    <value>지정하신대로 작성하시겠습니까?(계정명,거래처명에 컬럼구분자가 포함된경우  빈값으로 자동 변경됩니다.)</value>
+  </data>
+  <data name="FI0449" xml:space="preserve">
+    <value>작성폴더를 여시겠습니까?</value>
+  </data>
+  <data name="FI0450" xml:space="preserve">
+    <value>지정하신 사원번호를 선택하시겠습니까?</value>
+  </data>
+  <data name="FI0451" xml:space="preserve">
+    <value>날짜포맷이 잘못 되었습니다.</value>
+  </data>
+  <data name="FI0452" xml:space="preserve">
+    <value>갱신할 기간손익코드[</value>
+  </data>
+  <data name="FI0453" xml:space="preserve">
+    <value>갱신할 차량코드[</value>
+  </data>
+  <data name="FI0454" xml:space="preserve">
+    <value>건을 갱신하시겠습니까?</value>
+  </data>
+  <data name="FI0455" xml:space="preserve">
+    <value>건을 삭제하시겠습니까?</value>
+  </data>
+  <data name="FI0456" xml:space="preserve">
+    <value>건을 추가하시겠습니까?</value>
+  </data>
+  <data name="FI0457" xml:space="preserve">
+    <value>계산방식을 입력하여주십시요.</value>
+  </data>
+  <data name="FI0458" xml:space="preserve">
+    <value>계산시작일을 입력하여주십시요.</value>
+  </data>
+  <data name="FI0459" xml:space="preserve">
+    <value>계산일 이후에 전기된 분개가 있습니다.</value>
+  </data>
+  <data name="FI0460" xml:space="preserve">
+    <value>금액가져오기 완료</value>
+  </data>
+  <data name="FI0461" xml:space="preserve">
+    <value>금액가져오기를 완료했지만 단수차이가 발생했습니다.</value>
+  </data>
+  <data name="FI0462" xml:space="preserve">
+    <value>기간구분을 입력하여주십시요.</value>
+  </data>
+  <data name="FI0463" xml:space="preserve">
+    <value>기간손익기간 시작일을 입력하여주십시요.</value>
+  </data>
+  <data name="FI0464" xml:space="preserve">
+    <value>기간손익기간 종료일을 입력하여주십시요.</value>
+  </data>
+  <data name="FI0465" xml:space="preserve">
+    <value>기간손익명을 입력하여주십시요.</value>
+  </data>
+  <data name="FI0466" xml:space="preserve">
+    <value>기간손익분개가 발생되어 기간손익을 생성할수 없습니다.</value>
+  </data>
+  <data name="FI0467" xml:space="preserve">
+    <value>기간손익분개가 존재합니다.</value>
+  </data>
+  <data name="FI0468" xml:space="preserve">
+    <value>기간손익생성 또는 기간손익조정에 기간손익분개가 존재합니다.</value>
+  </data>
+  <data name="FI0469" xml:space="preserve">
+    <value>기간손익생성 또는 기간손익조정에 발생분개가 존재합니다.</value>
+  </data>
+  <data name="FI0470" xml:space="preserve">
+    <value>기간손익생성 또는 기간손익조정에 해지분개가 존재합니다.</value>
+  </data>
+  <data name="FI0471" xml:space="preserve">
+    <value>기간손익유형을 입력하여주십시요.</value>
+  </data>
+  <data name="FI0472" xml:space="preserve">
+    <value>기간손익적용금액과 기간중분개적용금액이 다릅니다. 계속진행하시겠습니까?</value>
+  </data>
+  <data name="FI0473" xml:space="preserve">
+    <value>기간손익적용금액과 발생분개적용금액이 다릅니다. 계속진행하시겠습니까?</value>
+  </data>
+  <data name="FI0474" xml:space="preserve">
+    <value>기간손익적용금액과 해지분개적용금액이 다릅니다. 계속진행하시겠습니까?</value>
+  </data>
+  <data name="FI0475" xml:space="preserve">
+    <value>기간손익조정 내역이 존재합니다.</value>
+  </data>
+  <data name="FI0476" xml:space="preserve">
+    <value>대상 기간손익을 조회후 진행해 주십시요.</value>
+  </data>
+  <data name="FI0477" xml:space="preserve">
+    <value>데이터가 존재하지 않아 기간손익정보를 가져올수 없습니다.</value>
+  </data>
+  <data name="FI0478" xml:space="preserve">
+    <value>등록일/전기일/증빙일 중 하나를 시작/종료일을 모두 입력하세요.</value>
+  </data>
+  <data name="FI0479" xml:space="preserve">
+    <value>발생분개가 존재합니다.</value>
+  </data>
+  <data name="FI0480" xml:space="preserve">
+    <value>발생일을 입력하여 주십시요.</value>
+  </data>
+  <data name="FI0481" xml:space="preserve">
+    <value>복사원천 기간손익 코드값을 입력하여 주십시요.</value>
+  </data>
+  <data name="FI0482" xml:space="preserve">
+    <value>복사원천 기간손익 코드값이 기간손익마스터에 존재하지 않습니다.</value>
+  </data>
+  <data name="FI0483" xml:space="preserve">
+    <value>분개 템플릿을 설정해 주십시요.</value>
+  </data>
+  <data name="FI0484" xml:space="preserve">
+    <value>분개를 생성하시겠습니까?</value>
+  </data>
+  <data name="FI0485" xml:space="preserve">
+    <value>분개를 취소하시겠습니까?</value>
+  </data>
+  <data name="FI0486" xml:space="preserve">
+    <value>분개템플릿 내역이 존재하지 않습니다.</value>
+  </data>
+  <data name="FI0487" xml:space="preserve">
+    <value>분개템플릿을 저장하시겠습니까?</value>
+  </data>
+  <data name="FI0488" xml:space="preserve">
+    <value>비활성건입니다.</value>
+  </data>
+  <data name="FI0489" xml:space="preserve">
+    <value>사업장을 입력하여주십시요.</value>
+  </data>
+  <data name="FI0490" xml:space="preserve">
+    <value>선택된 거래처, 계정이 존재하지 않습니다. 조회시간이 매우 오래걸릴수 있습니다.</value>
+  </data>
+  <data name="FI0491" xml:space="preserve">
+    <value>선택된 계정이 존재하지 않습니다. 조회시간이 매우 오래걸릴수 있습니다.</value>
+  </data>
+  <data name="FI0492" xml:space="preserve">
+    <value>선택된 사업자번호, 계정이 존재하지 않습니다. 조회시간이 매우 오래걸릴수 있습니다.</value>
+  </data>
+  <data name="FI0493" xml:space="preserve">
+    <value>선택된 차원, 계정이 존재하지 않습니다. 조회시간이 매우 오래걸릴수 있습니다.</value>
+  </data>
+  <data name="FI0494" xml:space="preserve">
+    <value>선택된 프로젝트, 계정이 존재하지 않습니다. 조회시간이 매우 오래걸릴수 있습니다.</value>
+  </data>
+  <data name="FI0495" xml:space="preserve">
+    <value>원천기간손익 보다 계산일이 적을수 없습니다. [원천손익계산일 : </value>
+  </data>
+  <data name="FI0496" xml:space="preserve">
+    <value>원천기간손익의 기간손익데이터를 생성하여 주십시요.</value>
+  </data>
+  <data name="FI0497" xml:space="preserve">
+    <value>이미 기간손익분개가 발생되여 기간손익을 생성할수 없습니다.</value>
+  </data>
+  <data name="FI0498" xml:space="preserve">
+    <value>이미 기간손익분개가 존재합니다.</value>
+  </data>
+  <data name="FI0499" xml:space="preserve">
+    <value>이미 발생분개가 존재합니다.</value>
+  </data>
+  <data name="FI0500" xml:space="preserve">
+    <value>이미 전기된건은 일부 데이터만 갱신됩니다.</value>
+  </data>
+  <data name="FI0501" xml:space="preserve">
+    <value>이미 해지분개가 존재합니다.</value>
+  </data>
+  <data name="FI0502" xml:space="preserve">
+    <value>생성되지 않은 이전 기간의 P/L 마감 분개가 존재합니다. </value>
+  </data>
+  <data name="FI0503" xml:space="preserve">
+    <value>작성완료</value>
+  </data>
+  <data name="FI0504" xml:space="preserve">
+    <value>작업유형-추가로 변경한후 좌측 그리드에서 원천 손익기간코드를 선택하고 데이터입력을 진행하여 주십시요.</value>
+  </data>
+  <data name="FI0505" xml:space="preserve">
+    <value>작업유형-추가로 변경한후 좌측 그리드에서 원천 손익기간코드를 선택하여 주십시요.</value>
+  </data>
+  <data name="FI0506" xml:space="preserve">
+    <value>적용금액과 기간손익분할 총 금액이 다릅니다.</value>
+  </data>
+  <data name="FI0507" xml:space="preserve">
+    <value>적용금액을 입력하여 주십시요.</value>
+  </data>
+  <data name="FI0508" xml:space="preserve">
+    <value>전기일을 입력하여 주십시요.</value>
+  </data>
+  <data name="FI0509" xml:space="preserve">
+    <value>조정금액을 입력하여 주십시요.</value>
+  </data>
+  <data name="FI0510" xml:space="preserve">
+    <value>조정기간 시작일을 입력하여 주십시요.</value>
+  </data>
+  <data name="FI0511" xml:space="preserve">
+    <value>조정기간 종료일을 입력하여 주십시요.</value>
+  </data>
+  <data name="FI0512" xml:space="preserve">
+    <value>조정적용금액을 입력하여 주십시요.</value>
+  </data>
+  <data name="FI0513" xml:space="preserve">
+    <value>조회기간 To 를 입력하십시오.</value>
+  </data>
+  <data name="FI0514" xml:space="preserve">
+    <value>종료일의 전기기간이 존재하지 않습니다.</value>
+  </data>
+  <data name="FI0515" xml:space="preserve">
+    <value>차변과 대변의 비율 합계가 다릅니다.</value>
+  </data>
+  <data name="FI0516" xml:space="preserve">
+    <value>차변과 대변의 합계가 다릅니다.</value>
+  </data>
+  <data name="FI0517" xml:space="preserve">
+    <value>참고 : 기간손익일괄전기에서 부가세계산 자동처리시 세액에 단수차이가 발생될수 있습니다.</value>
+  </data>
+  <data name="FI0518" xml:space="preserve">
+    <value>처리 완료되었습니다.</value>
+  </data>
+  <data name="FI0519" xml:space="preserve">
+    <value>처리되었습니다.</value>
+  </data>
+  <data name="FI0520" xml:space="preserve">
+    <value>처리완료</value>
+  </data>
+  <data name="FI0521" xml:space="preserve">
+    <value>처리중 오류가 발생했습니다. 행별 오류내역을 확인하여 주십시요.</value>
+  </data>
+  <data name="FI0522" xml:space="preserve">
+    <value>처리중입니다.</value>
+  </data>
+  <data name="FI0523" xml:space="preserve">
+    <value>총 금액을 입력하여 주십시요.</value>
+  </data>
+  <data name="FI0524" xml:space="preserve">
+    <value>추가할 차량코드[</value>
+  </data>
+  <data name="FI0525" xml:space="preserve">
+    <value>출력 양식이 존재하지 않습니다.</value>
+  </data>
+  <data name="FI0526" xml:space="preserve">
+    <value>취소할 분개가 존재하지 않습니다.</value>
+  </data>
+  <data name="FI0527" xml:space="preserve">
+    <value>통화를 입력하여 주십시요.</value>
+  </data>
+  <data name="FI0528" xml:space="preserve">
+    <value>해당 차량번호로 발생된 분개[</value>
+  </data>
+  <data name="FI0529" xml:space="preserve">
+    <value>해지분개가 발생되어 갱신할수 없습니다.</value>
+  </data>
+  <data name="FI0530" xml:space="preserve">
+    <value>해지분개가 발생되어 기간손익을 생성할수 없습니다.</value>
+  </data>
+  <data name="FI0531" xml:space="preserve">
+    <value>해지분개가 발생되어 추가할수 없습니다.</value>
+  </data>
+  <data name="FI0532" xml:space="preserve">
+    <value>해지분개가 존재합니다.</value>
+  </data>
+  <data name="FI0533" xml:space="preserve">
+    <value>해지일을 입력하여 주십시요.</value>
+  </data>
+  <data name="FI0534" xml:space="preserve">
+    <value>행 대변금액을 입력하여 주십시요.</value>
+  </data>
+  <data name="FI0535" xml:space="preserve">
+    <value>행 대변비율을 입력하여 주십시요.</value>
+  </data>
+  <data name="FI0536" xml:space="preserve">
+    <value>행 적용금액을 입력하여 주십시요.</value>
+  </data>
+  <data name="FI0537" xml:space="preserve">
+    <value>행 전기일을 입력하여 주십시요.</value>
+  </data>
+  <data name="FI0538" xml:space="preserve">
+    <value>행 차대변구분을 입력하여 주십시요.</value>
+  </data>
+  <data name="FI0539" xml:space="preserve">
+    <value>행 차변금액을 입력하여 주십시요.</value>
+  </data>
+  <data name="FI0540" xml:space="preserve">
+    <value>행 차변비율을 입력하여 주십시요.</value>
+  </data>
+  <data name="FI0541" xml:space="preserve">
+    <value>행은 거래처 필수입력입니다.</value>
+  </data>
+  <data name="FI0542" xml:space="preserve">
+    <value>행은 세금그룹 필수입력입니다.</value>
+  </data>
+  <data name="FI0543" xml:space="preserve">
+    <value>행의 계정은 세금그룹에 정의된 계정과 일치하지 않습니다.</value>
+  </data>
+  <data name="FI0544" xml:space="preserve">
+    <value>행의 부가세 거래처를 입력하여 주십시요.</value>
+  </data>
+  <data name="FI0545" xml:space="preserve">
+    <value>행의 부가세 공급가액을 입력하여 주십시요.</value>
+  </data>
+  <data name="FI0546" xml:space="preserve">
+    <value>행의 부가세 원천라인은 </value>
+  </data>
+  <data name="FI0547" xml:space="preserve">
+    <value>행의 부가세 원천라인을 입력하여 주십시요.</value>
+  </data>
+  <data name="FI0548" xml:space="preserve">
+    <value>행의 세액을 입력하여 주십시요.</value>
+  </data>
+  <data name="FI0549" xml:space="preserve">
+    <value>]가 존재하지 않습니다.</value>
+  </data>
+  <data name="FI0550" xml:space="preserve">
+    <value>단수차이가 발생했습니다.</value>
+  </data>
+  <data name="FI0551" xml:space="preserve">
+    <value>계속 진행하시겠습니까?</value>
+  </data>
+  <data name="FI0552" xml:space="preserve">
+    <value>조회기간 From 을 입력하십시오.</value>
+  </data>
+  <data name="FI0553" xml:space="preserve">
+    <value>]가 이미 존재합니다.</value>
+  </data>
+  <data name="FI0554" xml:space="preserve">
+    <value>]가 존재합니다.</value>
+  </data>
+  <data name="FI0555" xml:space="preserve">
+    <value>행 보다 상위행이어야 합니다.</value>
+  </data>
+  <data name="FI0556" xml:space="preserve">
+    <value>이전 전기일 미생성 기간손익분개가 존재합니다.</value>
+  </data>
+  <data name="FI0557" xml:space="preserve">
+    <value>행의 계정은  세금그룹에 정의된 계정과 일치하지 않습니다.</value>
+  </data>
+  <data name="FI0558" xml:space="preserve">
+    <value>제조원가명세서 템플릿 상세 로드에 실패하였습니다.</value>
+  </data>
+  <data name="FI0559" xml:space="preserve">
+    <value>운행기간을 입력하십시요.</value>
+  </data>
+  <data name="FI0560" xml:space="preserve">
+    <value>차량번호를 입력하십시오</value>
+  </data>
+  <data name="FI0561" xml:space="preserve">
+    <value>운행일자를 입력하십시오.</value>
+  </data>
+  <data name="FI0562" xml:space="preserve">
+    <value>운행구분을 선택하십시오.</value>
+  </data>
+  <data name="FI0563" xml:space="preserve">
+    <value>출발지명을 입력하십시오.</value>
+  </data>
+  <data name="FI0564" xml:space="preserve">
+    <value>출발지주소를 입력하십시오.</value>
+  </data>
+  <data name="FI0565" xml:space="preserve">
+    <value>도착지명을 입력하십시오.</value>
+  </data>
+  <data name="FI0566" xml:space="preserve">
+    <value>도착지주소를 입력하십시오.</value>
+  </data>
+  <data name="FI0567" xml:space="preserve">
+    <value>시작KM가 종료KM보다 클 수 업습니다.</value>
+  </data>
+  <data name="FI0568" xml:space="preserve">
+    <value>주행 KM 를 입력하십시오.</value>
+  </data>
+  <data name="FI0569" xml:space="preserve">
+    <value>이전 전기일 미생성 기간손익분개가 존재합니다.</value>
+  </data>
+  <data name="FI0570" xml:space="preserve">
+    <value>일치하는 값이 없습니다.</value>
+  </data>
+  <data name="FI0571" xml:space="preserve">
+    <value>저장하시겠습니까?</value>
+  </data>
+  <data name="FI0572" xml:space="preserve">
+    <value>사번이 비어있습니다.</value>
+  </data>
+  <data name="FI0573" xml:space="preserve">
+    <value>등록거래처가 비어있습니다.</value>
+  </data>
+  <data name="FI0574" xml:space="preserve">
+    <value>이메일이 비어있습니다.</value>
+  </data>
+  <data name="FI0575" xml:space="preserve">
+    <value>휴대폰번호가 비어있습니다.</value>
+  </data>
+  <data name="FI0576" xml:space="preserve">
+    <value>이미 저장한 데이터의 경우 저장여부를 체크해제할 수 없습니다.</value>
+  </data>
+  <data name="FI0577" xml:space="preserve">
+    <value>사번이 중복됩니다.</value>
+  </data>
+  <data name="FI0578" xml:space="preserve">
+    <value>등록거래처가 중복됩니다.</value>
+  </data>
+  <data name="FI0579" xml:space="preserve">
+    <value>이메일이 중복됩니다.</value>
+  </data>
+  <data name="FI0580" xml:space="preserve">
+    <value>휴대폰번호가 중복됩니다.</value>
+  </data>
+  <data name="FI0581" xml:space="preserve">
+    <value>이미 저장한 데이터의 경우에만 삭제 가능합니다.</value>
+  </data>
+  <data name="FI0582" xml:space="preserve">
+    <value>핸드폰번호는 국가코드를 포함해야 합니다.</value>
+  </data>
+  <data name="FI0583" xml:space="preserve">
+    <value>이메일은 BIZPLAY ID 연동됨으로 이메일 수정은 관리자에게 연락 바랍니다.</value>
+  </data>
+  <data name="FI0584" xml:space="preserve">
+    <value>시스템 결산 마감항목은 삭제 할수 없습니다.</value>
+  </data>
+  <data name="FI0585" xml:space="preserve">
+    <value>적용기간을 입력해 주세요.</value>
+  </data>
+  <data name="FI0586" xml:space="preserve">
+    <value>회계년도를 입력하세요</value>
+  </data>
+  <data name="FI0587" xml:space="preserve">
+    <value>고정상각률에 올바른 충당률을 입력하십시오.</value>
+  </data>
+  <data name="FI0588" xml:space="preserve">
+    <value>채권연령 기준에 올바른 충당률을 입력하십시오.</value>
+  </data>
+  <data name="FI0589" xml:space="preserve">
+    <value>계산식을 입력해 주세요.</value>
+  </data>
+  <data name="FI0590" xml:space="preserve">
+    <value>계산식을 체크한후에 등록 하실 수 있습니다.</value>
+  </data>
+  <data name="FI0591" xml:space="preserve">
+    <value>리포트를 선택해 주세요.</value>
+  </data>
+  <data name="FI0592" xml:space="preserve">
+    <value>템플릿 값을 숫자형식으로 입력해 주세요.</value>
+  </data>
+  <data name="FI0593" xml:space="preserve">
+    <value>개별항목을 입력해 주세요</value>
+  </data>
+  <data name="FI0594" xml:space="preserve">
+    <value>제거 되었습니다.</value>
+  </data>
+  <data name="FI0595" xml:space="preserve">
+    <value>마감분개번호가 없습니다</value>
+  </data>
+  <data name="FI0596" xml:space="preserve">
+    <value>이월분개번호가 없습니다.</value>
+  </data>
+  <data name="FI0597" xml:space="preserve">
+    <value>마감내역이 없습니다.</value>
+  </data>
+  <data name="FI0598" xml:space="preserve">
+    <value>마감 하시겠습니까?</value>
+  </data>
+  <data name="FI0599" xml:space="preserve">
+    <value>이미 마감되었습니다.</value>
+  </data>
+  <data name="FI0600" xml:space="preserve">
+    <value>마감작업이 완료 되지 않았습니다. 마감작업을 먼저 진행해 주세요</value>
+  </data>
+  <data name="FI0601" xml:space="preserve">
+    <value>기간손익에 관해 전기할 내역이 없습니다</value>
+  </data>
+  <data name="FI0602" xml:space="preserve">
+    <value>해당 작업을 마감 취소 한후 작업 해주세요 </value>
+  </data>
+  <data name="FI0603" xml:space="preserve">
+    <value>다음 마감작업</value>
+  </data>
+  <data name="FI0604" xml:space="preserve">
+    <value>마감취소 하시겠습니까?</value>
+  </data>
+  <data name="FI0605" xml:space="preserve">
+    <value>마감월을 입력하세요</value>
+  </data>
+  <data name="FI0606" xml:space="preserve">
+    <value>먼저 저장부터 하십시요.</value>
+  </data>
+  <data name="FI0607" xml:space="preserve">
+    <value>마감 되었으므로 제거할 수 없습니다.</value>
+  </data>
+  <data name="FI0608" xml:space="preserve">
+    <value>등록내역이 존재합니다. 등록된 내역을 가져오시겠습니까?</value>
+  </data>
+  <data name="FI0609" xml:space="preserve">
+    <value>마감되었습니다. 마감자료를 가져옵니다.</value>
+  </data>
+  <data name="FI0610" xml:space="preserve">
+    <value>마감할 내역이 없습니다.  이대로 마감 하시겠습니까?</value>
+  </data>
+  <data name="FI0611" xml:space="preserve">
+    <value>처분계정을 입력해 주세요.</value>
+  </data>
+  <data name="FI0612" xml:space="preserve">
+    <value>초기화를 완료하였습니다.</value>
+  </data>
+  <data name="FI0613" xml:space="preserve">
+    <value>템플릿 초기화를 하시겠습니까?</value>
+  </data>
+  <data name="FI0614" xml:space="preserve">
+    <value>처분예정일을 등록하여 주십시요.</value>
+  </data>
+  <data name="FI0615" xml:space="preserve">
+    <value>마감내역이 존재하여 제거할수 없습니다.</value>
+  </data>
+  <data name="FI0616" xml:space="preserve">
+    <value>올바른 적용기간값을 입력하여 주십시요.</value>
+  </data>
+  <data name="FI0617" xml:space="preserve">
+    <value>이후에 발생된 마감전표가 존재합니다.</value>
+  </data>
+  <data name="FI0618" xml:space="preserve">
+    <value>마감데이터가 존재하여 수정할수 없습니다.</value>
+  </data>
+  <data name="FI0619" xml:space="preserve">
+    <value>결산마감 적용기간에 결산마감이력이 존재 하여 결산마감 설정에 대한 변경이 불가능합니다.</value>
+  </data>
+  <data name="FI0620" xml:space="preserve">
+    <value>결산마감 대상설정에 등록되지 않은 마감년월 입니다.</value>
+  </data>
+  <data name="FI0621" xml:space="preserve">
+    <value>이전단계 마감이 진행되지않아 마감할수 없습니다.</value>
+  </data>
+  <data name="FI0622" xml:space="preserve">
+    <value>이후단계 마감이 진행되어 마감취소할수 없습니다..</value>
+  </data>
+  <data name="FI0623" xml:space="preserve">
+    <value>이익잉여금 정산 취소가 완료 되었습니다.</value>
+  </data>
+  <data name="FI0624" xml:space="preserve">
+    <value>이익잉여금 정산이 완료 되었습니다.</value>
+  </data>
+  <data name="FI0625" xml:space="preserve">
+    <value>대손충당금 산정의 마감단위는 년 기준입니다. 마감월을 해당 회계연도 마지막월로 정의 하십시요.</value>
+  </data>
+  <data name="FI0626" xml:space="preserve">
+    <value>올바른 년월을 입력하여주십시요.</value>
+  </data>
+  <data name="FI0627" xml:space="preserve">
+    <value>행 올바른 전기일범위가 아닙니다.</value>
+  </data>
+  <data name="FI0628" xml:space="preserve">
+    <value>행을 삭제하시겠습니까?</value>
+  </data>
+  <data name="FI0629" xml:space="preserve">
+    <value>마감월에 대한 경비 마감이 되어 있어 전표를 생성할 수 없습니다. 경비전표를 추가하고자 할 경우 경비마감을 취소 후 작업을 진행 부탁드립니다.</value>
+  </data>
+  <data name="FI0630" xml:space="preserve">
+    <value>마감월에 대한 구매업무가 마감이 되어 해당 전표를 생성할 수 없습니다. 구매 내역을 추가 하고자 할 경우 구매마감을 취소 후 작업 진행 부탁드립니다.</value>
+  </data>
+  <data name="PLS001" xml:space="preserve">
+    <value>관리회계영역을 입력하십시오.</value>
+  </data>
+  <data name="PLS002" xml:space="preserve">
+    <value>전기일을 입력하십시오.</value>
+  </data>
+  <data name="PLS004" xml:space="preserve">
+    <value>만기일을 입력하십시오.</value>
+  </data>
+  <data name="PLS005" xml:space="preserve">
+    <value>증빙일을 입력하십시오.</value>
+  </data>
+  <data name="PLS006" xml:space="preserve">
+    <value>라인 데이터를 입력하십시오.</value>
+  </data>
+  <data name="PLS007" xml:space="preserve">
+    <value>계정을 입력하십시오.</value>
+  </data>
+  <data name="PLS008" xml:space="preserve">
+    <value>기준년월을 입력하십시오.</value>
+  </data>
+  <data name="PLS009" xml:space="preserve">
+    <value>데이터로딩중..(</value>
+  </data>
+  <data name="PLS010" xml:space="preserve">
+    <value>데이터로딩완료</value>
+  </data>
+  <data name="PLS011" xml:space="preserve">
+    <value>차이내역이 없습니다.</value>
+  </data>
+  <data name="PLS012" xml:space="preserve">
+    <value>확인모드에서만 확정가능합니다.</value>
+  </data>
+  <data name="PLS013" xml:space="preserve">
+    <value>확정전표를 생성합니다. 진행하시겠습니까?</value>
+  </data>
+  <data name="PLS014" xml:space="preserve">
+    <value>확정 작업이 성공하였습니다.</value>
+  </data>
+  <data name="PLS015" xml:space="preserve">
+    <value>확정 작업이 실패하였습니다.</value>
+  </data>
+  <data name="PLS016" xml:space="preserve">
+    <value>생성된 확정전표가 존재하지 않습니다.</value>
+  </data>
+  <data name="PLS017" xml:space="preserve">
+    <value>확인모드에서만 확정취소가능합니다.</value>
+  </data>
+  <data name="PLS018" xml:space="preserve">
+    <value>생성된 확정전표가 존재하지 않습니다.</value>
+  </data>
+  <data name="PLS019" xml:space="preserve">
+    <value>전표를 확정취소합니다. 진행하시겠습니까?</value>
+  </data>
+  <data name="PLS020" xml:space="preserve">
+    <value>확정취소 작업이 성공하였습니다.</value>
+  </data>
+  <data name="PLS021" xml:space="preserve">
+    <value>확정취소 작업이 실패하였습니다.</value>
+  </data>
+  <data name="PLS022" xml:space="preserve">
+    <value>현재 문서를 제거합니다. 진행하시겠습니까?</value>
+  </data>
+  <data name="PLS023" xml:space="preserve">
+    <value>확정된 전표가 존재하여 제거할 수 없습니다.</value>
+  </data>
+  <data name="PLS024" xml:space="preserve">
+    <value>확정된 전표가 존재하여 행추가를 할 수 없습니다.</value>
+  </data>
+  <data name="PLS025" xml:space="preserve">
+    <value>확정된 전표가 존재하여 행삭제를 할 수 없습니다.</value>
+  </data>
+  <data name="PLS026" xml:space="preserve">
+    <value>조회조건 관리회계영역을 입력하십시오.</value>
+  </data>
+  <data name="PLS027" xml:space="preserve">
+    <value>조회조건 템플릿을 입력하십시오.</value>
+  </data>
+  <data name="PLS028" xml:space="preserve">
+    <value>조회조건 기준년월을 입력하십시오.</value>
+  </data>
+  <data name="PLS029" xml:space="preserve">
+    <value>계층템플릿을 입력하십시오.</value>
+  </data>
+  <data name="PLS030" xml:space="preserve">
+    <value>손익분석차원을 중복하여 입력할 수 없습니다.</value>
+  </data>
+  <data name="PLS031" xml:space="preserve">
+    <value>계층템플릿 1개 이상 입력된 경우 계층템플릿은 모두 필수로 입력하셔야 합니다.</value>
+  </data>
+  <data name="PLS032" xml:space="preserve">
+    <value>개별상세와 레벨조회를 혼용할 수 없습니다.</value>
+  </data>
+  <data name="PLS033" xml:space="preserve">
+    <value>손익분석차원을 하나이상 선택하십시오.</value>
+  </data>
+  <data name="PLS034" xml:space="preserve">
+    <value>데이터 조회중입니다.</value>
+  </data>
+  <data name="PLS035" xml:space="preserve">
+    <value>데이터가 없습니다.</value>
+  </data>
+  <data name="PLS036" xml:space="preserve">
+    <value>손익분석차원을 하나이상 선택하십시오.</value>
+  </data>
+  <data name="PLS037" xml:space="preserve">
+    <value>조회완료</value>
+  </data>
+  <data name="PLS038" xml:space="preserve">
+    <value>년월을 입력하여 주십시오.</value>
+  </data>
+  <data name="PLS039" xml:space="preserve">
+    <value>시작 전기일을 입력하세요.</value>
+  </data>
+  <data name="PLS040" xml:space="preserve">
+    <value>종료 전기일을 입력하세요.</value>
+  </data>
+  <data name="PLS041" xml:space="preserve">
+    <value>종료 전기일이 시작 전기일보다 이전의 일자입니다.</value>
+  </data>
+  <data name="PLS042" xml:space="preserve">
+    <value>처리중입니다.</value>
+  </data>
+  <data name="PLS043" xml:space="preserve">
+    <value>데이터 조회중입니다.</value>
+  </data>
+  <data name="PLS044" xml:space="preserve">
+    <value>데이터가 없습니다.</value>
+  </data>
+  <data name="PLS045" xml:space="preserve">
+    <value>조회완료</value>
+  </data>
+  <data name="PLS046" xml:space="preserve">
+    <value>날짜포맷이 잘못 되었습니다.</value>
+  </data>
+  <data name="PLS047" xml:space="preserve">
+    <value>선택된 내역이 없습니다.</value>
+  </data>
+  <data name="PLS048" xml:space="preserve">
+    <value>인쇄할 내역이 존재하지 않습니다.</value>
+  </data>
+  <data name="PLS049" xml:space="preserve">
+    <value>선택된 계정이 존재하지 않습니다. 조회시간이 매우 오래걸릴수 있습니다.</value>
+  </data>
+  <data name="PLS050" xml:space="preserve">
+    <value>계속 진행하시겠습니까?</value>
+  </data>
+  <data name="PLS051" xml:space="preserve">
+    <value>선택된 거래처, 계정이 존재하지 않습니다. 조회시간이 매우 오래걸릴수 있습니다.</value>
+  </data>
+  <data name="PLS052" xml:space="preserve">
+    <value>선택된 사업자번호, 계정이 존재하지 않습니다. 조회시간이 매우 오래걸릴수 있습니다.</value>
+  </data>
+</root>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<WJS>
+	<DBSetting Client="WJS">
+		<Name>WJS</Name>
+		<DataSource>192.1.30.126</DataSource>
+		<UserID>sa</UserID>
+		<PassWord>dndwls123</PassWord>
+		<InitialCatalog>WJPASS</InitialCatalog>
+		<ConnectionTimeOut>3600</ConnectionTimeOut>
+	</DBSetting>
+	<DBSetting Client="DEV">
+		<Name>PASS1</Name>
+		<DataSource>localhost</DataSource>
+		<UserID>sa</UserID>
+		<PassWord>pk6</PassWord>
+		<InitialCatalog>sap_add_test_061215</InitialCatalog>
+		<ConnectionTimeOut>3600</ConnectionTimeOut>
+	</DBSetting>
+</WJS>
+

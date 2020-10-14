@@ -1,0 +1,141 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+WJS.DEV
+</name>
+</assembly>
+<members>
+<member name="P:WJS.DEV.My.Resources.Resources.ResourceManager">
+	<summary>
+  이 클래스에서 사용하는 캐시된 ResourceManager 인스턴스를 반환합니다.
+</summary>
+</member><member name="P:WJS.DEV.My.Resources.Resources.Culture">
+	<summary>
+  이 강력한 형식의 리소스 클래스를 사용하여 모든 리소스 조회에 대한 현재 스레드의 CurrentUICulture
+  속성을 재정의합니다.
+</summary>
+</member><member name="T:WJS.DEV.My.Resources.Resources">
+	<summary>
+  지역화된 문자열 등을 찾기 위한 강력한 형식의 리소스 클래스입니다.
+</summary>
+</member><member name="M:WJS.DEV.DEV_COMMON.WJS_ZZ_Excel.xlsCellsFontSize(System.Object,System.Int32,WJS.DEV.DEV_COMMON.WJS_ZZ_Excel.xTriConstants,WJS.DEV.DEV_COMMON.WJS_ZZ_Excel.xTriConstants,System.Int32,System.String)">
+	<summary>
+ 셀전체 -&gt; 폰트설정 (크기,굵기,이텔릭체,색상,폰트)
+ </summary>
+	<param name="txls"></param>
+	<param name="tSize"></param>
+	<param name="tBold"></param>
+	<param name="tItalic"></param>
+	<param name="tColor"></param>
+	<param name="tFontName"></param>
+	<remarks>셀전체 -&gt; 폰트설정 (크기,굵기,이텔릭체,색상,폰트)</remarks>
+</member><member name="M:WJS.DEV.DEV_COMMON.WJS_ZZ_Excel.xlsCellFont(System.Object,System.Int64,System.Int64,System.Int64,System.Int64,System.Int32,WJS.DEV.DEV_COMMON.WJS_ZZ_Excel.xTriConstants,WJS.DEV.DEV_COMMON.WJS_ZZ_Excel.x1TriConstants,System.Int32,System.String)">
+	<summary>
+ 셀범위 -&gt; 폰트설정 (크기,굵기,이텔릭체,색상,폰트)
+ </summary>
+	<param name="txls"></param>
+	<param name="tCol1"></param>
+	<param name="tRow1"></param>
+	<param name="tCol2"></param>
+	<param name="tRow2"></param>
+	<param name="tSize"></param>
+	<param name="tBold"></param>
+	<param name="tItalic"></param>
+	<param name="tColor"></param>
+	<param name="tFontName"></param>
+	<remarks>셀범위 -&gt; 폰트설정 (크기,굵기,이텔릭체,색상,폰트)</remarks>
+</member><member name="M:WJS.DEV.DEV_COMMON.WJS_ZZ_Excel.xlsCellsAutoFit(System.Object)">
+	<summary>
+ 셀전체 -&gt; 컴럼크기 자동설정
+ </summary>
+	<param name="txls"></param>
+	<remarks>셀전체 -&gt; 컴럼크기 자동설정</remarks>
+</member><member name="M:WJS.DEV.DEV_COMMON.WJS_ZZ_Excel.xlsCellsAlign(System.Object,WJS.DEV.DEV_COMMON.WJS_ZZ_Excel.eAlignConstants,WJS.DEV.DEV_COMMON.WJS_ZZ_Excel.eAlignConstants)">
+	<summary>
+ 셀전체 -&gt; 가로,세로 좌우정렬
+ </summary>
+	<param name="txls"></param>
+	<param name="tHAlign"></param>
+	<param name="tVAlign"></param>
+	<remarks>셀전체 -&gt; 가로,세로 좌우정렬</remarks>
+</member><member name="M:WJS.DEV.DEV_COMMON.WJS_ZZ_Excel.xlsCellAlign(System.Object,System.Int64,System.Int64,System.Int64,System.Int64,WJS.DEV.DEV_COMMON.WJS_ZZ_Excel.eAlignConstants,WJS.DEV.DEV_COMMON.WJS_ZZ_Excel.eAlignConstants)">
+	<summary>
+ 셀범위 -&gt; 가로,세로 좌우정렬
+ </summary>
+	<param name="txls"></param>
+	<param name="tCol1"></param>
+	<param name="tRow1"></param>
+	<param name="tCol2"></param>
+	<param name="tRow2"></param>
+	<param name="tHAlign"></param>
+	<param name="tVAlign"></param>
+	<remarks>셀범위 -&gt; 가로,세로 좌우정렬</remarks>
+</member><member name="M:WJS.DEV.DEV_COMMON.WJS_ZZ_Excel.xlsCellColor(System.Object,System.Int64,System.Int64,System.Int64,System.Int64,System.Int32)">
+	<summary>
+ 셀 -&gt; 색상 지정하기 범위지정하기(col1,row1,col2,row2)
+ </summary>
+	<param name="txls"></param>
+	<param name="tCol1"></param>
+	<param name="tRow1"></param>
+	<param name="tCol2"></param>
+	<param name="tRow2"></param>
+	<param name="tindex"></param>
+	<remarks>셀 -&gt; 색상 지정하기 범위지정하기(col1,row1,col2,row2)</remarks>
+</member><member name="M:WJS.DEV.DEV_COMMON.WJS_ZZ_Excel.xlsCellMerge(System.Object,System.Int64,System.Int64,System.Int64,System.Int64,WJS.DEV.DEV_COMMON.WJS_ZZ_Excel.eAlignConstants,WJS.DEV.DEV_COMMON.WJS_ZZ_Excel.eAlignConstants)">
+	<summary>
+ 셀 -&gt; 셀병합하기(Col1,Row1,Col2,Row2)
+ </summary>
+	<param name="txls"></param>
+	<param name="tCol1"></param>
+	<param name="tRow1"></param>
+	<param name="tCol2"></param>
+	<param name="tRow2"></param>
+	<param name="tHAlign"></param>
+	<param name="tVAlign"></param>
+	<remarks>셀 -&gt; 셀병합하기(Col1,Row1,Col2,Row2)</remarks>
+</member><member name="M:WJS.DEV.DEV_COMMON.WJS_ZZ_Excel.xlsCellBorder(System.Object,System.Int64,System.Int64,System.Int64,System.Int64)">
+	<summary>
+ 셀 -&gt; 범위지정 보더표현(Col1,Row1,Col2,Row2)
+ </summary>
+	<param name="txls"></param>
+	<param name="tCol1"></param>
+	<param name="tRow1"></param>
+	<param name="tCol2"></param>
+	<param name="tRow2"></param>
+	<remarks>셀 -&gt; 범위지정 보더표현(Col1,Row1,Col2,Row2)</remarks>
+</member><member name="M:WJS.DEV.DEV_COMMON.WJS_ZZ_Excel.xlsCellBorder01(System.Object,System.Int64,System.Int64,System.Int64,System.Int64,System.Boolean,System.Boolean,System.Boolean,System.Boolean)">
+	<summary>
+ 셀 -&gt; 범위지정 보더표현(Col1,Row1,Col2,Row2)
+ </summary>
+	<param name="txls"></param>
+	<param name="tCol1"></param>
+	<param name="tRow1"></param>
+	<param name="tCol2"></param>
+	<param name="tRow2"></param>
+	<param name="sbTop"></param>
+	<param name="sbButtom"></param>
+	<param name="sbLeft"></param>
+	<param name="sbRight"></param>
+	<remarks>셀 -&gt; 범위지정 보더표현(Col1,Row1,Col2,Row2)</remarks>
+</member><member name="M:WJS.DEV.DEV_COMMON.WJS_ZZ_Excel.xlsImage(Excel.Application,System.Int64,System.Int64,System.Int64,System.Int64,System.Int32,System.Int32,System.String)">
+	<summary>
+ 셀 -&gt; 범위지정 보더표현(Col1,Row1,Col2,Row2)
+ </summary>
+	<param name="oXls"></param>
+	<param name="iCol1"></param>
+	<param name="iRow1"></param>
+	<param name="iCol2"></param>
+	<param name="iRow2"></param>
+	<param name="WLeft"></param>
+	<param name="WTop"></param>
+	<param name="Img"></param>
+	<remarks>셀 -&gt; 범위지정 보더표현(Col1,Row1,Col2,Row2)</remarks>
+</member><member name="T:WJS.DEV.DEV_COMMON.WJS_ZZ_Excel">
+	<summary>
+ 엑셀모듈 
+ </summary>
+	<remarks>기존 엑셀모듈 컨버젼</remarks>
+</member>
+</members>
+</doc>
