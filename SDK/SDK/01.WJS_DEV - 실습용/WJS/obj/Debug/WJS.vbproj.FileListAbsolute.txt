@@ -1,7 +1,0 @@
-E:\SBO\SDK\SDK\01.WJS_DEV - 실습용\WJS\bin\WJS_DEV.exe.config
-E:\SBO\SDK\SDK\01.WJS_DEV - 실습용\WJS\obj\Debug\Interop.SAPbobsCOM.dll
-E:\SBO\SDK\SDK\01.WJS_DEV - 실습용\WJS\obj\Debug\Interop.SAPbouiCOM.dll
-E:\SBO\SDK\SDK\01.WJS_DEV - 실습용\WJS\obj\Debug\WJS.vbproj.ResolveComReference.cache
-E:\SBO\SDK\SDK\01.WJS_DEV - 실습용\WJS\obj\Debug\WJS_DEV.exe
-E:\SBO\SDK\SDK\01.WJS_DEV - 실습용\WJS\obj\Debug\.xml
-E:\SBO\SDK\SDK\01.WJS_DEV - 실습용\WJS\obj\Debug\WJS_DEV.pdb
