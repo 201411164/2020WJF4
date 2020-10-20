@@ -1,0 +1,131 @@
+  #Region "IDisposable...."
+    Protected Overridable Sub Dispose(ByVal disposing As [Boolean])
+        If (disposedValue = false) Then
+            If (disposing = true) Then
+                'TODO: free unmanaged resources when explicitly called
+            End If
+            'TODO: free shared unmanaged resources
+            Me.ClearUnManagedObject
+        End If
+        disposedValue = true
+    End Sub
+    
+    Sub IDisposable_Dispose() Implements IDisposable.Dispose
+        Me.Dispose(true)
+        GC.SuppressFinalize(Me)
+    End Sub
+    #End Region
+    <B1Listener(BoEventTypes.et_ITEM_PRESSED, True, ActionType.Itm, "btnFIND")> _
+    Public Overridable Function ET_btnFIND_BFItemPressed(ByVal pVal As ItemEvent) As Boolean
+        oForm = B1Connections.theAppl.Forms.Item(pVal.FormUID)
+        oButton = CType(CType(oForm.Items.Item("btnFIND"), SAPbouiCOM.Item).Specific, Button)
+        'ADD YOUR ACTION CODE HERE ...
+        Return True
+    End Function
+
+    <B1Listener(BoEventTypes.et_ITEM_PRESSED, False, ActionType.Itm, "btnFIND")> _
+    Public Overridable Sub ET_btnFIND_AFItemPressed(ByVal pVal As ItemEvent)
+        oForm = B1Connections.theAppl.Forms.Item(pVal.FormUID)
+        oButton = CType(CType(oForm.Items.Item("btnFIND"), SAPbouiCOM.Item).Specific, Button)
+        'ADD YOUR ACTION CODE HERE ...
+    End Sub
+    
+    <B1Listener(BoEventTypes.et_COMBO_SELECT, True, ActionType.Itm, "cboBPTYPE")> _
+    Public Overridable Function ET_cboBPTYPE_BFComboSelect(ByVal pVal As ItemEvent) As Boolean
+        oForm = B1Connections.theAppl.Forms.Item(pVal.FormUID)
+        oComboBox = CType(CType(oForm.Items.Item("cboBPTYPE"), SAPbouiCOM.Item).Specific, ComboBox)
+        'ADD YOUR ACTION CODE HERE ...
+        Return True
+    End Function
+    
+    <B1Listener(BoEventTypes.et_COMBO_SELECT, False, ActionType.Itm, "cboBPTYPE")> _
+    Public Overridable Sub ET_cboBPTYPE_AFComboSelect(ByVal pVal As ItemEvent)
+        oForm = B1Connections.theAppl.Forms.Item(pVal.FormUID)
+        oComboBox = CType(CType(oForm.Items.Item("cboBPTYPE"), SAPbouiCOM.Item).Specific, ComboBox)
+        'ADD YOUR ACTION CODE HERE ...
+    End Sub
+
+    <B1Listener(BoEventTypes.et_CLICK, True, ActionType.Itm, "fldACCT")> _
+    Public Overridable Function ET_fldACCT_BFClick(ByVal pVal As ItemEvent) As Boolean
+        oForm = B1Connections.theAppl.Forms.Item(pVal.FormUID)
+        oFolder = CType(CType(oForm.Items.Item("fldACCT"), SAPbouiCOM.Item).Specific, Folder)
+        'ADD YOUR ACTION CODE HERE ...
+        Return True
+    End Function
+    
+    
+    <B1Listener(BoEventTypes.et_CLICK, False, ActionType.Itm, "fldACCT")> _
+    Public Overridable Sub ET_fldACCT_AFClick(ByVal pVal As ItemEvent)
+        oForm = B1Connections.theAppl.Forms.Item(pVal.FormUID)
+        oFolder = CType(CType(oForm.Items.Item("fldACCT"), SAPbouiCOM.Item).Specific, Folder)
+        'ADD YOUR ACTION CODE HERE ...
+    End Sub
+
+    <B1Listener(BoEventTypes.et_VALIDATE, True, ActionType.Itm, "edtACCTCDF")> _
+    Public Overridable Function ET_edtACCTCDF_BFValidate(ByVal pVal As ItemEvent) As Boolean
+        oForm = B1Connections.theAppl.Forms.Item(pVal.FormUID)
+        oEditText = CType(CType(oForm.Items.Item("edtACCTCDF"), SAPbouiCOM.Item).Specific, EditText)
+        'ADD YOUR ACTION CODE HERE ...
+        Return True
+    End Function
+
+
+
+    <B1Listener(BoEventTypes.et_VALIDATE, False, ActionType.Itm, "edtACCTCDF")> _
+    Public Overridable Sub ET_edtACCTCDF_AFValidate(ByVal pVal As ItemEvent)
+        oForm = B1Connections.theAppl.Forms.Item(pVal.FormUID)
+        oEditText = CType(CType(oForm.Items.Item("edtACCTCDF"), SAPbouiCOM.Item).Specific, EditText)
+        'ADD YOUR ACTION CODE HERE ...
+    End Sub
+
+
+    <B1Listener(BoEventTypes.et_MATRIX_LINK_PRESSED, True, ActionType.Itm, "grdACCT")> _
+    Public Overridable Function ET_grdACCT_BFMatrixLinkPressed(ByVal pVal As ItemEvent) As Boolean
+        oForm = B1Connections.theAppl.Forms.Item(pVal.FormUID)
+        oGrid = CType(CType(oForm.Items.Item("grdACCT"), SAPbouiCOM.Item).Specific, Grid)
+        'ADD YOUR ACTION CODE HERE ...
+        Return True
+    End Function
+
+
+    <B1Listener(BoEventTypes.et_MATRIX_LINK_PRESSED, False, ActionType.Itm, "grdACCT")> _
+    Public Overridable Sub ET_grdACCT_AFMatrixLinkPressed(ByVal pVal As ItemEvent)
+        oForm = B1Connections.theAppl.Forms.Item(pVal.FormUID)
+        oGrid = CType(CType(oForm.Items.Item("grdACCT"), SAPbouiCOM.Item).Specific, Grid)
+        'ADD YOUR ACTION CODE HERE ...
+    End Sub
+
+
+
+    <B1Listener(BoEventTypes.et_VALIDATE, True, ActionType.Itm, "grdBP")> _
+    Public Overridable Function ET_grdBP_BFValidate(ByVal pVal As ItemEvent) As Boolean
+        oForm = B1Connections.theAppl.Forms.Item(pVal.FormUID)
+        oGrid = CType(CType(oForm.Items.Item("grdBP"), SAPbouiCOM.Item).Specific, Grid)
+        'ADD YOUR ACTION CODE HERE ...
+        Return True
+    End Function
+
+
+    <B1Listener(BoEventTypes.et_VALIDATE, False, ActionType.Itm, "grdBP")> _
+    Public Overridable Sub ET_grdBP_AFValidate(ByVal pVal As ItemEvent)
+        oForm = B1Connections.theAppl.Forms.Item(pVal.FormUID)
+        oGrid = CType(CType(oForm.Items.Item("grdBP"), SAPbouiCOM.Item).Specific, Grid)
+        'ADD YOUR ACTION CODE HERE ...
+    End Sub
+
+
+    <B1Listener(BoEventTypes.et_CHOOSE_FROM_LIST, True, ActionType.Itm, "edtBPCDF")> _
+    Public Overridable Function ET_edtBPCDF_BFChooseFromList(ByVal pVal As ItemEvent) As Boolean
+        oForm = B1Connections.theAppl.Forms.Item(pVal.FormUID)
+        oEditText = CType(CType(oForm.Items.Item("edtBPCDF"), SAPbouiCOM.Item).Specific, EditText)
+        'ADD YOUR ACTION CODE HERE ...
+        Return True
+    End Function
+
+
+    <B1Listener(BoEventTypes.et_CHOOSE_FROM_LIST, False, ActionType.Itm, "edtBPCDF")> _
+    Public Overridable Sub ET_edtBPCDF_AFChooseFromList(ByVal pVal As ItemEvent)
+        oForm = B1Connections.theAppl.Forms.Item(pVal.FormUID)
+        oEditText = CType(CType(oForm.Items.Item("edtBPCDF"), SAPbouiCOM.Item).Specific, EditText)
+        'ADD YOUR ACTION CODE HERE ...
+    End Sub
