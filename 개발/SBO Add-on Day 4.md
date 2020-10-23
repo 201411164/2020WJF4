@@ -48,12 +48,52 @@ Visual Studio - 도구 - 텍스트 편집기 - 확장자명 srf / xml 텍스트 
 
 
 
-
-
 cfl.common_message("!","Hello")
+
+
 
 ### Linked Button
 
 linkedObject : Doc ObjType
 
 linkedTo : editText
+
+
+
+### Before와 After Event
+
+Before는 Sub가 아니고 Function 즉, 리턴값이 있음.
+
+After는 Sub이다.
+
+
+
+### SDK 복습
+
+- DataBind
+- SetBound
+- 디폴트 값 세팅
+- 콤보박스 값 쿼리로 세팅
+- EditText에 FMS(FormattedSearch)  세팅
+- 체크 박스 기본 값(2가지로 DataSource, UI)
+- 라디오 버튼
+- 라디오 버튼과 체크박스 이벤트 처리 BF/AF
+
+
+
+### 프로시저
+
+- 매개변수
+  - = '값'으로 디폴트 값 주기 가능
+- SET 설정 3가지
+  1. SET NOCOUNT ON
+  2. SET ANSI WARNING OFF
+  3. SET ARITHIGNORE ON
+- EXAC PROC_NAME 으로 실행 가능
+
+
+
+### 그리드
+
+- ChooseFromList
+- 
