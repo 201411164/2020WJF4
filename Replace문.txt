@@ -1,0 +1,39 @@
+주석 - 기존의 동적쿼리문은 뒤에 &도 붙여야 하고 "','"도 신경써야함 눈깔빠짐 ㅠㅠ
+콤마나 따옴표도 헷갈리고 N붙일까말까 괄호 넣어야하나말아야하나 마지막엔 콤마 안찍어야하는것도 너무빡침
+Replace는 그런거 귀찮게 신경 쓸필요 없이 SQL문 값들을 직접 치환해줘서 짜봤는데 잘돌아감 ㅇㅇ 코드 라인수도 똑같음
+난 콤마 계산하는거 머리 아파서 아마 계속 이렇게 쓸듯 자기한테 편한방식으로 ㄱㄱ
+
+ 
+
+Else
+                        oRS.DoQuery("SELECT ISNULL(MAX(CAST(CODE AS INT)),0) + 1 AS MAXCODE FROM [@WJS_USD99M]")
+                        'code의 max 값을 가져온다
+                        'xSQL = ""
+                        'xSQL = xSQL & "INSERT INTO [@WJS_USD99M]  (Code,	Name, 	U_BPCODE, U_BPNAME,	U_ITEMCODE, 	U_ITEMNAME,	U_PRICE, U_DATEF,	U_DATET,	U_REMARK,	U_CDATE) VALUES('"
+                        'xSQL = xSQL & oRS.Fields.Item("MAXCODE").Value.ToString & "', '"
+                        'xSQL = xSQL & oRS.Fields.Item("MAXCODE").Value.ToString & "',N'"
+                        'xSQL = xSQL & oGrid.DataTable.GetValue("U_BPCODE", oGrid.GetDataTableRowIndex(i)) & "',N'"
+                        'xSQL = xSQL & oGrid.DataTable.GetValue("U_BPNAME", oGrid.GetDataTableRowIndex(i)) & " ',N'"
+                        'xSQL = xSQL & oGrid.DataTable.GetValue("U_ITEMCODE", oGrid.GetDataTableRowIndex(i)) & "',N'"
+                        'xSQL = xSQL & oGrid.DataTable.GetValue("U_ITEMNAME", oGrid.GetDataTableRowIndex(i)) & "',"
+                        'xSQL = xSQL & oGrid.DataTable.GetValue("U_PRICE", oGrid.GetDataTableRowIndex(i)) & ",'"
+                        'xSQL = xSQL & oGrid.DataTable.GetValue("U_DATEF", oGrid.GetDataTableRowIndex(i)) & "','"
+                        'xSQL = xSQL & oGrid.DataTable.GetValue("U_DATET", oGrid.GetDataTableRowIndex(i)) & "',N'"
+                        'xSQL = xSQL & oGrid.DataTable.GetValue("U_REMARK", oGrid.GetDataTableRowIndex(i)) & "','"
+                        'xSQL = xSQL & oGrid.DataTable.GetValue("U_CDATE", oGrid.GetDataTableRowIndex(i)) & "')"
+
+                        xSQL = "INSERT INTO [@WJS_USD99M]  (Code,	Name, 	U_BPCODE, U_BPNAME,	U_ITEMCODE, 	U_ITEMNAME,	U_PRICE, U_DATEF,	U_DATET,	U_REMARK,	U_CDATE) VALUES('WJ_MAXCODE', 'WJ_NAME ', 'WJ_U_BPCODE ', N'WJ_U_BPNAME ', N'WJ_U_ITEMCODE ', N'WJ_U_ITEMNAME ',  WJ_U_PRICE , 'WJ_U_DATEF', 'WJ_U_DATET', N'WJ_U_REMARK', 'WJ_U_CDATE')"
+                        xSQL = xSQL.Replace("WJ_MAXCODE", oRS.Fields.Item("MAXCODE").Value.ToString)
+                        xSQL = xSQL.Replace("WJ_NAME", oRS.Fields.Item("MAXCODE").Value.ToString)
+                        xSQL = xSQL.Replace("WJ_U_BPCODE", oGrid.DataTable.GetValue("U_BPCODE", oGrid.GetDataTableRowIndex(i)))
+                        xSQL = xSQL.Replace("WJ_U_BPNAME", oGrid.DataTable.GetValue("U_BPNAME", oGrid.GetDataTableRowIndex(i)))
+                        xSQL = xSQL.Replace("WJ_U_ITEMCODE", oGrid.DataTable.GetValue("U_ITEMCODE", oGrid.GetDataTableRowIndex(i)))
+                        xSQL = xSQL.Replace("WJ_U_ITEMNAME", oGrid.DataTable.GetValue("U_ITEMNAME", oGrid.GetDataTableRowIndex(i)))
+                        xSQL = xSQL.Replace("WJ_U_PRICE", oGrid.DataTable.GetValue("U_PRICE", oGrid.GetDataTableRowIndex(i)))
+                        xSQL = xSQL.Replace("WJ_U_DATEF", oGrid.DataTable.GetValue("U_DATEF", oGrid.GetDataTableRowIndex(i)))
+                        xSQL = xSQL.Replace("WJ_U_DATET", oGrid.DataTable.GetValue("U_DATET", oGrid.GetDataTableRowIndex(i)))
+                        xSQL = xSQL.Replace("WJ_U_REMARK", oGrid.DataTable.GetValue("U_REMARK", oGrid.GetDataTableRowIndex(i)))
+                        xSQL = xSQL.Replace("WJ_U_CDATE", oGrid.DataTable.GetValue("U_CDATE", oGrid.GetDataTableRowIndex(i)))
+                        oRS.DoQuery(xSQL)
+
+                    End If
