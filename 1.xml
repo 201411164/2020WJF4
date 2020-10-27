@@ -2,7 +2,7 @@
 <Application>
 	<forms>
 		<action type="add">
-			<form appformnumber="2102055099" FormType="2102055099" type="0" BorderStyle="0" uid="WJS_FIB0110_LMS" title="계정명 갱신*" visible="1" default_button="" pane="0" color="0" left="303" top="135" width="790" height="472" client_width="774" client_height="433" AutoManaged="0" SupportedModes="15" ObjectType="" modality="0">
+			<form appformnumber="2102055099" FormType="2102055099" type="0" BorderStyle="0" uid="WJS_FIB0110_LMS" title="계정명 갱신*" visible="1" default_button="" pane="0" color="0" left="357" top="84" width="790" height="472" client_width="774" client_height="433" AutoManaged="0" SupportedModes="15" ObjectType="" modality="0">
 				<datasources>
 					<dbdatasources>
 						<action type="add"/>
@@ -10,11 +10,12 @@
 					<userdatasources>
 						<action type="add"/>
 					</userdatasources>
+					<DataTables>
+						<DataTable Uid="grd">
+							<Columns/>
+						</DataTable>
+					</DataTables>
 				</datasources>
-				<DataTables>
-					<DataTable Uid="grd">
-					</DataTable>
-				</DataTables>
 				<Menus>
 					<action type="enable">
 						<Menu uid="5890"/>
@@ -65,7 +66,7 @@
 						</item>
 						<item uid="grd" type="128" left="4" tab_order="0" width="767" top="51" height="326" visible="1" enabled="1" from_pane="0" to_pane="0" disp_desc="0" right_just="0" description="" linkto="" forecolor="-1" backcolor="-1" text_style="0" font_size="-1" supp_zeros="0" AffectsFormMode="1">
 							<AutoManagedAttribute/>
-							<specific SelectionMode="0" DataTable="" CollapseLevel="0">
+							<specific SelectionMode="0" DataTable="grd" CollapseLevel="0">
 								<RowHeaders Width="20"/>
 								<GridColumns/>
 							</specific>
