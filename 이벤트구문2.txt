@@ -1,0 +1,122 @@
+
+        <B1Listener(BoEventTypes.et_FORM_DATA_ADD, true, ActionType.Frm)>  _
+        Public Overridable Function ET_BFFormDataAdd(ByVal pVal As BusinessObjectInfo) As Boolean
+            oForm = B1Connections.theAppl.Forms.Item(pVal.FormUID)
+        'ADD YOUR ACTION CODE HERE ... UDO, SBO Core 화면에서 저장되기 직전 이벤트 헨들링
+            Return true
+    End Function
+
+        <B1Listener(BoEventTypes.et_FORM_DATA_ADD, false, ActionType.Frm)>  _
+        Public Overridable Sub ET_AFFormDataAdd(ByVal pVal As BusinessObjectInfo)
+            oForm = B1Connections.theAppl.Forms.Item(pVal.FormUID)
+        'ADD YOUR ACTION CODE HERE ... UDO, SBO Core 화면에서 저장된후 이벤트 헨들링
+        End Sub
+    
+    
+        <B1Listener(BoEventTypes.et_FORM_DATA_DELETE, true, ActionType.Frm)>  _
+        Public Overridable Function ET_BFFormDataDelete(ByVal pVal As BusinessObjectInfo) As Boolean
+            oForm = B1Connections.theAppl.Forms.Item(pVal.FormUID)
+        'ADD YOUR ACTION CODE HERE ... UDO, SBO Core 화면에서 제거되기 직전 이벤트 헨들링
+            Return true
+        End Function
+    
+    
+        <B1Listener(BoEventTypes.et_FORM_DATA_DELETE, false, ActionType.Frm)>  _
+        Public Overridable Sub ET_AFFormDataDelete(ByVal pVal As BusinessObjectInfo)
+            oForm = B1Connections.theAppl.Forms.Item(pVal.FormUID)
+        'ADD YOUR ACTION CODE HERE ... UDO, SBO Core 화면에서 제거된후 직전 이벤트 헨들링
+        End Sub
+    
+    
+        <B1Listener(BoEventTypes.et_FORM_DATA_LOAD, true, ActionType.Frm)>  _
+        Public Overridable Function ET_BFFormDataLoad(ByVal pVal As BusinessObjectInfo) As Boolean
+            oForm = B1Connections.theAppl.Forms.Item(pVal.FormUID)
+        'ADD YOUR ACTION CODE HERE ... UDO, SBO Core 화면에서 네이베이션버튼이나 찾기모드에서 데이터를 불러오기 직전
+            Return true
+        End Function
+
+        <B1Listener(BoEventTypes.et_FORM_DATA_LOAD, false, ActionType.Frm)>  _
+        Public Overridable Sub ET_AFFormDataLoad(ByVal pVal As BusinessObjectInfo)
+            oForm = B1Connections.theAppl.Forms.Item(pVal.FormUID)
+        'ADD YOUR ACTION CODE HERE ... UDO, SBO Core 화면에서 네이베이션버튼이나 찾기모드에서 데이터를 불러온후
+        End Sub
+
+
+    
+        <B1Listener(BoEventTypes.et_FORM_DATA_UPDATE, true, ActionType.Frm)>  _
+        Public Overridable Function ET_BFFormDataUpdate(ByVal pVal As BusinessObjectInfo) As Boolean
+            oForm = B1Connections.theAppl.Forms.Item(pVal.FormUID)
+        'ADD YOUR ACTION CODE HERE ...UDO, SBO Core 화면에서 갱신전 이벤트 헨들링
+            Return true
+        End Function
+
+
+    
+        <B1Listener(BoEventTypes.et_FORM_DATA_UPDATE, false, ActionType.Frm)>  _
+        Public Overridable Sub ET_AFFormDataUpdate(ByVal pVal As BusinessObjectInfo)
+            oForm = B1Connections.theAppl.Forms.Item(pVal.FormUID)
+        'ADD YOUR ACTION CODE HERE ...UDO, SBO Core 화면에서 갱신후 이벤트 헨들링
+        End Sub
+
+
+    
+        <B1Listener(BoEventTypes.et_MENU_CLICK, true, ActionType.Mnu, "1282")>  _
+        Public Overridable Function ET_BFData_Add(ByVal pVal As MenuEvent) As Boolean
+            oForm = B1Connections.theAppl.Forms.ActiveForm
+        'ADD YOUR ACTION CODE HERE ...UDO, SBO Core 화면에서 추가모드로 바뀌기전 이벤트 헨들링
+            Return true
+        End Function
+    
+    
+        <B1Listener(BoEventTypes.et_MENU_CLICK, false, ActionType.Mnu, "1282")>  _
+        Public Overridable Sub ET_AFData_Add(ByVal pVal As MenuEvent)
+            oForm = B1Connections.theAppl.Forms.ActiveForm
+        'ADD YOUR ACTION CODE HERE ...UDO, SBO Core 화면에서 추가모드로 바뀐후 이벤트 헨들링
+        End Sub
+    
+    
+        <B1Listener(BoEventTypes.et_MENU_CLICK, true, ActionType.Mnu, "1292")>  _
+        Public Overridable Function ET_BFData_AddRow(ByVal pVal As MenuEvent) As Boolean
+            oForm = B1Connections.theAppl.Forms.ActiveForm
+        'ADD YOUR ACTION CODE HERE ...행추가전 이벤트 헨들링
+            Return true
+        End Function
+    
+    
+        <B1Listener(BoEventTypes.et_MENU_CLICK, false, ActionType.Mnu, "1292")>  _
+        Public Overridable Sub ET_AFData_AddRow(ByVal pVal As MenuEvent)
+            oForm = B1Connections.theAppl.Forms.ActiveForm
+        'ADD YOUR ACTION CODE HERE ...행추가후 이벤트 헨들링
+        End Sub
+
+
+    
+        <B1Listener(BoEventTypes.et_MENU_CLICK, true, ActionType.Mnu, "1293")>  _
+        Public Overridable Function ET_BFData_DeleteRow(ByVal pVal As MenuEvent) As Boolean
+            oForm = B1Connections.theAppl.Forms.ActiveForm
+        'ADD YOUR ACTION CODE HERE ...행삭제전 이벤트 헨들링
+            Return true
+        End Function
+    
+    
+        <B1Listener(BoEventTypes.et_MENU_CLICK, false, ActionType.Mnu, "1293")>  _
+        Public Overridable Sub ET_AFData_DeleteRow(ByVal pVal As MenuEvent)
+            oForm = B1Connections.theAppl.Forms.ActiveForm
+        'ADD YOUR ACTION CODE HERE ...행추가후 이벤트 헨들링
+        End Sub
+    
+    
+        <B1Listener(BoEventTypes.et_MENU_CLICK, true, ActionType.Mnu, "1283")>  _
+        Public Overridable Function ET_BFData_Remove(ByVal pVal As MenuEvent) As Boolean
+            oForm = B1Connections.theAppl.Forms.ActiveForm
+        'ADD YOUR ACTION CODE HERE ...제거매뉴전 이벤트 헨들링
+            Return true
+        End Function
+    
+    
+        <B1Listener(BoEventTypes.et_MENU_CLICK, false, ActionType.Mnu, "1283")>  _
+        Public Overridable Sub ET_AFData_Remove(ByVal pVal As MenuEvent)
+            oForm = B1Connections.theAppl.Forms.ActiveForm
+        'ADD YOUR ACTION CODE HERE ...제거매뉴후 이벤트 헨들링
+        End Sub
+    
