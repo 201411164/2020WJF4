@@ -1,0 +1,20 @@
+'사원명 가져오기 위해 dicompany의 Username(ex:manager)을 사용해 OHEM과 OUSR을 조인한다
+            oRS = B1Connections.diCompany.GetBusinessObject(SAPbobsCOM.BoObjectTypes.BoRecordset)
+
+            xSQL = "select Code, dept, lastName, U_EMPNO FROM OHEM INNER JOIN OUSR ON OUSR.USERID = OHEM.userId  WHERE OUSR.U_NAME = 'LOGIN_NAME'"
+
+            xSQL = xSQL.Replace("LOGIN_NAME", B1Connections.diCompany.UserName)
+
+
+            oRS.DoQuery(xSQL)
+            
+            Dim empCode As String = oRS.Fields.Item("Code").Value
+            Dim empDept As String = oRS.Fields.Item("dept").Value
+            Dim emplastName As String = oRS.Fields.Item("lastName").Value
+            Dim empNo As String = oRS.Fields.Item("U_EMPNO").Value
+
+            oForm.DataSources.DBDataSources.Item("@WJS_UFI02T_LMV").SetValue("U_DOCDT", 0, Now.Date.ToString("yyyyMMdd"))
+            oForm.DataSources.DBDataSources.Item("@WJS_UFI02T_LMV").SetValue("U_REGEMPNO", 0, empCode)
+            oForm.DataSources.DBDataSources.Item("@WJS_UFI02T_LMV").SetValue("U_REGEMPNM", 0, emplastName)
+            oForm.DataSources.DBDataSources.Item("@WJS_UFI02T_LMV").SetValue("U_EMPNO", 0, empCode)
+            oForm.DataSources.DBDataSources.Item("@WJS_UFI02T_LMV").SetValue("U_EMPNM", 0, emplastName)
