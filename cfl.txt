@@ -1,0 +1,132 @@
+Private Sub AddChooseFromList(ByVal oForm As SAPbouiCOM.Form)
+
+        Dim oCFL As SAPbouiCOM.ChooseFromList
+        Dim oCFLCreationParams As SAPbouiCOM.ChooseFromListCreationParams
+        Dim oCons As SAPbouiCOM.Conditions
+        Dim oCon As SAPbouiCOM.Condition
+
+        Try
+
+            '-------------------------------------------------------------------------------
+            '계정시작 ChooseFromList 셋팅 시작
+            '-------------------------------------------------------------------------------
+
+            oCFLCreationParams = B1Connections.theAppl.CreateObject(SAPbouiCOM.BoCreatableObjectType.cot_ChooseFromListCreationParams)
+
+            oCFLCreationParams.ObjectType = BoLinkedObject.lf_GLAccounts
+
+            oCFLCreationParams.UniqueID = "edtACCTCDF"
+
+            oCFL = oForm.ChooseFromLists.Add(oCFLCreationParams)
+
+            oCons = oCFL.GetConditions()
+
+            oCon = oCons.Add()
+            oCon.Alias = "Postable"
+            oCon.Operation = SAPbouiCOM.BoConditionOperation.co_EQUAL
+            oCon.CondVal = "Y"
+
+            oCFL.SetConditions(oCons)
+
+            oForm.Items.Item("edtACCTCDF").Specific.ChooseFromListUID = "edtACCTCDF"
+            oForm.Items.Item("edtACCTCDF").Specific.ChooseFromListAlias = "AcctCode"
+
+            '-------------------------------------------------------------------------------
+            '계정시작 ChooseFromList 셋팅 끝
+            '-------------------------------------------------------------------------------
+
+            '-------------------------------------------------------------------------------
+            '계정끝 ChooseFromList 셋팅 시작
+            '-------------------------------------------------------------------------------
+
+            oCFLCreationParams = B1Connections.theAppl.CreateObject(SAPbouiCOM.BoCreatableObjectType.cot_ChooseFromListCreationParams)
+
+            oCFLCreationParams.ObjectType = BoLinkedObject.lf_GLAccounts
+            oCFLCreationParams.UniqueID = "edtACCTCDT"
+
+            oCFL = oForm.ChooseFromLists.Add(oCFLCreationParams)
+
+            oCons = oCFL.GetConditions()
+
+            oCon = oCons.Add()
+            oCon.Alias = "Postable"
+            oCon.Operation = SAPbouiCOM.BoConditionOperation.co_EQUAL
+            oCon.CondVal = "Y"
+
+            oCFL.SetConditions(oCons)
+
+            oForm.Items.Item("edtACCTCDT").Specific.ChooseFromListUID = "edtACCTCDT"
+            oForm.Items.Item("edtACCTCDT").Specific.ChooseFromListAlias = "AcctCode"
+
+            '-------------------------------------------------------------------------------
+            '계정끝 ChooseFromList 셋팅 끝
+            '-------------------------------------------------------------------------------
+
+            '-------------------------------------------------------------------------------
+            'BP시작 ChooseFromList 셋팅 시작
+            '-------------------------------------------------------------------------------
+
+            oCFLCreationParams = B1Connections.theAppl.CreateObject(SAPbouiCOM.BoCreatableObjectType.cot_ChooseFromListCreationParams)
+
+            oCFLCreationParams.ObjectType = BoLinkedObject.lf_BusinessPartner
+            oCFLCreationParams.UniqueID = "edtBPCDF"
+
+            oCFL = oForm.ChooseFromLists.Add(oCFLCreationParams)
+
+            oCons = oCFL.GetConditions()
+
+            oCon = oCons.Add()
+            oCon.Alias = "frozenFor"
+            oCon.Operation = SAPbouiCOM.BoConditionOperation.co_EQUAL
+            oCon.CondVal = "N"
+
+            oCFL.SetConditions(oCons)
+
+            oForm.Items.Item("edtBPCDF").Specific.ChooseFromListUID = "edtBPCDF"
+            oForm.Items.Item("edtBPCDF").Specific.ChooseFromListAlias = "CardCode"
+
+            '-------------------------------------------------------------------------------
+            'BP시작 ChooseFromList 셋팅 끝
+            '-------------------------------------------------------------------------------
+
+            '-------------------------------------------------------------------------------
+            'BP끝 ChooseFromList 셋팅 시작
+            '-------------------------------------------------------------------------------
+
+            oCFLCreationParams = B1Connections.theAppl.CreateObject(SAPbouiCOM.BoCreatableObjectType.cot_ChooseFromListCreationParams)
+
+            oCFLCreationParams.ObjectType = BoLinkedObject.lf_BusinessPartner
+            oCFLCreationParams.UniqueID = "edtBPCDT"
+
+            oCFL = oForm.ChooseFromLists.Add(oCFLCreationParams)
+
+            oCons = oCFL.GetConditions()
+
+            oCon = oCons.Add()
+            oCon.Alias = "frozenFor"
+            oCon.Operation = SAPbouiCOM.BoConditionOperation.co_EQUAL
+            oCon.CondVal = "N"
+
+            oCFL.SetConditions(oCons)
+
+            oForm.Items.Item("edtBPCDT").Specific.ChooseFromListUID = "edtBPCDT"
+            oForm.Items.Item("edtBPCDT").Specific.ChooseFromListAlias = "CardCode"
+
+            '-------------------------------------------------------------------------------
+            'BP끝 ChooseFromList 셋팅 끝
+            '-------------------------------------------------------------------------------
+
+        Catch ex As Exception
+
+            B1Connections.theAppl.StatusBar.SetText("AddChooseFromList " & Err.Description, SAPbouiCOM.BoMessageTime.bmt_Short, SAPbouiCOM.BoStatusBarMessageType.smt_Error)
+
+        Finally
+
+            oCFLCreationParams = Nothing
+            oCFL = Nothing
+            oCons = Nothing
+            oCon = Nothing
+
+        End Try
+
+    End Sub
