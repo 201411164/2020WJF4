@@ -1,0 +1,74 @@
+ 'Matrix 행 추가 이벤트
+    <B1Listener(BoEventTypes.et_MENU_CLICK, False, ActionType.Mnu, "1292")> _
+    Public Overridable Sub ET_AFRowDataMenu_Add(ByVal pVal As MenuEvent)
+        oForm = B1Connections.theAppl.Forms.ActiveForm
+        'ADD YOUR ACTION CODE HERE ...
+
+        Try
+
+            Dim oMatrix As SAPbouiCOM.Matrix = Nothing
+            Dim oDbSrc As SAPbouiCOM.DBDataSource = Nothing
+            Dim xSQL As String = ""
+            oForm.Freeze(True)
+
+
+
+
+
+            oMatrix = oForm.Items.Item("mtx").Specific
+            oMatrix.AddRow(1)
+            oMatrix.FlushToDataSource()
+            oDbSrc = oForm.DataSources.DBDataSources.Item("@WJS_UFI021_LMV")
+            oDbSrc.SetValue("U_EACCTCD", oMatrix.VisualRowCount - 1, "")
+            oDbSrc.SetValue("U_EACCTNM", oMatrix.VisualRowCount - 1, "")
+            oDbSrc.SetValue("U_SUPAMT", oMatrix.VisualRowCount - 1, 0)
+            oDbSrc.SetValue("U_VATGROUP", oMatrix.VisualRowCount - 1, "")
+            oDbSrc.SetValue("U_VAT", oMatrix.VisualRowCount - 1, 0)
+
+            oDbSrc.SetValue("U_SVCAMT", oMatrix.VisualRowCount - 1, 0)
+            oDbSrc.SetValue("U_LMEMO", oMatrix.VisualRowCount - 1, "")
+
+            oDbSrc.SetValue("U_OCRCD1", oMatrix.VisualRowCount - 1, "")
+            oDbSrc.SetValue("U_OCRCD2", oMatrix.VisualRowCount - 1, "")
+            oDbSrc.SetValue("U_OCRCD3", oMatrix.VisualRowCount - 1, "")
+            oDbSrc.SetValue("U_PROJECT", oMatrix.VisualRowCount - 1, "")
+            oDbSrc.SetValue("U_CARDCD", oMatrix.VisualRowCount - 1, "")
+            oDbSrc.SetValue("U_CARDNM", oMatrix.VisualRowCount - 1, "")
+            oDbSrc.SetValue("U_VATNUM", oMatrix.VisualRowCount - 1, "")
+            oDbSrc.SetValue("U_CASHNO", oMatrix.VisualRowCount - 1, "")
+            oDbSrc.SetValue("U_CARNO", oMatrix.VisualRowCount - 1, "")
+
+
+
+
+
+
+
+
+            oMatrix.LoadFromDataSource()
+
+            Call Auto_Line(oForm)
+
+
+            Dim oComboBox As SAPbouiCOM.ComboBox = Nothing
+
+
+
+
+            xSQL = "select ISNULL(ECVatGroup, 'V0')  AS VAT from ocrd left join ovtg on ocrd.ECVatGroup = ovtg.Code WHERE OCRD.CardCode  =  N'USER_CODE' AND OVTG.Category= 'I'"
+            xSQL = xSQL.Replace("USER_CODE", oForm.DataSources.DBDataSources.Item("@WJS_UFI02T_LMV").GetValue("U_BPCD", 0))
+
+            Dim vatGRP As String = CFL.GetValue(xSQL)
+
+            oComboBox = oMatrix.Columns.Item("colVATGRP").Cells.Item(oMatrix.VisualRowCount).Specific
+            If vatGRP = "" Then
+                oComboBox.Select("V0", BoSearchKey.psk_ByValue)
+            Else
+                oComboBox.Select(vatGRP, BoSearchKey.psk_ByValue)
+            End If
+
+        Catch ex As Exception
+        Finally
+            oForm.Freeze(False)
+        End Try
+    End Sub
