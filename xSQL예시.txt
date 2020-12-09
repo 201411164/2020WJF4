@@ -1,0 +1,27 @@
+oRS = B1Connections.diCompany.GetBusinessObject(SAPbobsCOM.BoObjectTypes.BoRecordset)
+            oUDS = oForm.DataSources.UserDataSources
+
+            oForm.Items.Item("btnACCTDOC").Enabled = False
+
+            oGrid = oForm.Items.Item("grd").Specific
+
+
+            xSQL = "EXEC WJS_SP_FIF0120F_ISE "
+            xSQL = xSQL & " N'" & oUDS.Item("cboBPLID").ValueEx & "'"               '사업장
+            xSQL = xSQL & ",  " & oUDS.Item("cboTEMPLET").ValueEx                   '템플릿
+            xSQL = xSQL & ", '" & oUDS.Item("edtREFDTF").ValueEx & "'"              '기준일자From
+            xSQL = xSQL & ", '" & oUDS.Item("edtREFDTT").ValueEx & "'"              '기준일자To
+            xSQL = xSQL & ", '" & oUDS.Item("edtCMPDTF").ValueEx & "'"              '비교일자From
+            xSQL = xSQL & ", '" & oUDS.Item("edtCMPDTT").ValueEx & "'"              '비교일자To
+            xSQL = xSQL & ",  " & oUDS.Item("cboLEVELS").ValueEx                    '레벨
+            xSQL = xSQL & ",N'" & IIf(oForm.Items.Item("chkCLSJEYN").Specific.checked, CFL.YES_MARK, CFL.NO_MARK) & "'" '결산잔액포함(Y-포함/N-미포함)
+            xSQL = xSQL & ",N'" & IIf(oForm.Items.Item("chkADJTRAN").Specific.checked, CFL.YES_MARK, CFL.NO_MARK) & "'" '조정거래포함(Y-포함/N-미포함)
+            xSQL = xSQL & ",N'" & IIf(oForm.Items.Item("optLC").Specific.selected, "L", "S") & "'"                      '조회기준(L-LC/S-SC)
+            xSQL = xSQL & ",N'" & IIf(oForm.Items.Item("optJAN1").Specific.selected, CFL.NO_MARK, CFL.YES_MARK) & "'"   '조회기준(N-전체/Y-잔액)
+            xSQL = xSQL & ",N'" & oUDS.Item("edtTYPECD").ValueEx & "'"              '코스트센터유형
+            xSQL = xSQL & ",N'" & oUDS.Item("edtCOSTCD").ValueEx & "'"              '코스트센터
+
+            B1Connections.theAppl.StatusBar.SetText(CFL.GetMSG("FI0052", ModuleIni.FI), SAPbouiCOM.BoMessageTime.bmt_Short, SAPbouiCOM.BoStatusBarMessageType.smt_Warning) '데이터 조회중입니다
+
+            oForm.Freeze(True)
+
